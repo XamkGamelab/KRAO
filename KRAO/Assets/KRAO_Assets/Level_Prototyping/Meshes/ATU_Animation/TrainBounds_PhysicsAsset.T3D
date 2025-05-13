@@ -1,0 +1,3 @@
+Begin Object Class=/Script/Engine.PhysicsAsset Name="TrainBounds_PhysicsAsset" ExportPath=/Script/Engine.PhysicsAsset'"/Game/LevelPrototyping/Meshes/ATU_Animation/TrainBounds_PhysicsAsset.TrainBounds_PhysicsAsset"'
+   PreviewSkeletalMesh="/Game/LevelPrototyping/Meshes/ATU_Animation/TrainBoundsSM.TrainBoundsSM"
+End Object

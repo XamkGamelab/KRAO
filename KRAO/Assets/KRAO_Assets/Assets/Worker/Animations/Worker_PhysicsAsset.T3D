@@ -1,0 +1,252 @@
+Begin Object Class=/Script/Engine.PhysicsAsset Name="Worker_PhysicsAsset" ExportPath=/Script/Engine.PhysicsAsset'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset"'
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_9" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_9"'
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_8" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_8"'
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_7" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_7"'
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_6" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_6"'
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_5" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_5"'
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_4" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_4"'
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_3" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_3"'
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_2" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_2"'
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_16" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_16"'
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_15" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_15"'
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_14" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_14"'
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_13" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_13"'
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_12" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_12"'
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_11" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_11"'
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_10" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_10"'
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_1" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_1"'
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_0" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_0"'
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_9" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:PhysicsConstraintTemplate_9"'
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_8" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:PhysicsConstraintTemplate_8"'
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_7" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:PhysicsConstraintTemplate_7"'
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_6" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:PhysicsConstraintTemplate_6"'
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_5" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:PhysicsConstraintTemplate_5"'
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_4" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:PhysicsConstraintTemplate_4"'
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_3" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:PhysicsConstraintTemplate_3"'
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_2" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:PhysicsConstraintTemplate_2"'
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_15" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:PhysicsConstraintTemplate_15"'
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_14" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:PhysicsConstraintTemplate_14"'
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_13" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:PhysicsConstraintTemplate_13"'
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_12" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:PhysicsConstraintTemplate_12"'
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_11" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:PhysicsConstraintTemplate_11"'
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_10" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:PhysicsConstraintTemplate_10"'
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_1" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:PhysicsConstraintTemplate_1"'
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_0" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:PhysicsConstraintTemplate_0"'
+   End Object
+   Begin Object Name="SkeletalBodySetup_9" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_9"'
+      AggGeom=(SphylElems=((Center=(X=-1.302820,Y=-16.643263,Z=1.013987),Rotation=(Pitch=0.000000,Yaw=-6.549258,Roll=-79.075425),Radius=14.637637,Length=19.617489)))
+      BoneName="pelvis_L"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_8" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_8"'
+      AggGeom=(SphylElems=((Center=(X=-2.394959,Y=-10.910248,Z=0.330726),Rotation=(Pitch=-0.000000,Yaw=169.219074,Roll=-86.415371),Radius=7.384912,Length=9.820423)))
+      BoneName="hand_R"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_7" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_7"'
+      AggGeom=(SphylElems=((Center=(X=-3.417005,Y=-22.601982,Z=0.852115),Rotation=(Pitch=0.000000,Yaw=-2.956284,Roll=-86.260645),Radius=10.389096,Length=26.405857)))
+      BoneName="upper_arm_R"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_6" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_6"'
+      AggGeom=(SphylElems=((Center=(X=2.394953,Y=-10.910236,Z=0.330728),Rotation=(Pitch=-0.000000,Yaw=-169.219043,Roll=-86.415409),Radius=7.384906,Length=9.820423)))
+      BoneName="hand_L"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_5" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_5"'
+      AggGeom=(SphylElems=((Center=(X=3.417006,Y=-22.601968,Z=0.852113),Rotation=(Pitch=0.000000,Yaw=2.956259,Roll=-86.260639),Radius=10.389099,Length=26.405870)))
+      BoneName="upper_arm_L"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_4" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_4"'
+      AggGeom=(SphylElems=((Center=(X=-0.001501,Y=-9.014802,Z=2.056614),Rotation=(Pitch=40.277747,Yaw=-90.000000,Roll=0.009994),Radius=12.470301,Length=14.603260)))
+      BoneName="head"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_3" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_3"'
+      AggGeom=(SphylElems=((Center=(X=-0.000004,Y=-11.462285,Z=0.768187),Rotation=(Pitch=16.693326,Yaw=-90.000000,Roll=-90.000007),Radius=19.136202,Length=20.809114)))
+      BoneName="spine_003"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_2" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_2"'
+      AggGeom=(SphylElems=((Center=(X=-0.000000,Y=-5.753749,Z=0.839525),Rotation=(Pitch=1.443147,Yaw=-90.000000,Roll=-89.999990),Radius=15.835804,Length=18.054441)))
+      BoneName="spine_002"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_16" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_16"'
+      AggGeom=(SphylElems=((Center=(X=-0.387400,Y=-11.137204,Z=0.918932),Rotation=(Pitch=-0.000000,Yaw=-178.541999,Roll=-70.412187),Radius=8.107011,Length=17.161003)))
+      BoneName="foot_R"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_15" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_15"'
+      AggGeom=(SphylElems=((Center=(X=-0.664600,Y=-23.248210,Z=0.509956),Rotation=(Pitch=-0.000000,Yaw=2.969158,Roll=-87.598426),Radius=11.190051,Length=21.277113)))
+      BoneName="shin_R"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_14" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_14"'
+      AggGeom=(SphylElems=((Center=(X=1.102286,Y=-18.085024,Z=-0.709411),Rotation=(Pitch=-0.000000,Yaw=-173.699389,Roll=-83.993785),Radius=12.506677,Length=18.437632)))
+      BoneName="thigh_R"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_13" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_13"'
+      AggGeom=(SphylElems=((Center=(X=0.387401,Y=-11.137201,Z=0.918925),Rotation=(Pitch=-0.000000,Yaw=178.542021,Roll=-70.412170),Radius=8.107011,Length=17.161005)))
+      BoneName="foot_L"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_12" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_12"'
+      AggGeom=(SphylElems=((Center=(X=0.664599,Y=-23.248231,Z=0.509955),Rotation=(Pitch=0.000000,Yaw=-2.969156,Roll=-87.598429),Radius=11.190053,Length=21.277111)))
+      BoneName="shin_L"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_11" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_11"'
+      AggGeom=(SphylElems=((Center=(X=-1.424115,Y=-18.190548,Z=-0.327163),Rotation=(Pitch=0.000000,Yaw=177.457689,Roll=-85.635392),Radius=12.565169,Length=18.036098)))
+      BoneName="thigh_L"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_10" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_10"'
+      AggGeom=(SphylElems=((Center=(X=-0.371134,Y=-16.559549,Z=0.676226),Rotation=(Pitch=9.545801,Yaw=-179.844254,Roll=-90.000000),Radius=15.938619,Length=19.039011)))
+      BoneName="pelvis_R"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_1" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_1"'
+      AggGeom=(SphylElems=((Center=(X=-0.000005,Y=-9.085547,Z=-0.947786),Rotation=(Pitch=-36.436414,Yaw=-90.000000,Roll=0.000031),Radius=18.320892,Length=20.012720)))
+      BoneName="spine_001"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_0" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:SkeletalBodySetup_0"'
+      AggGeom=(SphylElems=((Rotation=(Pitch=-0.000000,Yaw=-90.000000,Roll=0.000000),Radius=0.505000,Length=0.505000)))
+      BoneName="spine"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_9" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:PhysicsConstraintTemplate_9"'
+      DefaultInstance=(JointName="pelvis_R",ConstraintBone1="pelvis_R",ConstraintBone2="spine",Pos2=(X=-0.000000,Y=0.000005,Z=0.000012),PriAxis2=(X=-0.404803,Y=-0.165703,Z=-0.899265),SecAxis2=(X=0.606160,Y=0.687683,Z=-0.399578),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_8" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:PhysicsConstraintTemplate_8"'
+      DefaultInstance=(JointName="pelvis_L",ConstraintBone1="pelvis_L",ConstraintBone2="spine",Pos2=(X=-0.000000,Y=0.000005,Z=0.000012),PriAxis2=(X=-0.404803,Y=0.165703,Z=0.899265),SecAxis2=(X=-0.606160,Y=0.687683,Z=-0.399578),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_7" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:PhysicsConstraintTemplate_7"'
+      DefaultInstance=(JointName="hand_R",ConstraintBone1="hand_R",ConstraintBone2="upper_arm_R",Pos2=(X=0.273565,Y=-45.018286,Z=2.359630),PriAxis2=(X=0.991134,Y=0.082302,Z=0.104305),SecAxis2=(X=-0.074765,Y=0.994435,Z=-0.074223),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_6" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:PhysicsConstraintTemplate_6"'
+      DefaultInstance=(JointName="upper_arm_R",ConstraintBone1="upper_arm_R",ConstraintBone2="spine_003",Pos2=(X=-18.601596,Y=-9.663201,Z=-1.131341),PriAxis2=(X=-0.693125,Y=-0.708790,Z=-0.131128),SecAxis2=(X=0.720807,Y=-0.682527,Z=-0.120809),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_5" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:PhysicsConstraintTemplate_5"'
+      DefaultInstance=(JointName="hand_L",ConstraintBone1="hand_L",ConstraintBone2="upper_arm_L",Pos2=(X=-0.273567,Y=-45.018291,Z=2.359634),PriAxis2=(X=0.991134,Y=-0.082303,Z=-0.104304),SecAxis2=(X=0.074766,Y=0.994435,Z=-0.074223),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_4" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:PhysicsConstraintTemplate_4"'
+      DefaultInstance=(JointName="upper_arm_L",ConstraintBone1="upper_arm_L",ConstraintBone2="spine_003",Pos2=(X=18.601597,Y=-9.663201,Z=-1.131349),PriAxis2=(X=-0.693125,Y=0.708789,Z=0.131130),SecAxis2=(X=-0.720807,Y=-0.682527,Z=-0.120808),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_3" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:PhysicsConstraintTemplate_3"'
+      DefaultInstance=(JointName="head",ConstraintBone1="head",ConstraintBone2="spine_003",Pos2=(X=0.000000,Y=-29.141071,Z=0.304296),PriAxis2=(X=1.000000,Y=0.000267,Z=0.000024),SecAxis2=(X=-0.000268,Y=0.998100,Z=0.061610),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_2" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:PhysicsConstraintTemplate_2"'
+      DefaultInstance=(JointName="spine_003",ConstraintBone1="spine_003",ConstraintBone2="spine_002",Pos2=(X=0.000000,Y=-16.859226,Z=-0.000004),PriAxis2=(X=1.000000,Y=0.000000,Z=0.000000),SecAxis2=(X=0.000000,Y=0.997569,Z=-0.069692),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_15" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:PhysicsConstraintTemplate_15"'
+      DefaultInstance=(JointName="foot_R",ConstraintBone1="foot_R",ConstraintBone2="shin_R",Pos2=(X=0.000224,Y=-40.536892,Z=0.000002),PriAxis2=(X=0.967171,Y=-0.039060,Z=-0.251107),SecAxis2=(X=0.251048,Y=0.300214,Z=0.920243),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_14" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:PhysicsConstraintTemplate_14"'
+      DefaultInstance=(JointName="shin_R",ConstraintBone1="shin_R",ConstraintBone2="thigh_R",Pos2=(X=0.000196,Y=-38.245663,Z=0.000001),PriAxis2=(X=0.999701,Y=0.020524,Z=0.013277),SecAxis2=(X=-0.020329,Y=0.999685,Z=-0.014691),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_13" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:PhysicsConstraintTemplate_13"'
+      DefaultInstance=(JointName="thigh_R",ConstraintBone1="thigh_R",ConstraintBone2="spine",Pos2=(X=-9.848741,Y=-5.867511,Z=3.318985),PriAxis2=(X=0.997014,Y=0.074866,Z=0.018940),SecAxis2=(X=0.076107,Y=-0.994149,Z=-0.076650),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_12" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:PhysicsConstraintTemplate_12"'
+      DefaultInstance=(JointName="foot_L",ConstraintBone1="foot_L",ConstraintBone2="shin_L",Pos2=(X=-0.000220,Y=-40.536915,Z=-0.000002),PriAxis2=(X=0.967171,Y=0.039061,Z=0.251107),SecAxis2=(X=-0.251048,Y=0.300214,Z=0.920243),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_11" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:PhysicsConstraintTemplate_11"'
+      DefaultInstance=(JointName="shin_L",ConstraintBone1="shin_L",ConstraintBone2="thigh_L",Pos2=(X=-0.000199,Y=-38.245647,Z=0.000002),PriAxis2=(X=0.999701,Y=-0.020524,Z=-0.013277),SecAxis2=(X=0.020328,Y=0.999685,Z=-0.014691),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_10" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:PhysicsConstraintTemplate_10"'
+      DefaultInstance=(JointName="thigh_L",ConstraintBone1="thigh_L",ConstraintBone2="spine",Pos2=(X=9.848739,Y=-5.867511,Z=3.318989),PriAxis2=(X=0.997014,Y=-0.074866,Z=-0.018939),SecAxis2=(X=-0.076107,Y=-0.994149,Z=-0.076650),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_1" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:PhysicsConstraintTemplate_1"'
+      DefaultInstance=(JointName="spine_002",ConstraintBone1="spine_002",ConstraintBone2="spine_001",Pos2=(X=-0.000000,Y=-16.914459,Z=0.000001),PriAxis2=(X=1.000000,Y=0.000000,Z=0.000000),SecAxis2=(X=-0.000000,Y=0.968179,Z=0.250260),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_0" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Worker/Animations/Worker_PhysicsAsset.Worker_PhysicsAsset:PhysicsConstraintTemplate_0"'
+      DefaultInstance=(JointName="spine_001",ConstraintBone1="spine_001",ConstraintBone2="spine",Pos2=(X=-0.000000,Y=-16.996731,Z=0.000013),PriAxis2=(X=1.000000,Y=-0.000000,Z=0.000000),SecAxis2=(X=0.000000,Y=0.992051,Z=-0.125839),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   PreviewSkeletalMesh="/Game/Assets/Worker/Animations/Worker_SkeletalMesh.Worker_SkeletalMesh"
+   BoundsBodies(0)=0
+   BoundsBodies(1)=1
+   BoundsBodies(2)=2
+   BoundsBodies(3)=3
+   BoundsBodies(4)=4
+   BoundsBodies(5)=5
+   BoundsBodies(6)=6
+   BoundsBodies(7)=7
+   BoundsBodies(8)=8
+   BoundsBodies(9)=9
+   BoundsBodies(10)=10
+   BoundsBodies(11)=11
+   BoundsBodies(12)=12
+   BoundsBodies(13)=13
+   BoundsBodies(14)=14
+   BoundsBodies(15)=15
+   BoundsBodies(16)=16
+   SkeletalBodySetups(0)=/Script/Engine.SkeletalBodySetup'"SkeletalBodySetup_0"'
+   SkeletalBodySetups(1)=/Script/Engine.SkeletalBodySetup'"SkeletalBodySetup_1"'
+   SkeletalBodySetups(2)=/Script/Engine.SkeletalBodySetup'"SkeletalBodySetup_2"'
+   SkeletalBodySetups(3)=/Script/Engine.SkeletalBodySetup'"SkeletalBodySetup_3"'
+   SkeletalBodySetups(4)=/Script/Engine.SkeletalBodySetup'"SkeletalBodySetup_4"'
+   SkeletalBodySetups(5)=/Script/Engine.SkeletalBodySetup'"SkeletalBodySetup_5"'
+   SkeletalBodySetups(6)=/Script/Engine.SkeletalBodySetup'"SkeletalBodySetup_6"'
+   SkeletalBodySetups(7)=/Script/Engine.SkeletalBodySetup'"SkeletalBodySetup_7"'
+   SkeletalBodySetups(8)=/Script/Engine.SkeletalBodySetup'"SkeletalBodySetup_8"'
+   SkeletalBodySetups(9)=/Script/Engine.SkeletalBodySetup'"SkeletalBodySetup_9"'
+   SkeletalBodySetups(10)=/Script/Engine.SkeletalBodySetup'"SkeletalBodySetup_10"'
+   SkeletalBodySetups(11)=/Script/Engine.SkeletalBodySetup'"SkeletalBodySetup_11"'
+   SkeletalBodySetups(12)=/Script/Engine.SkeletalBodySetup'"SkeletalBodySetup_12"'
+   SkeletalBodySetups(13)=/Script/Engine.SkeletalBodySetup'"SkeletalBodySetup_13"'
+   SkeletalBodySetups(14)=/Script/Engine.SkeletalBodySetup'"SkeletalBodySetup_14"'
+   SkeletalBodySetups(15)=/Script/Engine.SkeletalBodySetup'"SkeletalBodySetup_15"'
+   SkeletalBodySetups(16)=/Script/Engine.SkeletalBodySetup'"SkeletalBodySetup_16"'
+   ConstraintSetup(0)=/Script/Engine.PhysicsConstraintTemplate'"PhysicsConstraintTemplate_0"'
+   ConstraintSetup(1)=/Script/Engine.PhysicsConstraintTemplate'"PhysicsConstraintTemplate_1"'
+   ConstraintSetup(2)=/Script/Engine.PhysicsConstraintTemplate'"PhysicsConstraintTemplate_2"'
+   ConstraintSetup(3)=/Script/Engine.PhysicsConstraintTemplate'"PhysicsConstraintTemplate_3"'
+   ConstraintSetup(4)=/Script/Engine.PhysicsConstraintTemplate'"PhysicsConstraintTemplate_4"'
+   ConstraintSetup(5)=/Script/Engine.PhysicsConstraintTemplate'"PhysicsConstraintTemplate_5"'
+   ConstraintSetup(6)=/Script/Engine.PhysicsConstraintTemplate'"PhysicsConstraintTemplate_6"'
+   ConstraintSetup(7)=/Script/Engine.PhysicsConstraintTemplate'"PhysicsConstraintTemplate_7"'
+   ConstraintSetup(8)=/Script/Engine.PhysicsConstraintTemplate'"PhysicsConstraintTemplate_8"'
+   ConstraintSetup(9)=/Script/Engine.PhysicsConstraintTemplate'"PhysicsConstraintTemplate_9"'
+   ConstraintSetup(10)=/Script/Engine.PhysicsConstraintTemplate'"PhysicsConstraintTemplate_10"'
+   ConstraintSetup(11)=/Script/Engine.PhysicsConstraintTemplate'"PhysicsConstraintTemplate_11"'
+   ConstraintSetup(12)=/Script/Engine.PhysicsConstraintTemplate'"PhysicsConstraintTemplate_12"'
+   ConstraintSetup(13)=/Script/Engine.PhysicsConstraintTemplate'"PhysicsConstraintTemplate_13"'
+   ConstraintSetup(14)=/Script/Engine.PhysicsConstraintTemplate'"PhysicsConstraintTemplate_14"'
+   ConstraintSetup(15)=/Script/Engine.PhysicsConstraintTemplate'"PhysicsConstraintTemplate_15"'
+End Object

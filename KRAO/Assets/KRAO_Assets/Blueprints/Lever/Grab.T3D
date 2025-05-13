@@ -1,0 +1,47 @@
+Begin Object Class=/Script/Engine.Blueprint Name="Grab" ExportPath=/Script/Engine.Blueprint'"/Game/Blueprints/Lever/Grab.Grab"'
+   Begin Object Class=/Script/Engine.EdGraph Name="Grab" ExportPath=/Script/Engine.EdGraph'"/Game/Blueprints/Lever/Grab.Grab:Grab"'
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath=/Script/BlueprintGraph.K2Node_FunctionEntry'"/Game/Blueprints/Lever/Grab.Grab:Grab.K2Node_FunctionEntry_0"'
+      End Object
+   End Object
+   Begin Object Class=/Script/Engine.EdGraph Name="Release" ExportPath=/Script/Engine.EdGraph'"/Game/Blueprints/Lever/Grab.Grab:Release"'
+      Begin Object Class=/Script/BlueprintGraph.K2Node_FunctionEntry Name="K2Node_FunctionEntry_0" ExportPath=/Script/BlueprintGraph.K2Node_FunctionEntry'"/Game/Blueprints/Lever/Grab.Grab:Release.K2Node_FunctionEntry_0"'
+      End Object
+   End Object
+   Begin Object Name="Grab" ExportPath=/Script/Engine.EdGraph'"/Game/Blueprints/Lever/Grab.Grab:Grab"'
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath=/Script/BlueprintGraph.K2Node_FunctionEntry'"/Game/Blueprints/Lever/Grab.Grab:Grab.K2Node_FunctionEntry_0"'
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Grab")
+         bIsEditable=True
+         NodeGuid=068057144225B3B8B6E39CB2163E2844
+         CustomProperties Pin (PinId=931ACCF94B5B8F264DBEC9A4B6F5F80B,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=C4D06DAD431C0CAFFB4C37BAA5F04BC4,PinName="MotionController",Direction="EGPD_Output",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject=/Script/CoreUObject.Class'"/Script/HeadMountedDisplay.MotionControllerComponent"',PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="MotionController",PinType=(PinCategory="object",PinSubCategoryObject=/Script/CoreUObject.Class'"/Script/HeadMountedDisplay.MotionControllerComponent"'),DesiredPinDirection=EGPD_Output)
+      End Object
+      Schema=/Script/CoreUObject.Class'"/Script/BlueprintGraph.EdGraphSchema_K2"'
+      Nodes(0)=/Script/BlueprintGraph.K2Node_FunctionEntry'"K2Node_FunctionEntry_0"'
+      GraphGuid=4009EA7F475C2F16B04175ABA73A2B8D
+   End Object
+   Begin Object Name="Release" ExportPath=/Script/Engine.EdGraph'"/Game/Blueprints/Lever/Grab.Grab:Release"'
+      Begin Object Name="K2Node_FunctionEntry_0" ExportPath=/Script/BlueprintGraph.K2Node_FunctionEntry'"/Game/Blueprints/Lever/Grab.Grab:Release.K2Node_FunctionEntry_0"'
+         ExtraFlags=201457664
+         FunctionReference=(MemberName="Release")
+         bIsEditable=True
+         NodeGuid=DB6EF10E4614B2B7CAF29BA9FB588C0A
+         CustomProperties Pin (PinId=2A263F6D434245F5336C4299F6076AE7,PinName="then",Direction="EGPD_Output",PinType.PinCategory="exec",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=A0D55807448D0BBAC57AAE8992E05940,PinName="MotionController",Direction="EGPD_Output",PinType.PinCategory="object",PinType.PinSubCategory="",PinType.PinSubCategoryObject=/Script/CoreUObject.Class'"/Script/HeadMountedDisplay.MotionControllerComponent"',PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties UserDefinedPin (PinName="MotionController",PinType=(PinCategory="object",PinSubCategoryObject=/Script/CoreUObject.Class'"/Script/HeadMountedDisplay.MotionControllerComponent"'),DesiredPinDirection=EGPD_Output)
+      End Object
+      Schema=/Script/CoreUObject.Class'"/Script/BlueprintGraph.EdGraphSchema_K2"'
+      Nodes(0)=/Script/BlueprintGraph.K2Node_FunctionEntry'"K2Node_FunctionEntry_0"'
+      GraphGuid=BE79C47743EDF4F5EB66DE8660BAE253
+   End Object
+   ParentClass=/Script/CoreUObject.Class'"/Script/CoreUObject.Interface"'
+   BlueprintType=BPTYPE_Interface
+   BlueprintSystemVersion=2
+   FunctionGraphs(0)=/Script/Engine.EdGraph'"Grab"'
+   FunctionGraphs(1)=/Script/Engine.EdGraph'"Release"'
+   CategorySorting(0)=""
+   GeneratedClass=/Script/Engine.BlueprintGeneratedClass'"Grab_C"'
+   bLegacyNeedToPurgeSkelRefs=False
+   BlueprintGuid=4B63BCC3459A926D69DB7D80434B1304
+End Object

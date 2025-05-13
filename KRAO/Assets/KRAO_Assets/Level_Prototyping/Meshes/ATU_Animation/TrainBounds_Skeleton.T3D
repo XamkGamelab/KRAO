@@ -1,0 +1,4 @@
+Begin Object Class=/Script/Engine.Skeleton Name="TrainBounds_Skeleton" ExportPath=/Script/Engine.Skeleton'"/Game/LevelPrototyping/Meshes/ATU_Animation/TrainBounds_Skeleton.TrainBounds_Skeleton"'
+   BoneTree(2)=()
+   PreviewSkeletalMesh="/Game/LevelPrototyping/Meshes/ATU_Animation/TrainBoundsSM.TrainBoundsSM"
+End Object

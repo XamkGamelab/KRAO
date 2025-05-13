@@ -1,0 +1,305 @@
+Begin Object Class=/Script/Engine.SoundCue Name="MasterMixer" ExportPath=/Script/Engine.SoundCue'"/Game/Assets/SFX/MasterMixer.MasterMixer"'
+   Begin Object Class=/Script/Engine.SoundNodeWavePlayer Name="SoundNodeWavePlayer_7" ExportPath=/Script/Engine.SoundNodeWavePlayer'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundNodeWavePlayer_7"'
+   End Object
+   Begin Object Class=/Script/Engine.SoundNodeWavePlayer Name="SoundNodeWavePlayer_6" ExportPath=/Script/Engine.SoundNodeWavePlayer'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundNodeWavePlayer_6"'
+   End Object
+   Begin Object Class=/Script/Engine.SoundNodeWavePlayer Name="SoundNodeWavePlayer_5" ExportPath=/Script/Engine.SoundNodeWavePlayer'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundNodeWavePlayer_5"'
+   End Object
+   Begin Object Class=/Script/Engine.SoundNodeWavePlayer Name="SoundNodeWavePlayer_4" ExportPath=/Script/Engine.SoundNodeWavePlayer'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundNodeWavePlayer_4"'
+   End Object
+   Begin Object Class=/Script/Engine.SoundNodeWavePlayer Name="SoundNodeWavePlayer_3" ExportPath=/Script/Engine.SoundNodeWavePlayer'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundNodeWavePlayer_3"'
+   End Object
+   Begin Object Class=/Script/Engine.SoundNodeRandom Name="SoundNodeRandom_0" ExportPath=/Script/Engine.SoundNodeRandom'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundNodeRandom_0"'
+   End Object
+   Begin Object Class=/Script/Engine.SoundNodeModulator Name="SoundNodeModulator_5" ExportPath=/Script/Engine.SoundNodeModulator'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundNodeModulator_5"'
+   End Object
+   Begin Object Class=/Script/Engine.SoundNodeModulator Name="SoundNodeModulator_4" ExportPath=/Script/Engine.SoundNodeModulator'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundNodeModulator_4"'
+   End Object
+   Begin Object Class=/Script/Engine.SoundNodeModulator Name="SoundNodeModulator_3" ExportPath=/Script/Engine.SoundNodeModulator'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundNodeModulator_3"'
+   End Object
+   Begin Object Class=/Script/Engine.SoundNodeModulator Name="SoundNodeModulator_2" ExportPath=/Script/Engine.SoundNodeModulator'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundNodeModulator_2"'
+   End Object
+   Begin Object Class=/Script/Engine.SoundNodeModulator Name="SoundNodeModulator_1" ExportPath=/Script/Engine.SoundNodeModulator'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundNodeModulator_1"'
+   End Object
+   Begin Object Class=/Script/Engine.SoundNodeModulator Name="SoundNodeModulator_0" ExportPath=/Script/Engine.SoundNodeModulator'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundNodeModulator_0"'
+   End Object
+   Begin Object Class=/Script/Engine.SoundNodeMixer Name="SoundNodeMixer_1" ExportPath=/Script/Engine.SoundNodeMixer'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundNodeMixer_1"'
+   End Object
+   Begin Object Class=/Script/Engine.SoundNodeLooping Name="SoundNodeLooping_0" ExportPath=/Script/Engine.SoundNodeLooping'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundNodeLooping_0"'
+   End Object
+   Begin Object Class=/Script/AudioEditor.SoundCueGraph Name="SoundCueGraph_0" ExportPath=/Script/AudioEditor.SoundCueGraph'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundCueGraph_0"'
+      Begin Object Class=/Script/AudioEditor.SoundCueGraphNode_Root Name="SoundCueGraphNode_Root_0" ExportPath=/Script/AudioEditor.SoundCueGraphNode_Root'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundCueGraph_0.SoundCueGraphNode_Root_0"'
+      End Object
+      Begin Object Class=/Script/AudioEditor.SoundCueGraphNode Name="SoundCueGraphNode_9" ExportPath=/Script/AudioEditor.SoundCueGraphNode'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundCueGraph_0.SoundCueGraphNode_9"'
+      End Object
+      Begin Object Class=/Script/AudioEditor.SoundCueGraphNode Name="SoundCueGraphNode_8" ExportPath=/Script/AudioEditor.SoundCueGraphNode'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundCueGraph_0.SoundCueGraphNode_8"'
+      End Object
+      Begin Object Class=/Script/AudioEditor.SoundCueGraphNode Name="SoundCueGraphNode_6" ExportPath=/Script/AudioEditor.SoundCueGraphNode'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundCueGraph_0.SoundCueGraphNode_6"'
+      End Object
+      Begin Object Class=/Script/AudioEditor.SoundCueGraphNode Name="SoundCueGraphNode_5" ExportPath=/Script/AudioEditor.SoundCueGraphNode'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundCueGraph_0.SoundCueGraphNode_5"'
+      End Object
+      Begin Object Class=/Script/AudioEditor.SoundCueGraphNode Name="SoundCueGraphNode_4" ExportPath=/Script/AudioEditor.SoundCueGraphNode'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundCueGraph_0.SoundCueGraphNode_4"'
+      End Object
+      Begin Object Class=/Script/AudioEditor.SoundCueGraphNode Name="SoundCueGraphNode_22" ExportPath=/Script/AudioEditor.SoundCueGraphNode'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundCueGraph_0.SoundCueGraphNode_22"'
+      End Object
+      Begin Object Class=/Script/AudioEditor.SoundCueGraphNode Name="SoundCueGraphNode_21" ExportPath=/Script/AudioEditor.SoundCueGraphNode'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundCueGraph_0.SoundCueGraphNode_21"'
+      End Object
+      Begin Object Class=/Script/AudioEditor.SoundCueGraphNode Name="SoundCueGraphNode_20" ExportPath=/Script/AudioEditor.SoundCueGraphNode'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundCueGraph_0.SoundCueGraphNode_20"'
+      End Object
+      Begin Object Class=/Script/AudioEditor.SoundCueGraphNode Name="SoundCueGraphNode_19" ExportPath=/Script/AudioEditor.SoundCueGraphNode'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundCueGraph_0.SoundCueGraphNode_19"'
+      End Object
+      Begin Object Class=/Script/AudioEditor.SoundCueGraphNode Name="SoundCueGraphNode_17" ExportPath=/Script/AudioEditor.SoundCueGraphNode'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundCueGraph_0.SoundCueGraphNode_17"'
+      End Object
+      Begin Object Class=/Script/AudioEditor.SoundCueGraphNode Name="SoundCueGraphNode_16" ExportPath=/Script/AudioEditor.SoundCueGraphNode'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundCueGraph_0.SoundCueGraphNode_16"'
+      End Object
+      Begin Object Class=/Script/AudioEditor.SoundCueGraphNode Name="SoundCueGraphNode_15" ExportPath=/Script/AudioEditor.SoundCueGraphNode'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundCueGraph_0.SoundCueGraphNode_15"'
+      End Object
+      Begin Object Class=/Script/AudioEditor.SoundCueGraphNode Name="SoundCueGraphNode_14" ExportPath=/Script/AudioEditor.SoundCueGraphNode'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundCueGraph_0.SoundCueGraphNode_14"'
+      End Object
+      Begin Object Class=/Script/AudioEditor.SoundCueGraphNode Name="SoundCueGraphNode_13" ExportPath=/Script/AudioEditor.SoundCueGraphNode'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundCueGraph_0.SoundCueGraphNode_13"'
+      End Object
+   End Object
+   Begin Object Name="SoundNodeWavePlayer_7" ExportPath=/Script/Engine.SoundNodeWavePlayer'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundNodeWavePlayer_7"'
+      SoundWaveAssetPtr="/Game/Assets/SFX/ConstructionSFX4.ConstructionSFX4"
+      GraphNode=/Script/AudioEditor.SoundCueGraphNode'"MasterMixer:SoundCueGraph_0.SoundCueGraphNode_17"'
+   End Object
+   Begin Object Name="SoundNodeWavePlayer_6" ExportPath=/Script/Engine.SoundNodeWavePlayer'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundNodeWavePlayer_6"'
+      SoundWaveAssetPtr="/Game/Assets/SFX/ConstructionSFX3.ConstructionSFX3"
+      GraphNode=/Script/AudioEditor.SoundCueGraphNode'"MasterMixer:SoundCueGraph_0.SoundCueGraphNode_16"'
+   End Object
+   Begin Object Name="SoundNodeWavePlayer_5" ExportPath=/Script/Engine.SoundNodeWavePlayer'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundNodeWavePlayer_5"'
+      SoundWaveAssetPtr="/Game/Assets/SFX/ForestSFX1.ForestSFX1"
+      bLooping=True
+      GraphNode=/Script/AudioEditor.SoundCueGraphNode'"MasterMixer:SoundCueGraph_0.SoundCueGraphNode_6"'
+   End Object
+   Begin Object Name="SoundNodeWavePlayer_4" ExportPath=/Script/Engine.SoundNodeWavePlayer'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundNodeWavePlayer_4"'
+      SoundWaveAssetPtr="/Game/Assets/SFX/ConstructionSFX2.ConstructionSFX2"
+      GraphNode=/Script/AudioEditor.SoundCueGraphNode'"MasterMixer:SoundCueGraph_0.SoundCueGraphNode_5"'
+   End Object
+   Begin Object Name="SoundNodeWavePlayer_3" ExportPath=/Script/Engine.SoundNodeWavePlayer'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundNodeWavePlayer_3"'
+      SoundWaveAssetPtr="/Game/Assets/SFX/ConstructionSFX1.ConstructionSFX1"
+      GraphNode=/Script/AudioEditor.SoundCueGraphNode'"MasterMixer:SoundCueGraph_0.SoundCueGraphNode_4"'
+   End Object
+   Begin Object Name="SoundNodeRandom_0" ExportPath=/Script/Engine.SoundNodeRandom'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundNodeRandom_0"'
+      Weights(0)=1.000000
+      Weights(1)=1.000000
+      Weights(2)=1.000000
+      Weights(3)=1.000000
+      ChildNodes(0)=/Script/Engine.SoundNodeModulator'"MasterMixer:SoundNodeModulator_5"'
+      ChildNodes(1)=/Script/Engine.SoundNodeModulator'"MasterMixer:SoundNodeModulator_4"'
+      ChildNodes(2)=/Script/Engine.SoundNodeModulator'"MasterMixer:SoundNodeModulator_3"'
+      ChildNodes(3)=/Script/Engine.SoundNodeModulator'"MasterMixer:SoundNodeModulator_2"'
+      GraphNode=/Script/AudioEditor.SoundCueGraphNode'"MasterMixer:SoundCueGraph_0.SoundCueGraphNode_9"'
+   End Object
+   Begin Object Name="SoundNodeModulator_5" ExportPath=/Script/Engine.SoundNodeModulator'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundNodeModulator_5"'
+      PitchMin=1.000000
+      PitchMax=1.000000
+      VolumeMin=0.400000
+      VolumeMax=0.400000
+      ChildNodes(0)=/Script/Engine.SoundNodeWavePlayer'"MasterMixer:SoundNodeWavePlayer_3"'
+      GraphNode=/Script/AudioEditor.SoundCueGraphNode'"MasterMixer:SoundCueGraph_0.SoundCueGraphNode_14"'
+   End Object
+   Begin Object Name="SoundNodeModulator_4" ExportPath=/Script/Engine.SoundNodeModulator'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundNodeModulator_4"'
+      PitchMin=1.000000
+      PitchMax=1.000000
+      VolumeMin=0.400000
+      VolumeMax=0.400000
+      ChildNodes(0)=/Script/Engine.SoundNodeWavePlayer'"MasterMixer:SoundNodeWavePlayer_4"'
+      GraphNode=/Script/AudioEditor.SoundCueGraphNode'"MasterMixer:SoundCueGraph_0.SoundCueGraphNode_22"'
+   End Object
+   Begin Object Name="SoundNodeModulator_3" ExportPath=/Script/Engine.SoundNodeModulator'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundNodeModulator_3"'
+      PitchMin=1.000000
+      PitchMax=1.000000
+      VolumeMin=0.200000
+      VolumeMax=0.200000
+      ChildNodes(0)=/Script/Engine.SoundNodeWavePlayer'"MasterMixer:SoundNodeWavePlayer_6"'
+      GraphNode=/Script/AudioEditor.SoundCueGraphNode'"MasterMixer:SoundCueGraph_0.SoundCueGraphNode_21"'
+   End Object
+   Begin Object Name="SoundNodeModulator_2" ExportPath=/Script/Engine.SoundNodeModulator'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundNodeModulator_2"'
+      PitchMin=1.000000
+      PitchMax=1.000000
+      VolumeMin=0.400000
+      VolumeMax=0.400000
+      ChildNodes(0)=/Script/Engine.SoundNodeWavePlayer'"MasterMixer:SoundNodeWavePlayer_7"'
+      GraphNode=/Script/AudioEditor.SoundCueGraphNode'"MasterMixer:SoundCueGraph_0.SoundCueGraphNode_20"'
+   End Object
+   Begin Object Name="SoundNodeModulator_1" ExportPath=/Script/Engine.SoundNodeModulator'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundNodeModulator_1"'
+      VolumeMin=1.000000
+      VolumeMax=1.000000
+      ChildNodes(0)=/Script/Engine.SoundNodeLooping'"MasterMixer:SoundNodeLooping_0"'
+      GraphNode=/Script/AudioEditor.SoundCueGraphNode'"MasterMixer:SoundCueGraph_0.SoundCueGraphNode_13"'
+   End Object
+   Begin Object Name="SoundNodeModulator_0" ExportPath=/Script/Engine.SoundNodeModulator'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundNodeModulator_0"'
+      PitchMin=0.900000
+      VolumeMin=1.000000
+      VolumeMax=1.000000
+      ChildNodes(0)=/Script/Engine.SoundNodeWavePlayer'"MasterMixer:SoundNodeWavePlayer_5"'
+      GraphNode=/Script/AudioEditor.SoundCueGraphNode'"MasterMixer:SoundCueGraph_0.SoundCueGraphNode_19"'
+   End Object
+   Begin Object Name="SoundNodeMixer_1" ExportPath=/Script/Engine.SoundNodeMixer'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundNodeMixer_1"'
+      InputVolume(0)=0.500000
+      InputVolume(1)=0.800000
+      ChildNodes(0)=/Script/Engine.SoundNodeModulator'"MasterMixer:SoundNodeModulator_1"'
+      ChildNodes(1)=/Script/Engine.SoundNodeModulator'"MasterMixer:SoundNodeModulator_0"'
+      GraphNode=/Script/AudioEditor.SoundCueGraphNode'"MasterMixer:SoundCueGraph_0.SoundCueGraphNode_8"'
+   End Object
+   Begin Object Name="SoundNodeLooping_0" ExportPath=/Script/Engine.SoundNodeLooping'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundNodeLooping_0"'
+      ChildNodes(0)=/Script/Engine.SoundNodeRandom'"MasterMixer:SoundNodeRandom_0"'
+      GraphNode=/Script/AudioEditor.SoundCueGraphNode'"MasterMixer:SoundCueGraph_0.SoundCueGraphNode_15"'
+   End Object
+   Begin Object Name="SoundCueGraph_0" ExportPath=/Script/AudioEditor.SoundCueGraph'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundCueGraph_0"'
+      Begin Object Name="SoundCueGraphNode_Root_0" ExportPath=/Script/AudioEditor.SoundCueGraphNode_Root'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundCueGraph_0.SoundCueGraphNode_Root_0"'
+         NodePosX=16
+         NodePosY=-32
+         NodeGuid=8CC06C254A1CCC1CCA3E72A0D14451AE
+         CustomProperties Pin (PinId=B3713ED843FC40E3EF9E128A4BABC54F,PinType.PinCategory="SoundNode",PinType.PinSubCategory="Root",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_8 AAB04322462C2D9863A235BC3E82C3E7,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="SoundCueGraphNode_9" ExportPath=/Script/AudioEditor.SoundCueGraphNode'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundCueGraph_0.SoundCueGraphNode_9"'
+         SoundNode=/Script/Engine.SoundNodeRandom'"MasterMixer:SoundNodeRandom_0"'
+         NodePosX=-976
+         NodePosY=-41
+         NodeGuid=D21070A9438014432932A198C81112AD
+         CustomProperties Pin (PinId=A1C27F24408A5A04F382E492CE8EED75,PinName="Output",Direction="EGPD_Output",PinType.PinCategory="SoundNode",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_15 90370C394E2005A5B4A3F5A3E7D7A65E,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=199AB6384352A90AC764D4BC71F86458,PinName="Input",PinFriendlyName=NSLOCTEXT("", "4FA5D5614F8EDDA8905DD282FDB25264", " "),PinType.PinCategory="SoundNode",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_14 913A34524C232BF10B84528A74FEE526,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=9ADB5A9B4217D9C3C309C68439A91C37,PinName="Input2",PinFriendlyName=NSLOCTEXT("", "E2A3332A48421406F5071E81FF59D3AA", " "),PinType.PinCategory="SoundNode",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_22 913A34524C232BF10B84528A74FEE526,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=7F0B45524A1346529AE9DAB6B2543CA1,PinName="Input3",PinFriendlyName=NSLOCTEXT("", "794C623444E63E115B4BC58BA42D248F", " "),PinType.PinCategory="SoundNode",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_21 913A34524C232BF10B84528A74FEE526,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=88C510B94E678AC76E06DF9650966EB6,PinName="Input4",PinFriendlyName=NSLOCTEXT("", "EB63E8FF4AFC5F53CF3FBF8760EDC963", " "),PinType.PinCategory="SoundNode",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_20 913A34524C232BF10B84528A74FEE526,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="SoundCueGraphNode_8" ExportPath=/Script/AudioEditor.SoundCueGraphNode'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundCueGraph_0.SoundCueGraphNode_8"'
+         SoundNode=/Script/Engine.SoundNodeMixer'"MasterMixer:SoundNodeMixer_1"'
+         NodePosX=-326
+         NodePosY=25
+         NodeGuid=44392DB74A542238FA42A98120A8CB56
+         CustomProperties Pin (PinId=AAB04322462C2D9863A235BC3E82C3E7,PinName="Output",Direction="EGPD_Output",PinType.PinCategory="SoundNode",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_Root_0 B3713ED843FC40E3EF9E128A4BABC54F,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=6D8DDA8E4B1E10007B123FA60E96B417,PinName="Input",PinFriendlyName=NSLOCTEXT("", "014A51064D0E0ED8791C1EB14D81E82B", " "),PinType.PinCategory="SoundNode",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_13 913A34524C232BF10B84528A74FEE526,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=791601844C8379F1FE981B955F98EE1E,PinName="Input2",PinFriendlyName=NSLOCTEXT("", "72877F254B0066B69B562C83B54EF139", " "),PinType.PinCategory="SoundNode",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_19 913A34524C232BF10B84528A74FEE526,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="SoundCueGraphNode_6" ExportPath=/Script/AudioEditor.SoundCueGraphNode'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundCueGraph_0.SoundCueGraphNode_6"'
+         SoundNode=/Script/Engine.SoundNodeWavePlayer'"MasterMixer:SoundNodeWavePlayer_5"'
+         NodePosX=-960
+         NodePosY=336
+         NodeGuid=BAF854A1476146A1439F0191D5123E9F
+         CustomProperties Pin (PinId=AED56004428C26874471C485B2097BA2,PinName="Output",Direction="EGPD_Output",PinType.PinCategory="SoundNode",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_19 DAAF47C641585A77B09511ADBAA919DF,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="SoundCueGraphNode_5" ExportPath=/Script/AudioEditor.SoundCueGraphNode'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundCueGraph_0.SoundCueGraphNode_5"'
+         SoundNode=/Script/Engine.SoundNodeWavePlayer'"MasterMixer:SoundNodeWavePlayer_4"'
+         NodePosX=-1508
+         NodePosY=-20
+         NodeGuid=FE1D488246641F785A3442B64690B54E
+         CustomProperties Pin (PinId=FFFA9DD94AA58BE2A8161FB779E2DB46,PinName="Output",Direction="EGPD_Output",PinType.PinCategory="SoundNode",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_22 DAAF47C641585A77B09511ADBAA919DF,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="SoundCueGraphNode_4" ExportPath=/Script/AudioEditor.SoundCueGraphNode'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundCueGraph_0.SoundCueGraphNode_4"'
+         SoundNode=/Script/Engine.SoundNodeWavePlayer'"MasterMixer:SoundNodeWavePlayer_3"'
+         NodePosX=-1508
+         NodePosY=-89
+         NodeGuid=C93C1AB84EA9C2D38463D0A0AAED637A
+         CustomProperties Pin (PinId=46FF4EA34E003ADCD4A578A927E05821,PinName="Output",Direction="EGPD_Output",PinType.PinCategory="SoundNode",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_14 DAAF47C641585A77B09511ADBAA919DF,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="SoundCueGraphNode_22" ExportPath=/Script/AudioEditor.SoundCueGraphNode'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundCueGraph_0.SoundCueGraphNode_22"'
+         SoundNode=/Script/Engine.SoundNodeModulator'"MasterMixer:SoundNodeModulator_4"'
+         NodePosX=-1232
+         NodePosY=-20
+         NodeGuid=CE8E62CC492B789494B342B925F6A66C
+         CustomProperties Pin (PinId=DAAF47C641585A77B09511ADBAA919DF,PinName="Input",PinFriendlyName=NSLOCTEXT("", "DBD897A944385143EAC3B29E77E032D0", " "),PinType.PinCategory="SoundNode",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_5 FFFA9DD94AA58BE2A8161FB779E2DB46,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=913A34524C232BF10B84528A74FEE526,PinName="Output",Direction="EGPD_Output",PinType.PinCategory="SoundNode",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_9 9ADB5A9B4217D9C3C309C68439A91C37,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="SoundCueGraphNode_21" ExportPath=/Script/AudioEditor.SoundCueGraphNode'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundCueGraph_0.SoundCueGraphNode_21"'
+         SoundNode=/Script/Engine.SoundNodeModulator'"MasterMixer:SoundNodeModulator_3"'
+         NodePosX=-1232
+         NodePosY=48
+         NodeGuid=68EFF17A49EBD4140F01E78AE6F9EED2
+         CustomProperties Pin (PinId=DAAF47C641585A77B09511ADBAA919DF,PinName="Input",PinFriendlyName=NSLOCTEXT("", "1C6ACD4E4BA552CC35BB57AD94EA1814", " "),PinType.PinCategory="SoundNode",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_16 E5FC402E4E445B206FDF5DA5F3259FE4,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=913A34524C232BF10B84528A74FEE526,PinName="Output",Direction="EGPD_Output",PinType.PinCategory="SoundNode",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_9 7F0B45524A1346529AE9DAB6B2543CA1,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="SoundCueGraphNode_20" ExportPath=/Script/AudioEditor.SoundCueGraphNode'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundCueGraph_0.SoundCueGraphNode_20"'
+         SoundNode=/Script/Engine.SoundNodeModulator'"MasterMixer:SoundNodeModulator_2"'
+         NodePosX=-1232
+         NodePosY=119
+         NodeGuid=20A12B2A464EB6C7309D5FB15A717C40
+         CustomProperties Pin (PinId=DAAF47C641585A77B09511ADBAA919DF,PinName="Input",PinFriendlyName=NSLOCTEXT("", "401EA58C4D239B951292919024E1469E", " "),PinType.PinCategory="SoundNode",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_17 7E7A0A154B018E1D21F7B1BBA7847EA3,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=913A34524C232BF10B84528A74FEE526,PinName="Output",Direction="EGPD_Output",PinType.PinCategory="SoundNode",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_9 88C510B94E678AC76E06DF9650966EB6,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="SoundCueGraphNode_19" ExportPath=/Script/AudioEditor.SoundCueGraphNode'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundCueGraph_0.SoundCueGraphNode_19"'
+         SoundNode=/Script/Engine.SoundNodeModulator'"MasterMixer:SoundNodeModulator_0"'
+         NodePosX=-560
+         NodePosY=336
+         NodeGuid=23860FAB4A4D171F3DEC3AAF706752AE
+         CustomProperties Pin (PinId=913A34524C232BF10B84528A74FEE526,PinName="Output",Direction="EGPD_Output",PinType.PinCategory="SoundNode",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_8 791601844C8379F1FE981B955F98EE1E,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=DAAF47C641585A77B09511ADBAA919DF,PinName="Input",PinFriendlyName=NSLOCTEXT("", "28D11F3D4BE2AF587A177DBD8228D428", " "),PinType.PinCategory="SoundNode",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_6 AED56004428C26874471C485B2097BA2,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="SoundCueGraphNode_17" ExportPath=/Script/AudioEditor.SoundCueGraphNode'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundCueGraph_0.SoundCueGraphNode_17"'
+         SoundNode=/Script/Engine.SoundNodeWavePlayer'"MasterMixer:SoundNodeWavePlayer_7"'
+         NodePosX=-1505
+         NodePosY=119
+         NodeGuid=A9E02BDF496055FACF7A2496DADC9626
+         CustomProperties Pin (PinId=7E7A0A154B018E1D21F7B1BBA7847EA3,PinName="Output",Direction="EGPD_Output",PinType.PinCategory="SoundNode",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_20 DAAF47C641585A77B09511ADBAA919DF,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="SoundCueGraphNode_16" ExportPath=/Script/AudioEditor.SoundCueGraphNode'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundCueGraph_0.SoundCueGraphNode_16"'
+         SoundNode=/Script/Engine.SoundNodeWavePlayer'"MasterMixer:SoundNodeWavePlayer_6"'
+         NodePosX=-1505
+         NodePosY=49
+         NodeGuid=CECE89FF4B62EC3667E23587ADB8329F
+         CustomProperties Pin (PinId=E5FC402E4E445B206FDF5DA5F3259FE4,PinName="Output",Direction="EGPD_Output",PinType.PinCategory="SoundNode",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_21 DAAF47C641585A77B09511ADBAA919DF,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="SoundCueGraphNode_15" ExportPath=/Script/AudioEditor.SoundCueGraphNode'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundCueGraph_0.SoundCueGraphNode_15"'
+         SoundNode=/Script/Engine.SoundNodeLooping'"MasterMixer:SoundNodeLooping_0"'
+         NodePosX=-768
+         NodePosY=-41
+         NodeGuid=64C7C4B847119112B45E97980CA7D6CD
+         CustomProperties Pin (PinId=59F16B1A4DA856906462BD9ED1A0B6B3,PinName="Output",Direction="EGPD_Output",PinType.PinCategory="SoundNode",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_13 DAAF47C641585A77B09511ADBAA919DF,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=90370C394E2005A5B4A3F5A3E7D7A65E,PinName="Input",PinFriendlyName=NSLOCTEXT("", "8B7F81F540066B459D6884989DAC4566", " "),PinType.PinCategory="SoundNode",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_9 A1C27F24408A5A04F382E492CE8EED75,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="SoundCueGraphNode_14" ExportPath=/Script/AudioEditor.SoundCueGraphNode'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundCueGraph_0.SoundCueGraphNode_14"'
+         SoundNode=/Script/Engine.SoundNodeModulator'"MasterMixer:SoundNodeModulator_5"'
+         NodePosX=-1232
+         NodePosY=-89
+         NodeGuid=FDB6FFA54AB8DB8879F316BB97F1BB25
+         CustomProperties Pin (PinId=DAAF47C641585A77B09511ADBAA919DF,PinName="Input",PinFriendlyName=NSLOCTEXT("", "70ADC7D142D98FE979976A88EEE5B5CB", " "),PinType.PinCategory="SoundNode",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_4 46FF4EA34E003ADCD4A578A927E05821,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=913A34524C232BF10B84528A74FEE526,PinName="Output",Direction="EGPD_Output",PinType.PinCategory="SoundNode",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_9 199AB6384352A90AC764D4BC71F86458,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Begin Object Name="SoundCueGraphNode_13" ExportPath=/Script/AudioEditor.SoundCueGraphNode'"/Game/Assets/SFX/MasterMixer.MasterMixer:SoundCueGraph_0.SoundCueGraphNode_13"'
+         SoundNode=/Script/Engine.SoundNodeModulator'"MasterMixer:SoundNodeModulator_1"'
+         NodePosX=-560
+         NodePosY=-41
+         NodeGuid=C7944ABE4BAF0380B90AD5AF05A45DB7
+         CustomProperties Pin (PinId=DAAF47C641585A77B09511ADBAA919DF,PinName="Input",PinFriendlyName=NSLOCTEXT("", "D19EBC234CA987C13EBB159BEE6BEE6E", " "),PinType.PinCategory="SoundNode",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_15 59F16B1A4DA856906462BD9ED1A0B6B3,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+         CustomProperties Pin (PinId=913A34524C232BF10B84528A74FEE526,PinName="Output",Direction="EGPD_Output",PinType.PinCategory="SoundNode",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(SoundCueGraphNode_8 6D8DDA8E4B1E10007B123FA60E96B417,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+      End Object
+      Schema=/Script/CoreUObject.Class'"/Script/AudioEditor.SoundCueGraphSchema"'
+      Nodes(0)=/Script/AudioEditor.SoundCueGraphNode_Root'"SoundCueGraphNode_Root_0"'
+      Nodes(1)=/Script/AudioEditor.SoundCueGraphNode'"SoundCueGraphNode_4"'
+      Nodes(2)=/Script/AudioEditor.SoundCueGraphNode'"SoundCueGraphNode_5"'
+      Nodes(3)=/Script/AudioEditor.SoundCueGraphNode'"SoundCueGraphNode_6"'
+      Nodes(4)=/Script/AudioEditor.SoundCueGraphNode'"SoundCueGraphNode_8"'
+      Nodes(5)=/Script/AudioEditor.SoundCueGraphNode'"SoundCueGraphNode_9"'
+      Nodes(6)=/Script/AudioEditor.SoundCueGraphNode'"SoundCueGraphNode_19"'
+      Nodes(7)=/Script/AudioEditor.SoundCueGraphNode'"SoundCueGraphNode_13"'
+      Nodes(8)=/Script/AudioEditor.SoundCueGraphNode'"SoundCueGraphNode_15"'
+      Nodes(9)=/Script/AudioEditor.SoundCueGraphNode'"SoundCueGraphNode_16"'
+      Nodes(10)=/Script/AudioEditor.SoundCueGraphNode'"SoundCueGraphNode_17"'
+      Nodes(11)=/Script/AudioEditor.SoundCueGraphNode'"SoundCueGraphNode_20"'
+      Nodes(12)=/Script/AudioEditor.SoundCueGraphNode'"SoundCueGraphNode_21"'
+      Nodes(13)=/Script/AudioEditor.SoundCueGraphNode'"SoundCueGraphNode_22"'
+      Nodes(14)=/Script/AudioEditor.SoundCueGraphNode'"SoundCueGraphNode_14"'
+      bAllowDeletion=False
+      GraphGuid=0A1E4B9C4015493F4B62DAB9465680D8
+   End Object
+   FirstNode=/Script/Engine.SoundNodeMixer'"SoundNodeMixer_1"'
+   AllNodes(0)=/Script/Engine.SoundNodeWavePlayer'"SoundNodeWavePlayer_3"'
+   AllNodes(1)=/Script/Engine.SoundNodeWavePlayer'"SoundNodeWavePlayer_4"'
+   AllNodes(2)=/Script/Engine.SoundNodeWavePlayer'"SoundNodeWavePlayer_5"'
+   AllNodes(3)=/Script/Engine.SoundNodeMixer'"SoundNodeMixer_1"'
+   AllNodes(4)=/Script/Engine.SoundNodeRandom'"SoundNodeRandom_0"'
+   AllNodes(5)=/Script/Engine.SoundNodeModulator'"SoundNodeModulator_0"'
+   AllNodes(6)=/Script/Engine.SoundNodeModulator'"SoundNodeModulator_1"'
+   AllNodes(7)=/Script/Engine.SoundNodeLooping'"SoundNodeLooping_0"'
+   AllNodes(8)=/Script/Engine.SoundNodeWavePlayer'"SoundNodeWavePlayer_6"'
+   AllNodes(9)=/Script/Engine.SoundNodeWavePlayer'"SoundNodeWavePlayer_7"'
+   AllNodes(10)=/Script/Engine.SoundNodeModulator'"SoundNodeModulator_2"'
+   AllNodes(11)=/Script/Engine.SoundNodeModulator'"SoundNodeModulator_3"'
+   AllNodes(12)=/Script/Engine.SoundNodeModulator'"SoundNodeModulator_4"'
+   AllNodes(13)=/Script/Engine.SoundNodeModulator'"SoundNodeModulator_5"'
+   SoundCueGraph=/Script/AudioEditor.SoundCueGraph'"SoundCueGraph_0"'
+   Duration=10000.000000
+   MaxDistance=2097152.000000
+End Object
