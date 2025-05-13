@@ -47,13 +47,21 @@ public class Interaction : MonoBehaviour
                 InteractableObject _rayTarget = _hit.collider.GetComponent<InteractableObject>();
                 if (IsObjectInList(_rayTarget))
                 {
-                    selectedObject = _rayTarget;
+                    if(selectedObject != _rayTarget)
+                    {
+                        selectedObject = _rayTarget;
+                        selectedObject.ToggleInteractableHighlight();
+                    }
                     return;
                 }
             }
         }
 
-        selectedObject = null;
+        if(selectedObject != null)
+        {
+            selectedObject.ToggleInteractableHighlight();
+            selectedObject = null;
+        }
     }
     private void CheckForInteractablesInRange()
     {
