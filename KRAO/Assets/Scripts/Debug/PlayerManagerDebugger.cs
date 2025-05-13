@@ -9,7 +9,6 @@ public class PlayerManagerDebugger : MonoBehaviour
     {
         if (Keyboard.current.kKey.wasPressedThisFrame)
         {
-            Debug.Log("poo");
             playerManager.ToggleControllerState();
         }
     }
