@@ -7,6 +7,7 @@ public class Interaction : MonoBehaviour
 {
     [SerializeField] private float interactionRadius = 2.5f;
     [SerializeField] private LayerMask interactionMask;
+    [SerializeField] private InteractionPrompt interactionPrompt;
 
     private List<InteractableObject> interactableObjects = new List<InteractableObject>();
     private InteractableObject selectedObject = null;
@@ -28,6 +29,7 @@ public class Interaction : MonoBehaviour
 
         if (CanInteract())
         {
+            interactionPrompt.ShowPrompt(selectedObject.Prompt, selectedObject.interactionType);
             if (interact.WasPressedThisFrame())
             {
                 selectedObject.Interact();
@@ -60,6 +62,7 @@ public class Interaction : MonoBehaviour
         if(selectedObject != null)
         {
             selectedObject.ToggleInteractableHighlight();
+            interactionPrompt.HidePrompt();
             selectedObject = null;
         }
     }

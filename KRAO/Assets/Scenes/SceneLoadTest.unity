@@ -374,6 +374,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1588434478667100198, guid: 6645bf40f6abba9458d99417182196c9, type: 3}
+      propertyPath: Prompt
+      value: ViljamiScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 1588434478667100198, guid: 6645bf40f6abba9458d99417182196c9, type: 3}
       propertyPath: sceneToLoadBuildIndex
       value: 0
       objectReference: {fileID: 0}
