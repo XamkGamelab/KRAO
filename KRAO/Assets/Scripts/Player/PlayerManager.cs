@@ -6,29 +6,42 @@ public class PlayerManager : MonoBehaviour
     private Movement movement => GetComponentInChildren<Movement>();
     private Look look => GetComponentInChildren<Look>();
 
+    public bool ControllerEnabled = false;
+
     [SerializeField] private Transform playerTransform;
-    private bool controllerEnabled = false;
 
     #region Public Functions
     public void ToggleControllerState()
     {
-        controllerEnabled = !controllerEnabled;
+        ControllerEnabled = !ControllerEnabled;
 
-        Debug.Log($"Controller state switched to {controllerEnabled}");
+        Debug.Log($"Controller state switched to {ControllerEnabled}");
 
-        movement.MovementEnabled = controllerEnabled;
-        look.LookEnabled = controllerEnabled;
+        movement.MovementEnabled = ControllerEnabled;
+        look.LookEnabled = ControllerEnabled;
 
-        GetCursorLockModeFromControllerState(controllerEnabled);
+        GetCursorLockModeFromControllerState(ControllerEnabled);
+    }
+
+    public void ToggleControllerState(bool state)
+    {
+        ControllerEnabled = state;
+
+        Debug.Log($"Controller state switched to {ControllerEnabled}");
+
+        movement.MovementEnabled = ControllerEnabled;
+        look.LookEnabled = ControllerEnabled;
+
+        GetCursorLockModeFromControllerState(ControllerEnabled);
     }
 
     public void TransportPlayer(Vector3 position, Quaternion rotation)
     {
-        bool wasControlEnabled = controllerEnabled;
-        controllerEnabled = false;
+        bool wasControlEnabled = ControllerEnabled;
+        ControllerEnabled = false;
         playerTransform.position = position;
         playerTransform.rotation = rotation;
-        controllerEnabled = wasControlEnabled;
+        ControllerEnabled = wasControlEnabled;
     }
     #endregion
     #region Private Functions

@@ -6,12 +6,15 @@ public class PauseMenu : MonoBehaviour
 {
     private CanvasGroup canvasGroup => GetComponent<CanvasGroup>();
 
+    private PlayerManager playerManager;
+
     private InputAction menu;
 
-    private bool menuOn = false;
+    private bool menuOn = true;
     private void Start()
     {
         menu = InputSystem.actions.FindAction("Menu");
+        playerManager = GameObject.FindWithTag("Player").GetComponent<PlayerManager>();
         SetCanvasState(menuOn);
     }
     private void Update()
@@ -22,9 +25,10 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-    private void ToggleMenuState()
+    public void ToggleMenuState()
     {
         menuOn = !menuOn;
+        playerManager.ToggleControllerState(!menuOn);
         SetCanvasState(menuOn);
     }
 
