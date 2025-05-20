@@ -28,6 +28,9 @@ public class Movement : MonoBehaviour
 
         movement = Vector3.MoveTowards(movement, _newMovement, movementDamping * Time.deltaTime);
 
-        controller.Move(movement);
+        if(movement.magnitude > 0)
+        {
+            controller.Move(movement);
+        }
     }
 }
