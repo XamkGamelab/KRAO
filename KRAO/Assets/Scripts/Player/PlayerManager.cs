@@ -1,29 +1,55 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerManager : MonoBehaviour
 {
     private Movement movement => GetComponentInChildren<Movement>();
     private Look look => GetComponentInChildren<Look>();
 
-    private bool controllerEnabled = false;
+    public bool ControllerEnabled = false;
+
+    [SerializeField] private Transform playerTransform;
 
     #region Public Functions
     public void ToggleControllerState()
     {
-        controllerEnabled = !controllerEnabled;
+        ControllerEnabled = !ControllerEnabled;
 
-        Debug.Log($"Controller state switched to {controllerEnabled}");
+        Debug.Log($"Controller state switched to {ControllerEnabled}");
 
-        movement.MovementEnabled = controllerEnabled;
-        look.LookEnabled = controllerEnabled;
+        movement.MovementEnabled = ControllerEnabled;
+        look.LookEnabled = ControllerEnabled;
 
-        GetCursorLockModeFromControllerState(controllerEnabled);
+        GetCursorLockModeFromControllerState(ControllerEnabled);
+    }
+
+    public void ToggleControllerState(bool state)
+    {
+        ControllerEnabled = state;
+
+        Debug.Log($"Controller state switched to {ControllerEnabled}");
+
+        movement.MovementEnabled = ControllerEnabled;
+        look.LookEnabled = ControllerEnabled;
+
+        GetCursorLockModeFromControllerState(ControllerEnabled);
+    }
+
+    public void TransportPlayer(Vector3 position, Quaternion rotation)
+    {
+        bool wasControlEnabled = ControllerEnabled;
+        ControllerEnabled = false;
+        playerTransform.position = position;
+        playerTransform.rotation = rotation;
+        ControllerEnabled = wasControlEnabled;
     }
     #endregion
     #region Private Functions
     private void Start()
     {
         CheckComponents();
+        Transform newSpawn = GameObject.FindWithTag("Bootstrapper").GetComponent<SceneBootstrapper>().Spawnpoint;
+        TransportPlayer(newSpawn.position, newSpawn.rotation);
     }
 
     private void CheckComponents()
