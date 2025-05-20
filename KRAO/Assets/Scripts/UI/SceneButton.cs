@@ -22,7 +22,7 @@ public class SceneButton : MonoBehaviour
 
     public void LoadScene()
     {
-        SceneManager.LoadSceneAsync(sceneToLoadBuildIndex, LoadSceneMode.Additive);
+        SceneLoader.Instance.SwitchScene(sceneToLoadBuildIndex);
     }
 
     private bool SceneToLoadIsActive()
