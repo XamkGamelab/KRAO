@@ -169,6 +169,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 854d685aab030374b950f3693ae0cdb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionType: 0
+  Prompt: "k\xE4ytt\xE4\xE4ksesi vihre\xE4\xE4 nappia"
   interactionEvents:
     m_PersistentCalls:
       m_Calls:
@@ -4644,6 +4646,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 854d685aab030374b950f3693ae0cdb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionType: 0
+  Prompt: "k\xE4ytt\xE4\xE4ksesi punaista nappia"
   interactionEvents:
     m_PersistentCalls:
       m_Calls:
@@ -6139,6 +6143,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  visualizeStayTime: 0
   onStayEventCooldown: 1
   onStayEvents:
     m_PersistentCalls:
@@ -7953,6 +7958,10 @@ PrefabInstance:
     - target: {fileID: 461686385441494614, guid: 6645bf40f6abba9458d99417182196c9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1588434478667100198, guid: 6645bf40f6abba9458d99417182196c9, type: 3}
+      propertyPath: Prompt
+      value: SceneLoadTest
       objectReference: {fileID: 0}
     - target: {fileID: 2877508509099961738, guid: 6645bf40f6abba9458d99417182196c9, type: 3}
       propertyPath: m_Name

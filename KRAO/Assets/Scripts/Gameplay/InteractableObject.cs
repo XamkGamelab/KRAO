@@ -4,7 +4,11 @@ using UnityEngine.Events;
 
 public class InteractableObject : MonoBehaviour
 {
-    [SerializeField] UnityEvent interactionEvents;
+    public InteractionType interactionType;
+
+    public string Prompt = "k‰ytt‰‰ksesi esinett‰";
+
+    [SerializeField] private UnityEvent interactionEvents;
 
     private bool highlightOn = false;
     private Material highlightMaterial;
