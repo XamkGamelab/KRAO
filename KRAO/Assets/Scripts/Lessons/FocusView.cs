@@ -17,8 +17,3 @@ public class FocusView : MonoBehaviour
         rotatingCamera.enabled = focusViewEnabled;
     }
 }
-
-/* Create a method for the Focus View to be activated using the Basic Interaction system.
- * When activated, Player Controller movement and camera rotation should be turned off,
- * and when leaving the "Focus View", movement and camera rotation should be turned back on.
- */
