@@ -6,6 +6,7 @@ using System;
 
 public class LessonManager : MonoBehaviour
 {
+    private Journal journal => FindFirstObjectByType<Journal>();
     private MenuManager menuManager => FindFirstObjectByType<MenuManager>();
     private FocusView focusView => GameObject.FindWithTag("FocusView").GetComponent<FocusView>();
     private CinemachineCamera focusCamera => GameObject.FindWithTag("FocusView").GetComponent<CinemachineCamera>();
@@ -16,9 +17,6 @@ public class LessonManager : MonoBehaviour
         Lesson.OnLessonOpened += HandleLessonOpened;
         Lesson.OnLessonClosed += HandleLessonClosed;
 
-        //lessons.ForEach(lesson => Lesson.OnLessonOpened += HandleLessonOpened);
-        //lessons.ForEach(lesson => Lesson.OnLessonClosed += HandleLessonClosed);
-
         Debug.Log("Lessons in scene: " + lessons.Count);
     }
 
@@ -28,8 +26,6 @@ public class LessonManager : MonoBehaviour
         focusView.ToggleFocusView();
         // Close lesson text box (canvas)
         menuManager.CloseWindow(_lesson.ContentBox);
-
-
     }
 
     private void HandleLessonOpened(Lesson _lesson)
@@ -50,10 +46,9 @@ public class LessonManager : MonoBehaviour
 
     private void AddLessonToJournal(Lesson _lesson)
     {
+        journal.AddNewLessonButton(_lesson.HeaderText, _lesson.ContentText);
+
         Debug.Log("Lesson added to journal");
-        // Journal script/class ?
-        // Add by instanceId / hardcoded id ?
-        // Add by title ?
     }
 
     private void UpdateHUD()

@@ -17,7 +17,6 @@ public class Lesson : MonoBehaviour
     public bool NewLessonFound { get; private set; } = true;
     private bool triggered = false;
     private bool lessonOpen = false;
-    //private int instanceID => GetInstanceID();
 
     private Collider player;
 
