@@ -694,7 +694,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 11fb5f296c3256144831b6c7651d4d09, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 327.4
+      value: 324.91
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 11fb5f296c3256144831b6c7651d4d09, type: 3}
       propertyPath: m_LocalRotation.w
@@ -947,7 +947,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 91d71897a70b390438cff7bf459acd00, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 309.39966
+      value: 308.15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91d71897a70b390438cff7bf459acd00, type: 3}
       propertyPath: m_LocalPosition.y
@@ -955,7 +955,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91d71897a70b390438cff7bf459acd00, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 293.48746
+      value: 307.74
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91d71897a70b390438cff7bf459acd00, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2055,7 +2055,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ad2d9533e7c3c24418d24dc2801276b3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 291.46
+      value: 286.76
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ad2d9533e7c3c24418d24dc2801276b3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7456,7 +7456,7 @@ Terrain:
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
   m_TreeMaximumFullLODCount: 50
-  m_DetailObjectDistance: 80
+  m_DetailObjectDistance: 89
   m_DetailObjectDensity: 1
   m_HeightmapPixelError: 5
   m_SplatMapDistance: 1000
