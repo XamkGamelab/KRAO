@@ -1,0 +1,4 @@
+Begin Object Class=/Script/Engine.Skeleton Name="Gears_Skeleton" ExportPath=/Script/Engine.Skeleton'"/Game/Assets/RailBeamRep_Assets/Meshes/RailwayGearSwitch/New/Gears_Skeleton.Gears_Skeleton"'
+   BoneTree(4)=()
+   PreviewSkeletalMesh="/Game/Assets/RailBeamRep_Assets/Meshes/RailwayGearSwitch/New/Gears.Gears"
+End Object

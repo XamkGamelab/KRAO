@@ -1,0 +1,72 @@
+Begin Object Class=/Script/Engine.PhysicsAsset Name="RailwayGearSwitch_PhysicsAsset" ExportPath=/Script/Engine.PhysicsAsset'"/Game/Assets/RailBeamRep_Assets/Meshes/RailwayGearSwitch/RailwayGearSwitch_PhysicsAsset.RailwayGearSwitch_PhysicsAsset"'
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_4" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/RailBeamRep_Assets/Meshes/RailwayGearSwitch/RailwayGearSwitch_PhysicsAsset.RailwayGearSwitch_PhysicsAsset:SkeletalBodySetup_4"'
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_3" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/RailBeamRep_Assets/Meshes/RailwayGearSwitch/RailwayGearSwitch_PhysicsAsset.RailwayGearSwitch_PhysicsAsset:SkeletalBodySetup_3"'
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_2" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/RailBeamRep_Assets/Meshes/RailwayGearSwitch/RailwayGearSwitch_PhysicsAsset.RailwayGearSwitch_PhysicsAsset:SkeletalBodySetup_2"'
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_1" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/RailBeamRep_Assets/Meshes/RailwayGearSwitch/RailwayGearSwitch_PhysicsAsset.RailwayGearSwitch_PhysicsAsset:SkeletalBodySetup_1"'
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_0" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/RailBeamRep_Assets/Meshes/RailwayGearSwitch/RailwayGearSwitch_PhysicsAsset.RailwayGearSwitch_PhysicsAsset:SkeletalBodySetup_0"'
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_3" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/RailBeamRep_Assets/Meshes/RailwayGearSwitch/RailwayGearSwitch_PhysicsAsset.RailwayGearSwitch_PhysicsAsset:PhysicsConstraintTemplate_3"'
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_2" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/RailBeamRep_Assets/Meshes/RailwayGearSwitch/RailwayGearSwitch_PhysicsAsset.RailwayGearSwitch_PhysicsAsset:PhysicsConstraintTemplate_2"'
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_1" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/RailBeamRep_Assets/Meshes/RailwayGearSwitch/RailwayGearSwitch_PhysicsAsset.RailwayGearSwitch_PhysicsAsset:PhysicsConstraintTemplate_1"'
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_0" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/RailBeamRep_Assets/Meshes/RailwayGearSwitch/RailwayGearSwitch_PhysicsAsset.RailwayGearSwitch_PhysicsAsset:PhysicsConstraintTemplate_0"'
+   End Object
+   Begin Object Name="SkeletalBodySetup_4" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/RailBeamRep_Assets/Meshes/RailwayGearSwitch/RailwayGearSwitch_PhysicsAsset.RailwayGearSwitch_PhysicsAsset:SkeletalBodySetup_4"'
+      AggGeom=(SphylElems=((Center=(X=0.002013,Y=-1.828534,Z=0.086000),Rotation=(Pitch=0.000000,Yaw=-179.812387,Roll=-89.980848),Radius=0.087560,Length=2.095197)))
+      BoneName="Bone_R_Out"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_3" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/RailBeamRep_Assets/Meshes/RailwayGearSwitch/RailwayGearSwitch_PhysicsAsset.RailwayGearSwitch_PhysicsAsset:SkeletalBodySetup_3"'
+      AggGeom=(SphylElems=((Center=(X=0.441929,Y=-1.756508,Z=0.085982),Rotation=(Pitch=0.000000,Yaw=0.364186,Roll=-89.938686),Radius=0.343190,Length=2.026381)))
+      BoneName="Bone_R_In"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_2" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/RailBeamRep_Assets/Meshes/RailwayGearSwitch/RailwayGearSwitch_PhysicsAsset.RailwayGearSwitch_PhysicsAsset:SkeletalBodySetup_2"'
+      AggGeom=(SphylElems=((Center=(X=0.005275,Y=-2.564238,Z=0.085960),Rotation=(Pitch=0.000000,Yaw=0.312869,Roll=-89.920488),Radius=0.090234,Length=2.460359)))
+      BoneName="Bone_L_Out"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_1" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/RailBeamRep_Assets/Meshes/RailwayGearSwitch/RailwayGearSwitch_PhysicsAsset.RailwayGearSwitch_PhysicsAsset:SkeletalBodySetup_1"'
+      AggGeom=(SphylElems=((Center=(X=0.311306,Y=-2.665724,Z=0.085903),Rotation=(Pitch=0.000000,Yaw=-2.337563,Roll=-89.828044),Radius=0.401180,Length=2.606168)))
+      BoneName="Bone_L_In"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_0" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/RailBeamRep_Assets/Meshes/RailwayGearSwitch/RailwayGearSwitch_PhysicsAsset.RailwayGearSwitch_PhysicsAsset:SkeletalBodySetup_0"'
+      AggGeom=(SphylElems=((Center=(X=2.999989,Y=-4.999957,Z=0.085996),Rotation=(Pitch=-0.000000,Yaw=13.426615,Roll=-89.967079),Radius=4.217050,Length=5.638760)))
+      BoneName="RailwayGearSwitch"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_3" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/RailBeamRep_Assets/Meshes/RailwayGearSwitch/RailwayGearSwitch_PhysicsAsset.RailwayGearSwitch_PhysicsAsset:PhysicsConstraintTemplate_3"'
+      DefaultInstance=(JointName="Bone_R_Out",ConstraintBone1="Bone_R_Out",ConstraintBone2="RailwayGearSwitch",Pos2=(X=4.500000,Y=-6.100000,Z=0.000000),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_2" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/RailBeamRep_Assets/Meshes/RailwayGearSwitch/RailwayGearSwitch_PhysicsAsset.RailwayGearSwitch_PhysicsAsset:PhysicsConstraintTemplate_2"'
+      DefaultInstance=(JointName="Bone_R_In",ConstraintBone1="Bone_R_In",ConstraintBone2="RailwayGearSwitch",Pos2=(X=4.500000,Y=-6.100000,Z=0.000000),PriAxis2=(X=0.933346,Y=0.358979,Z=-0.000000),SecAxis2=(X=-0.358979,Y=0.933346,Z=-0.000000),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_1" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/RailBeamRep_Assets/Meshes/RailwayGearSwitch/RailwayGearSwitch_PhysicsAsset.RailwayGearSwitch_PhysicsAsset:PhysicsConstraintTemplate_1"'
+      DefaultInstance=(JointName="Bone_L_Out",ConstraintBone1="Bone_L_Out",ConstraintBone2="RailwayGearSwitch",Pos2=(X=1.500000,Y=-5.000000,Z=0.000000),PriAxis2=(X=-1.000000,Y=-0.000000,Z=0.000000),SecAxis2=(X=0.000000,Y=-1.000000,Z=0.000000),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_0" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/RailBeamRep_Assets/Meshes/RailwayGearSwitch/RailwayGearSwitch_PhysicsAsset.RailwayGearSwitch_PhysicsAsset:PhysicsConstraintTemplate_0"'
+      DefaultInstance=(JointName="Bone_L_In",ConstraintBone1="Bone_L_In",ConstraintBone2="RailwayGearSwitch",Pos2=(X=1.500000,Y=-5.000000,Z=0.000000),PriAxis2=(X=-0.957826,Y=-0.287347,Z=0.000000),SecAxis2=(X=0.287347,Y=-0.957826,Z=0.000000),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   PreviewSkeletalMesh="/Game/Assets/RailBeamRep_Assets/Meshes/RailwayGearSwitch/RailwayGearSwitch.RailwayGearSwitch"
+   BoundsBodies(0)=0
+   BoundsBodies(1)=1
+   BoundsBodies(2)=2
+   BoundsBodies(3)=3
+   BoundsBodies(4)=4
+   SkeletalBodySetups(0)=/Script/Engine.SkeletalBodySetup'"SkeletalBodySetup_0"'
+   SkeletalBodySetups(1)=/Script/Engine.SkeletalBodySetup'"SkeletalBodySetup_1"'
+   SkeletalBodySetups(2)=/Script/Engine.SkeletalBodySetup'"SkeletalBodySetup_2"'
+   SkeletalBodySetups(3)=/Script/Engine.SkeletalBodySetup'"SkeletalBodySetup_3"'
+   SkeletalBodySetups(4)=/Script/Engine.SkeletalBodySetup'"SkeletalBodySetup_4"'
+   ConstraintSetup(0)=/Script/Engine.PhysicsConstraintTemplate'"PhysicsConstraintTemplate_0"'
+   ConstraintSetup(1)=/Script/Engine.PhysicsConstraintTemplate'"PhysicsConstraintTemplate_1"'
+   ConstraintSetup(2)=/Script/Engine.PhysicsConstraintTemplate'"PhysicsConstraintTemplate_2"'
+   ConstraintSetup(3)=/Script/Engine.PhysicsConstraintTemplate'"PhysicsConstraintTemplate_3"'
+End Object

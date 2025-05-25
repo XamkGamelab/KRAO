@@ -1,0 +1,72 @@
+Begin Object Class=/Script/Engine.PhysicsAsset Name="ExcavatorRigged_PhysicsAsset" ExportPath=/Script/Engine.PhysicsAsset'"/Game/Assets/RailBeamRep_Assets/Excavator/ExcavatorRigged_PhysicsAsset.ExcavatorRigged_PhysicsAsset"'
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_4" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/RailBeamRep_Assets/Excavator/ExcavatorRigged_PhysicsAsset.ExcavatorRigged_PhysicsAsset:SkeletalBodySetup_4"'
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_3" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/RailBeamRep_Assets/Excavator/ExcavatorRigged_PhysicsAsset.ExcavatorRigged_PhysicsAsset:SkeletalBodySetup_3"'
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_2" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/RailBeamRep_Assets/Excavator/ExcavatorRigged_PhysicsAsset.ExcavatorRigged_PhysicsAsset:SkeletalBodySetup_2"'
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_1" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/RailBeamRep_Assets/Excavator/ExcavatorRigged_PhysicsAsset.ExcavatorRigged_PhysicsAsset:SkeletalBodySetup_1"'
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_0" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/RailBeamRep_Assets/Excavator/ExcavatorRigged_PhysicsAsset.ExcavatorRigged_PhysicsAsset:SkeletalBodySetup_0"'
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_3" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/RailBeamRep_Assets/Excavator/ExcavatorRigged_PhysicsAsset.ExcavatorRigged_PhysicsAsset:PhysicsConstraintTemplate_3"'
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_2" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/RailBeamRep_Assets/Excavator/ExcavatorRigged_PhysicsAsset.ExcavatorRigged_PhysicsAsset:PhysicsConstraintTemplate_2"'
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_1" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/RailBeamRep_Assets/Excavator/ExcavatorRigged_PhysicsAsset.ExcavatorRigged_PhysicsAsset:PhysicsConstraintTemplate_1"'
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_0" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/RailBeamRep_Assets/Excavator/ExcavatorRigged_PhysicsAsset.ExcavatorRigged_PhysicsAsset:PhysicsConstraintTemplate_0"'
+   End Object
+   Begin Object Name="SkeletalBodySetup_4" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/RailBeamRep_Assets/Excavator/ExcavatorRigged_PhysicsAsset.ExcavatorRigged_PhysicsAsset:SkeletalBodySetup_4"'
+      AggGeom=(SphylElems=((Center=(X=-3.748918,Y=-99.237371,Z=-8.630962),Rotation=(Pitch=-0.000000,Yaw=1.000338,Roll=-77.202408),Radius=58.464905,Length=88.578072)))
+      BoneName="Bucket"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_3" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/RailBeamRep_Assets/Excavator/ExcavatorRigged_PhysicsAsset.ExcavatorRigged_PhysicsAsset:SkeletalBodySetup_3"'
+      AggGeom=(SphylElems=((Center=(X=-5.318147,Y=-109.024776,Z=-18.501285),Rotation=(Pitch=-0.000000,Yaw=0.512669,Roll=-80.783464),Radius=50.236538,Length=168.055038)))
+      BoneName="ArmExtension"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_2" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/RailBeamRep_Assets/Excavator/ExcavatorRigged_PhysicsAsset.ExcavatorRigged_PhysicsAsset:SkeletalBodySetup_2"'
+      AggGeom=(SphylElems=((Center=(X=-4.939191,Y=-244.675236,Z=-23.760786),Rotation=(Pitch=0.000000,Yaw=-0.201987,Roll=-80.747759),Radius=100.536301,Length=251.578278)))
+      BoneName="Arm"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_1" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/RailBeamRep_Assets/Excavator/ExcavatorRigged_PhysicsAsset.ExcavatorRigged_PhysicsAsset:SkeletalBodySetup_1"'
+      AggGeom=(SphylElems=((Center=(X=1.904847,Y=-114.253346,Z=-2.401835),Rotation=(Pitch=-3.524147,Yaw=-90.000000,Roll=21.645407),Radius=172.030609,Length=190.048950)))
+      BoneName="Cabin"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_0" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/RailBeamRep_Assets/Excavator/ExcavatorRigged_PhysicsAsset.ExcavatorRigged_PhysicsAsset:SkeletalBodySetup_0"'
+      AggGeom=(SphylElems=((Center=(X=-0.050244,Y=-59.930264,Z=-0.558205),Rotation=(Pitch=-0.567720,Yaw=-90.000000,Roll=0.015180),Radius=134.814423,Length=233.553787)))
+      BoneName="Base"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_3" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/RailBeamRep_Assets/Excavator/ExcavatorRigged_PhysicsAsset.ExcavatorRigged_PhysicsAsset:PhysicsConstraintTemplate_3"'
+      DefaultInstance=(JointName="Bucket",ConstraintBone1="Bucket",ConstraintBone2="ArmExtension",Pos2=(X=0.000000,Y=-233.452377,Z=0.000001),PriAxis2=(X=1.000000,Y=0.000000,Z=-0.000000),SecAxis2=(X=-0.000000,Y=0.804574,Z=-0.593852),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_2" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/RailBeamRep_Assets/Excavator/ExcavatorRigged_PhysicsAsset.ExcavatorRigged_PhysicsAsset:PhysicsConstraintTemplate_2"'
+      DefaultInstance=(JointName="ArmExtension",ConstraintBone1="ArmExtension",ConstraintBone2="Arm",Pos2=(X=0.000000,Y=-441.402679,Z=0.000015),PriAxis2=(X=1.000000,Y=0.000001,Z=-0.000001),SecAxis2=(X=-0.000001,Y=-0.260217,Z=-0.965550),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_1" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/RailBeamRep_Assets/Excavator/ExcavatorRigged_PhysicsAsset.ExcavatorRigged_PhysicsAsset:PhysicsConstraintTemplate_1"'
+      DefaultInstance=(JointName="Arm",ConstraintBone1="Arm",ConstraintBone2="Cabin",Pos2=(X=0.000035,Y=-77.692871,Z=48.309040),PriAxis2=(X=1.000000,Y=0.000001,Z=-0.000000),SecAxis2=(X=-0.000001,Y=0.421807,Z=-0.906686),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_0" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/RailBeamRep_Assets/Excavator/ExcavatorRigged_PhysicsAsset.ExcavatorRigged_PhysicsAsset:PhysicsConstraintTemplate_0"'
+      DefaultInstance=(JointName="Cabin",ConstraintBone1="Cabin",ConstraintBone2="Base",Pos2=(X=-0.000000,Y=-109.999992,Z=-0.000000),PriAxis2=(X=1.000000,Y=-0.000000,Z=0.000000),SecAxis2=(X=0.000000,Y=1.000000,Z=0.000000),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   PreviewSkeletalMesh="/Game/Assets/RailBeamRep_Assets/Excavator/ExcavatorRigged.ExcavatorRigged"
+   BoundsBodies(0)=0
+   BoundsBodies(1)=1
+   BoundsBodies(2)=2
+   BoundsBodies(3)=3
+   BoundsBodies(4)=4
+   SkeletalBodySetups(0)=/Script/Engine.SkeletalBodySetup'"SkeletalBodySetup_0"'
+   SkeletalBodySetups(1)=/Script/Engine.SkeletalBodySetup'"SkeletalBodySetup_1"'
+   SkeletalBodySetups(2)=/Script/Engine.SkeletalBodySetup'"SkeletalBodySetup_2"'
+   SkeletalBodySetups(3)=/Script/Engine.SkeletalBodySetup'"SkeletalBodySetup_3"'
+   SkeletalBodySetups(4)=/Script/Engine.SkeletalBodySetup'"SkeletalBodySetup_4"'
+   ConstraintSetup(0)=/Script/Engine.PhysicsConstraintTemplate'"PhysicsConstraintTemplate_0"'
+   ConstraintSetup(1)=/Script/Engine.PhysicsConstraintTemplate'"PhysicsConstraintTemplate_1"'
+   ConstraintSetup(2)=/Script/Engine.PhysicsConstraintTemplate'"PhysicsConstraintTemplate_2"'
+   ConstraintSetup(3)=/Script/Engine.PhysicsConstraintTemplate'"PhysicsConstraintTemplate_3"'
+End Object

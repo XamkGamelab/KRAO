@@ -1,0 +1,4 @@
+Begin Object Class=/Script/Engine.Skeleton Name="SKM_Electric_Desk_Rig_Skeleton" ExportPath=/Script/Engine.Skeleton'"/Game/Assets/Classroom_Assets/Meshes/SKM_Electric_Desk_Rig_Skeleton.SKM_Electric_Desk_Rig_Skeleton"'
+   BoneTree(2)=()
+   PreviewSkeletalMesh="/Game/Assets/Classroom_Assets/Meshes/SKM_Electric_Desk_Rig.SKM_Electric_Desk_Rig"
+End Object

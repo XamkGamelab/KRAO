@@ -1,0 +1,4 @@
+Begin Object Class=/Script/Engine.Font Name="Montserrat" ExportPath=/Script/Engine.Font'"/Game/Fonts/Montserrat.Montserrat"'
+   FontCacheType=Runtime
+   CompositeFont=(DefaultTypeface=(Fonts=((Name="Regular",Font=(FontFaceAsset=/Script/Engine.FontFace'"/Game/Fonts/Montserrat-Regular.Montserrat-Regular"')),(Name="Semi-Bold",Font=(FontFaceAsset=/Script/Engine.FontFace'"/Game/Fonts/Montserrat-SemiBold.Montserrat-SemiBold"')),(Name="Bold",Font=(FontFaceAsset=/Script/Engine.FontFace'"/Game/Fonts/Montserrat-Bold.Montserrat-Bold"')))),SubTypefaces=(()))
+End Object

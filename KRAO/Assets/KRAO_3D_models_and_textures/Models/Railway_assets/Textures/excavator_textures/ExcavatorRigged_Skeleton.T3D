@@ -1,0 +1,4 @@
+Begin Object Class=/Script/Engine.Skeleton Name="ExcavatorRigged_Skeleton" ExportPath=/Script/Engine.Skeleton'"/Game/Assets/RailBeamRep_Assets/Excavator/ExcavatorRigged_Skeleton.ExcavatorRigged_Skeleton"'
+   BoneTree(6)=()
+   PreviewSkeletalMesh="/Game/Assets/RailBeamRep_Assets/Excavator/ExcavatorRigged.ExcavatorRigged"
+End Object

@@ -1,0 +1,42 @@
+Begin Object Class=/Script/Engine.PhysicsAsset Name="SKM_Electric_Desk_Rig_PhysicsAsset" ExportPath=/Script/Engine.PhysicsAsset'"/Game/Assets/Classroom_Assets/Meshes/SKM_Electric_Desk_Rig_PhysicsAsset.SKM_Electric_Desk_Rig_PhysicsAsset"'
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_2" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Classroom_Assets/Meshes/SKM_Electric_Desk_Rig_PhysicsAsset.SKM_Electric_Desk_Rig_PhysicsAsset:SkeletalBodySetup_2"'
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_1" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Classroom_Assets/Meshes/SKM_Electric_Desk_Rig_PhysicsAsset.SKM_Electric_Desk_Rig_PhysicsAsset:SkeletalBodySetup_1"'
+   End Object
+   Begin Object Class=/Script/Engine.SkeletalBodySetup Name="SkeletalBodySetup_0" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Classroom_Assets/Meshes/SKM_Electric_Desk_Rig_PhysicsAsset.SKM_Electric_Desk_Rig_PhysicsAsset:SkeletalBodySetup_0"'
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_1" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Classroom_Assets/Meshes/SKM_Electric_Desk_Rig_PhysicsAsset.SKM_Electric_Desk_Rig_PhysicsAsset:PhysicsConstraintTemplate_1"'
+   End Object
+   Begin Object Class=/Script/Engine.PhysicsConstraintTemplate Name="PhysicsConstraintTemplate_0" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Classroom_Assets/Meshes/SKM_Electric_Desk_Rig_PhysicsAsset.SKM_Electric_Desk_Rig_PhysicsAsset:PhysicsConstraintTemplate_0"'
+   End Object
+   Begin Object Name="SkeletalBodySetup_2" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Classroom_Assets/Meshes/SKM_Electric_Desk_Rig_PhysicsAsset.SKM_Electric_Desk_Rig_PhysicsAsset:SkeletalBodySetup_2"'
+      AggGeom=(SphylElems=((Center=(X=0.443302,Y=14.244656,Z=0.256462),Rotation=(Pitch=0.000000,Yaw=89.128731,Roll=-78.016564),Radius=53.199478,Length=84.626839)))
+      BoneName="electric_table_top"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_1" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Classroom_Assets/Meshes/SKM_Electric_Desk_Rig_PhysicsAsset.SKM_Electric_Desk_Rig_PhysicsAsset:SkeletalBodySetup_1"'
+      AggGeom=(SphylElems=((Center=(X=-0.000000,Y=-12.421072,Z=-0.031516),Rotation=(Pitch=-0.000000,Yaw=-90.000000,Roll=-90.000003),Radius=20.264086,Length=63.171963)))
+      BoneName="electric_table_mid"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="SkeletalBodySetup_0" ExportPath=/Script/Engine.SkeletalBodySetup'"/Game/Assets/Classroom_Assets/Meshes/SKM_Electric_Desk_Rig_PhysicsAsset.SKM_Electric_Desk_Rig_PhysicsAsset:SkeletalBodySetup_0"'
+      AggGeom=(SphylElems=((Center=(X=-0.055931,Y=-21.714975,Z=-0.017766),Rotation=(Pitch=0.000000,Yaw=-90.147475,Roll=-89.614011),Radius=27.227703,Length=64.298019)))
+      BoneName="electric_table_legs"
+      CollisionTraceFlag=CTF_UseSimpleAsComplex
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_1" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Classroom_Assets/Meshes/SKM_Electric_Desk_Rig_PhysicsAsset.SKM_Electric_Desk_Rig_PhysicsAsset:PhysicsConstraintTemplate_1"'
+      DefaultInstance=(JointName="electric_table_top",ConstraintBone1="electric_table_top",ConstraintBone2="electric_table_mid",Pos2=(X=0.000000,Y=-29.022419,Z=0.000000),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   Begin Object Name="PhysicsConstraintTemplate_0" ExportPath=/Script/Engine.PhysicsConstraintTemplate'"/Game/Assets/Classroom_Assets/Meshes/SKM_Electric_Desk_Rig_PhysicsAsset.SKM_Electric_Desk_Rig_PhysicsAsset:PhysicsConstraintTemplate_0"'
+      DefaultInstance=(JointName="electric_table_mid",ConstraintBone1="electric_table_mid",ConstraintBone2="electric_table_legs",Pos2=(X=0.000000,Y=-30.874920,Z=0.000000),ProfileInstance=(ConeLimit=(Swing1Motion=ACM_Limited,Swing2Motion=ACM_Limited),TwistLimit=(TwistMotion=ACM_Limited)))
+   End Object
+   PreviewSkeletalMesh="/Game/Assets/Classroom_Assets/Meshes/SKM_Electric_Desk_Rig.SKM_Electric_Desk_Rig"
+   BoundsBodies(0)=0
+   BoundsBodies(1)=1
+   BoundsBodies(2)=2
+   SkeletalBodySetups(0)=/Script/Engine.SkeletalBodySetup'"SkeletalBodySetup_0"'
+   SkeletalBodySetups(1)=/Script/Engine.SkeletalBodySetup'"SkeletalBodySetup_1"'
+   SkeletalBodySetups(2)=/Script/Engine.SkeletalBodySetup'"SkeletalBodySetup_2"'
+   ConstraintSetup(0)=/Script/Engine.PhysicsConstraintTemplate'"PhysicsConstraintTemplate_0"'
+   ConstraintSetup(1)=/Script/Engine.PhysicsConstraintTemplate'"PhysicsConstraintTemplate_1"'
+End Object

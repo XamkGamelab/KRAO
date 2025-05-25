@@ -1,0 +1,3 @@
+Begin Object Class=/Script/Engine.SoundMix Name="MasterVolume" ExportPath=/Script/Engine.SoundMix'"/Game/Assets/SFX/MasterVolume.MasterVolume"'
+   SoundClassEffects(0)=(SoundClassObject=/Script/Engine.SoundClass'"/Engine/EngineSounds/Master.Master"')
+End Object

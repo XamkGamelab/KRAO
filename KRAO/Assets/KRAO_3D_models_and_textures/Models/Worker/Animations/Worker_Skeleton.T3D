@@ -1,0 +1,4 @@
+Begin Object Class=/Script/Engine.Skeleton Name="Worker_Skeleton" ExportPath=/Script/Engine.Skeleton'"/Game/Assets/Worker/Animations/Worker_Skeleton.Worker_Skeleton"'
+   BoneTree(70)=()
+   PreviewSkeletalMesh="/Game/Assets/Worker/Animations/Worker_SkeletalMesh.Worker_SkeletalMesh"
+End Object
