@@ -4,13 +4,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System;
 
+/* The object that this script is connected to should have a Rigidbody
+ * and the lesson object should have a collider for as trigger
+ */
+
 public class LessonManager : MonoBehaviour
 {
+    private LessonProgressBar progressBar => FindFirstObjectByType<LessonProgressBar>();
     private Journal journal => FindFirstObjectByType<Journal>();
     private MenuManager menuManager => FindFirstObjectByType<MenuManager>();
     private FocusView focusView => GameObject.FindWithTag("FocusView").GetComponent<FocusView>();
     private CinemachineCamera focusCamera => GameObject.FindWithTag("FocusView").GetComponent<CinemachineCamera>();
     private List<Lesson> lessons => FindObjectsByType<Lesson>(FindObjectsSortMode.None).ToList();
+
+    private int foundLessons = 0;
 
     private void Start()
     {
@@ -39,8 +46,9 @@ public class LessonManager : MonoBehaviour
 
         if (_lesson.NewLessonFound)
         {
+            foundLessons++;
             AddLessonToJournal(_lesson);
-            UpdateHUD();
+            UpdateProgressBar();
         }
     }
 
@@ -51,9 +59,8 @@ public class LessonManager : MonoBehaviour
         Debug.Log("Lesson added to journal");
     }
 
-    private void UpdateHUD()
+    private void UpdateProgressBar()
     {
-        //show message "New lesson found" ???
-        //progress bar in scene ???
+        progressBar.ChangeSliderValue(foundLessons, lessons.Count);
     }
 }
