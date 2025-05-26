@@ -1705,6 +1705,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: FocusViewCamera
       objectReference: {fileID: 0}
+    - target: {fileID: 6525983894449631769, guid: 090f899c9ce21f74c8e498317a8e491e, type: 3}
+      propertyPath: m_ControllerManager.Controllers.Array.data[0].Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6525983894449631769, guid: 090f899c9ce21f74c8e498317a8e491e, type: 3}
+      propertyPath: m_ControllerManager.Controllers.Array.data[1].Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8362519106912332972, guid: 090f899c9ce21f74c8e498317a8e491e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
