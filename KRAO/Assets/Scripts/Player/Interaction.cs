@@ -52,7 +52,7 @@ public class Interaction : MonoBehaviour
                     if(selectedObject != _rayTarget)
                     {
                         selectedObject = _rayTarget;
-                        selectedObject.ToggleInteractableHighlight();
+                        //selectedObject.ToggleInteractableHighlight();
                     }
                     return;
                 }
@@ -61,7 +61,7 @@ public class Interaction : MonoBehaviour
 
         if(selectedObject != null)
         {
-            selectedObject.ToggleInteractableHighlight();
+            //selectedObject.ToggleInteractableHighlight();
             interactionPrompt.HidePrompt();
             selectedObject = null;
         }
