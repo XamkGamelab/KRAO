@@ -901,6 +901,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF Conifer Medium BOTD URP
       objectReference: {fileID: 0}
+    - target: {fileID: 1661850992318236, guid: 78f6b68ad931a824c920d7b953612370, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4071390273635838, guid: 78f6b68ad931a824c920d7b953612370, type: 3}
       propertyPath: m_LocalPosition.x
       value: 347.51053
@@ -944,6 +948,10 @@ PrefabInstance:
     - target: {fileID: 23436335641026108, guid: 78f6b68ad931a824c920d7b953612370, type: 3}
       propertyPath: m_ScaleInLightmap
       value: 1.7142732
+      objectReference: {fileID: 0}
+    - target: {fileID: 23942989677910610, guid: 78f6b68ad931a824c920d7b953612370, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 227131698251642430, guid: 78f6b68ad931a824c920d7b953612370, type: 3}
       propertyPath: m_ScaleInLightmap
@@ -1483,7 +1491,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3682018525819560321, guid: 345c167bf3170194aa320030816b1ba9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 346.4
+      value: 343.98
       objectReference: {fileID: 0}
     - target: {fileID: 3682018525819560321, guid: 345c167bf3170194aa320030816b1ba9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1491,7 +1499,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3682018525819560321, guid: 345c167bf3170194aa320030816b1ba9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 284.26
+      value: 288.06
       objectReference: {fileID: 0}
     - target: {fileID: 3682018525819560321, guid: 345c167bf3170194aa320030816b1ba9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8776,6 +8784,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4534264641828652, guid: 4663d5cca4ed98548946e758cd5979e2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 205477677417311662, guid: 4663d5cca4ed98548946e758cd5979e2, type: 3}
+      propertyPath: m_AnimateCrossFading
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
