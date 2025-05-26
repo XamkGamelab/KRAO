@@ -5,7 +5,7 @@ using System.Linq;
 using System;
 
 /* The object that this script is connected to should have a Rigidbody
- * and the lesson object should have a collider for as trigger
+ * and the lesson object should have a collider as trigger
  */
 
 public class LessonManager : MonoBehaviour
@@ -16,6 +16,8 @@ public class LessonManager : MonoBehaviour
     private FocusView focusView => GameObject.FindWithTag("FocusView").GetComponent<FocusView>();
     private CinemachineCamera focusCamera => GameObject.FindWithTag("FocusView").GetComponent<CinemachineCamera>();
     private List<Lesson> lessons => FindObjectsByType<Lesson>(FindObjectsSortMode.None).ToList();
+    //private LessonWindow lessonWindow => FindFirstObjectByType<LessonWindow>();
+
 
     private int foundLessons = 0;
 
@@ -32,7 +34,7 @@ public class LessonManager : MonoBehaviour
         // Close FocusView
         focusView.ToggleFocusView();
         // Close lesson text box (canvas)
-        menuManager.CloseWindow(_lesson.ContentBox);
+        menuManager.CloseWindow(_lesson.lessonWindow.ContentBox);
     }
 
     private void HandleLessonOpened(Lesson _lesson)
@@ -42,7 +44,7 @@ public class LessonManager : MonoBehaviour
         // Open FocusView
         focusView.ToggleFocusView();
         // Open lesson text box (canvas)
-        menuManager.OpenWindow(_lesson.ContentBox);
+        menuManager.OpenWindow(_lesson.lessonWindow.ContentBox);
 
         if (_lesson.NewLessonFound)
         {
