@@ -3,9 +3,19 @@ guid: e4e4ed9584424a04f9a2ce386d6831c5
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Rusty_Gas_Tank_Metal_vd5kdabdy_1K
+    second: {fileID: 2100000, guid: bd15e114aa0276d478a9fcfffaaf62e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Sleepers
+    second: {fileID: 2100000, guid: f1fc5e0ac53333c4abf9d7929799f342, type: 2}
   materials:
-    materialImportMode: 2
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
