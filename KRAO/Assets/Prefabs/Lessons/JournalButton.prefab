@@ -78,7 +78,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: HEADER
+  m_Text: VR
 --- !u!1 &7931787667346461745
 GameObject:
   m_ObjectHideFlags: 0
@@ -213,9 +213,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dee20cc941db1f4fad8e7b86f60ca6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LessonContentText: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-    sunt in culpa qui officia deserunt mollit anim id est laborum.
+  LessonContentText: "VR-Yhtym\xE4 Oyj eli VR Group on Suomen valtion omistama logistiikkakonserni,
+    joka harjoittaa henkil\xF6- ja tavaraliikennett\xE4 Suomen rautateill\xE4 ja
+    maanteill\xE4 ja 2024 l\xE4htien my\xF6s Ruotsissa. VR:ll\xE4 oli Suomen rautatieliikenteess\xE4
+    sopimusoikeudellinen monopoli, joka p\xE4\xE4ttyi tavaraliikenteess\xE4 vuonna
+    2007 ja kaukoliikenteen henkil\xF6liikenteess\xE4 vuonna 2021.\r\n\r\nYhtym\xE4n
+    tunnuskirjaimet VR on johdettu Valtionrautateist\xE4, joka oli Suomen valtiollinen
+    rautatielaitos vuosina 1862\u20131995.\r\n\r\nVR on poliittisesti, uskonnollisesti
+    ja aatteellisesti puolueeton ja tasapuolinen valtion yll\xE4pit\xE4m\xE4 yhti\xF6,
+    joka ei salli tiloissaan niihin liittyv\xE4\xE4 viestint\xE4\xE4 tai tyrkytt\xE4mist\xE4
+    yleis\xF6lle."

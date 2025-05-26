@@ -6,10 +6,11 @@ using System;
 
 public class Lesson : MonoBehaviour
 {
-    public GameObject ContentBox => GetComponentInChildren<ScrollRect>().gameObject;
+    //public GameObject ContentBox => GetComponentInChildren<ScrollRect>().gameObject;
     public GameObject LessonFocusObject => GetComponentInChildren<Collider>().gameObject;
-    private GameObject interactionPrompt => GetComponentInChildren<Text>().gameObject;
-    private Text[] texts => ContentBox.GetComponentsInChildren<Text>().ToArray();
+    //private GameObject interactionPrompt => GetComponentInChildren<Text>().gameObject;
+    //private Text[] texts => ContentBox.GetComponentsInChildren<Text>().ToArray();
+    public LessonWindow lessonWindow => FindFirstObjectByType<LessonWindow>();
     
     public string HeaderText;
     [TextArea(15,20)] public string ContentText;
@@ -27,8 +28,7 @@ public class Lesson : MonoBehaviour
     {
         player = GameObject.FindWithTag("Player").GetComponentInChildren<CharacterController>();
 
-        texts[0].text = HeaderText;
-        texts[1].text = ContentText;
+        //lessonWindow.SetTexts(HeaderText, ContentText);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -38,6 +38,8 @@ public class Lesson : MonoBehaviour
             // Show interaction prompt
             ToggleInteractionPrompt(1);
             triggered = true;
+
+            lessonWindow.SetTexts(HeaderText, ContentText);
         }
     }
 
@@ -59,7 +61,7 @@ public class Lesson : MonoBehaviour
 
     private void ToggleInteractionPrompt(int _alpha)
     {
-        interactionPrompt.GetComponent<CanvasGroup>().alpha = _alpha;
+        lessonWindow.InteractionPrompt.GetComponent<CanvasGroup>().alpha = _alpha;
     }
 
     private void Update()
