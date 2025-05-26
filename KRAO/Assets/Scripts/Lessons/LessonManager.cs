@@ -15,6 +15,7 @@ public class LessonManager : MonoBehaviour
     private MenuManager menuManager => FindFirstObjectByType<MenuManager>();
     private FocusView focusView => GameObject.FindWithTag("FocusView").GetComponent<FocusView>();
     private CinemachineCamera focusCamera => GameObject.FindWithTag("FocusView").GetComponent<CinemachineCamera>();
+    private CinemachineOrbitalFollow orbitalFollow => GameObject.FindWithTag("FocusView").GetComponent<CinemachineOrbitalFollow>();
     private List<Lesson> lessons => FindObjectsByType<Lesson>(FindObjectsSortMode.None).ToList();
     //private LessonWindow lessonWindow => FindFirstObjectByType<LessonWindow>();
 
@@ -41,8 +42,10 @@ public class LessonManager : MonoBehaviour
     {
         // Set lessonObject as tracking target
         focusCamera.Target.TrackingTarget = _lesson.LessonFocusObject.transform;
+        orbitalFollow.Radius = _lesson.FocusRadius;
         // Open FocusView
         focusView.ToggleFocusView();
+
         // Open lesson text box (canvas)
         menuManager.OpenWindow(_lesson.lessonWindow.ContentBox);
 

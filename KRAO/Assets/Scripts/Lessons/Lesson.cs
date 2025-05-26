@@ -7,7 +7,8 @@ using System;
 public class Lesson : MonoBehaviour
 {
     //public GameObject ContentBox => GetComponentInChildren<ScrollRect>().gameObject;
-    public GameObject LessonFocusObject => GetComponentInChildren<Collider>().gameObject;
+    public GameObject LessonFocusObject;
+    public float FocusRadius = 4f;
     //private GameObject interactionPrompt => GetComponentInChildren<Text>().gameObject;
     //private Text[] texts => ContentBox.GetComponentsInChildren<Text>().ToArray();
     public LessonWindow lessonWindow => FindFirstObjectByType<LessonWindow>();
@@ -85,6 +86,21 @@ public class Lesson : MonoBehaviour
             // Show interaction prompt
             ToggleInteractionPrompt(1);
 
+            OnLessonClosed?.Invoke(this);
+        }
+    }
+
+    public void ToggleLesson()
+    {
+        lessonOpen = !lessonOpen;
+
+        if(lessonOpen)
+        {
+            lessonWindow.SetTexts(HeaderText, ContentText);
+            OnLessonOpened?.Invoke(this);
+        } else
+        {
+            NewLessonFound = false;
             OnLessonClosed?.Invoke(this);
         }
     }

@@ -24,20 +24,20 @@ public class MenuManager : MonoBehaviour
     public Button OpenSampleSceneButton;
     public Button OpenJessicaTestSceneButton;
 
-    private void Awake()
-    {
-        // Add listeners to buttons
-        OpenSettingsButton.onClick.AddListener(HandleOpenSettingsButtonClicked);
-        CloseSettingsButton.onClick.AddListener(HandleCloseSettingsButtonClicked);
+    //private void Awake()
+    //{
+    //    // Add listeners to buttons
+    //    OpenSettingsButton.onClick.AddListener(HandleOpenSettingsButtonClicked);
+    //    CloseSettingsButton.onClick.AddListener(HandleCloseSettingsButtonClicked);
 
-        OpenCreditsButton.onClick.AddListener(HandleOpenCreditsButtonClicked);
-        CloseCreditsButton.onClick.AddListener(HandleCloseCreditsButtonClicked);
+    //    OpenCreditsButton.onClick.AddListener(HandleOpenCreditsButtonClicked);
+    //    CloseCreditsButton.onClick.AddListener(HandleCloseCreditsButtonClicked);
 
-        OpenSceneSelectionButton.onClick.AddListener(HandleOpenSceneSelectionButtonClicked);
-        CloseSceneSelectionButton.onClick.AddListener(HandleCloseSceneSelectionButtonClicked);
-        OpenSampleSceneButton.onClick.AddListener(HandleOpenSampleSceneButtonClicked);
-        OpenJessicaTestSceneButton.onClick.AddListener(HandleOpenJessicaTestSceneButtonClicked);
-    }
+    //    OpenSceneSelectionButton.onClick.AddListener(HandleOpenSceneSelectionButtonClicked);
+    //    CloseSceneSelectionButton.onClick.AddListener(HandleCloseSceneSelectionButtonClicked);
+    //    OpenSampleSceneButton.onClick.AddListener(HandleOpenSampleSceneButtonClicked);
+    //    OpenJessicaTestSceneButton.onClick.AddListener(HandleOpenJessicaTestSceneButtonClicked);
+    //}
 
 
 
