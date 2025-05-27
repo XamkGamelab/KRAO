@@ -7,7 +7,7 @@ public class Look : MonoBehaviour
 
     public bool LookEnabled = false;
 
-    [SerializeField] float lookSensitivity = 20f;
+    [SerializeField] public float lookSensitivity = 20f;
     [SerializeField] float maxVerticalAngle = 75f;
     private InputAction look;
     private float verticalRotation = 0f;

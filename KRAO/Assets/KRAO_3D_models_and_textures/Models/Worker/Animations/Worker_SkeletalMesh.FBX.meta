@@ -3,7 +3,32 @@ guid: 71c9e6fe29b8fac44b3b628a5828d9a3
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Worker_Bottom
+    second: {fileID: 2100000, guid: 2e711a8cadc5b6c4b822582160e183da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Worker_Gear
+    second: {fileID: 2100000, guid: 25c7f9f31c9b428439d8ba9e4aa281f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Worker_Gear_2
+    second: {fileID: 2100000, guid: 25c7f9f31c9b428439d8ba9e4aa281f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Worker_Head
+    second: {fileID: 2100000, guid: f82da821113527e4aa415fdee6efc9ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Worker_Top
+    second: {fileID: 2100000, guid: af93b68e43f64504491ca69d828bfede, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -20,7 +45,7 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
+    importAnimatedCustomProperties: 1
     importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
