@@ -3,7 +3,27 @@ guid: 2928f1ddf342a5e46b168c775bb8c71c
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Branding
+    second: {fileID: 2100000, guid: 481b20f86cd746341ba78d6a21b7bad1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Excavator_Arm
+    second: {fileID: 2100000, guid: e9ed61e8ef8316b4081a157ff31f36c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Excavator_Cabin
+    second: {fileID: 2100000, guid: e74ca158e1b949d4396f033fbfcf35a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Excavator_Main
+    second: {fileID: 2100000, guid: 8546456a870443c43876cc7472b87a99, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
