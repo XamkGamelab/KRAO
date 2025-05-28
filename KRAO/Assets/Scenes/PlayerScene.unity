@@ -2147,6 +2147,10 @@ PrefabInstance:
       propertyPath: m_MatchWidthOrHeight
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2283512407421381836, guid: 31103c345b65bae4e9972399c5107f06, type: 3}
+      propertyPath: sceneToLoadBuildIndex
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3387967168840028787, guid: 31103c345b65bae4e9972399c5107f06, type: 3}
       propertyPath: m_Alpha
       value: 1
@@ -2186,6 +2190,10 @@ PrefabInstance:
     - target: {fileID: 5744176318956051109, guid: 31103c345b65bae4e9972399c5107f06, type: 3}
       propertyPath: m_text
       value: Palaa
+      objectReference: {fileID: 0}
+    - target: {fileID: 7794519910001931287, guid: 31103c345b65bae4e9972399c5107f06, type: 3}
+      propertyPath: m_text
+      value: DemoScene
       objectReference: {fileID: 0}
     - target: {fileID: 8094598675134102659, guid: 31103c345b65bae4e9972399c5107f06, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2250,6 +2258,10 @@ PrefabInstance:
     - target: {fileID: 8642388229634570730, guid: 31103c345b65bae4e9972399c5107f06, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8856559132799842140, guid: 31103c345b65bae4e9972399c5107f06, type: 3}
+      propertyPath: m_text
+      value: DevScene
       objectReference: {fileID: 0}
     - target: {fileID: 9078169380715666960, guid: 31103c345b65bae4e9972399c5107f06, type: 3}
       propertyPath: m_AnchorMax.y

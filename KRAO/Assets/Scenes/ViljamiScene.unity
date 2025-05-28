@@ -186,6 +186,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  highlightMaterial: {fileID: 0}
 --- !u!64 &285855073
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4663,6 +4664,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  highlightMaterial: {fileID: 0}
 --- !u!64 &1394854327
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7961,7 +7963,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1588434478667100198, guid: 6645bf40f6abba9458d99417182196c9, type: 3}
       propertyPath: Prompt
-      value: SceneLoadTest
+      value: DemoScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 1588434478667100198, guid: 6645bf40f6abba9458d99417182196c9, type: 3}
+      propertyPath: sceneToLoadBuildIndex
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2877508509099961738, guid: 6645bf40f6abba9458d99417182196c9, type: 3}
       propertyPath: m_Name

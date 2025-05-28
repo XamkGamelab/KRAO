@@ -51,6 +51,7 @@ public class PlayerTrigger : MonoBehaviour
                     onStayEvents.Invoke();
                     cooldownTimer -= onStayEventCooldown;
                     progressFiller.ResetProgress();
+                    return;
                 }
             } else
             {
