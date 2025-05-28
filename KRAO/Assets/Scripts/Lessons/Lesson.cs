@@ -32,28 +32,28 @@ public class Lesson : MonoBehaviour
         //lessonWindow.SetTexts(HeaderText, ContentText);
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (IsPlayer(other))
-        {
-            // Show interaction prompt
-            ToggleInteractionPrompt(1);
-            triggered = true;
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (IsPlayer(other))
+    //    {
+    //        // Show interaction prompt
+    //        ToggleInteractionPrompt(1);
+    //        triggered = true;
 
-            lessonWindow.SetTexts(HeaderText, ContentText);
-        }
-    }
+    //        lessonWindow.SetTexts(HeaderText, ContentText);
+    //    }
+    //}
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (IsPlayer(other))
-        {
-            // Hide interaction prompt
-            ToggleInteractionPrompt(0);
+    //private void OnTriggerExit(Collider other)
+    //{
+    //    if (IsPlayer(other))
+    //    {
+    //        // Hide interaction prompt
+    //        ToggleInteractionPrompt(0);
 
-            triggered = false;
-        }
-    }
+    //        triggered = false;
+    //    }
+    //}
 
     private bool IsPlayer(Collider collider)
     {
@@ -65,30 +65,30 @@ public class Lesson : MonoBehaviour
         lessonWindow.InteractionPrompt.GetComponent<CanvasGroup>().alpha = _alpha;
     }
 
-    private void Update()
-    {
-        // Get player inputs when triggered
-        if (triggered && Keyboard.current.eKey.wasPressedThisFrame && !lessonOpen)
-        {
-            lessonOpen = true;
+    //private void Update()
+    //{
+    //    // Get player inputs when triggered
+    //    if (triggered && Keyboard.current.eKey.wasPressedThisFrame && !lessonOpen)
+    //    {
+    //        lessonOpen = true;
 
-            // Hide interaction prompt
-            ToggleInteractionPrompt(0);
+    //        // Hide interaction prompt
+    //        ToggleInteractionPrompt(0);
 
-            OnLessonOpened?.Invoke(this);
-        }
+    //        OnLessonOpened?.Invoke(this);
+    //    }
 
-        else if (triggered && Keyboard.current.escapeKey.wasPressedThisFrame && lessonOpen)
-        {
-            lessonOpen = false;
-            NewLessonFound = false;
+    //    else if (triggered && Keyboard.current.escapeKey.wasPressedThisFrame && lessonOpen)
+    //    {
+    //        lessonOpen = false;
+    //        NewLessonFound = false;
 
-            // Show interaction prompt
-            ToggleInteractionPrompt(1);
+    //        // Show interaction prompt
+    //        ToggleInteractionPrompt(1);
 
-            OnLessonClosed?.Invoke(this);
-        }
-    }
+    //        OnLessonClosed?.Invoke(this);
+    //    }
+    //}
 
     public void ToggleLesson()
     {
@@ -97,6 +97,7 @@ public class Lesson : MonoBehaviour
         if(lessonOpen)
         {
             lessonWindow.SetTexts(HeaderText, ContentText);
+            lessonWindow.ResetScrollbox();
             OnLessonOpened?.Invoke(this);
         } else
         {
