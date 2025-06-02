@@ -6,14 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/ViljamiScene.unity
-    guid: 3c53c2090ae2c2047b1901dc7a63a023
-  - enabled: 1
-    path: Assets/Scenes/SceneLoadTest.unity
-    guid: 5c0329c657c1dbb47bee819abe81cb54
+    path: Assets/Scenes/Demo_scene.unity
+    guid: b9a80bce1b291b947a55a7fea4900e1c
   - enabled: 1
     path: Assets/Scenes/PlayerScene.unity
     guid: 476e9421c9b746b479339e07685077db
+  - enabled: 1
+    path: Assets/Scenes/ViljamiScene.unity
+    guid: 3c53c2090ae2c2047b1901dc7a63a023
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

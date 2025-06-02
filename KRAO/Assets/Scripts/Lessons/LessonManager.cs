@@ -15,8 +15,12 @@ public class LessonManager : MonoBehaviour
     private MenuManager menuManager => FindFirstObjectByType<MenuManager>();
     private FocusView focusView => GameObject.FindWithTag("FocusView").GetComponent<FocusView>();
     private CinemachineCamera focusCamera => GameObject.FindWithTag("FocusView").GetComponent<CinemachineCamera>();
+    private CinemachineOrbitalFollow orbitalFollow => GameObject.FindWithTag("FocusView").GetComponent<CinemachineOrbitalFollow>();
     private List<Lesson> lessons => FindObjectsByType<Lesson>(FindObjectsSortMode.None).ToList();
     //private LessonWindow lessonWindow => FindFirstObjectByType<LessonWindow>();
+    public LessonWindow lessonWindow => FindFirstObjectByType<LessonWindow>();
+
+    private Lesson openLesson;
 
 
     private int foundLessons = 0;
@@ -31,20 +35,29 @@ public class LessonManager : MonoBehaviour
 
     private void HandleLessonClosed(Lesson _lesson)
     {
+        openLesson = null;
         // Close FocusView
         focusView.ToggleFocusView();
         // Close lesson text box (canvas)
-        menuManager.CloseWindow(_lesson.lessonWindow.ContentBox);
+        menuManager.CloseWindow(lessonWindow.gameObject);
+    }
+
+    public void CloseLesson()
+    {
+        openLesson.ToggleLesson();
     }
 
     private void HandleLessonOpened(Lesson _lesson)
     {
+        openLesson = _lesson;
         // Set lessonObject as tracking target
-        focusCamera.Target.TrackingTarget = _lesson.LessonFocusObject.transform;
+        SetFocus(_lesson);
+
         // Open FocusView
         focusView.ToggleFocusView();
+
         // Open lesson text box (canvas)
-        menuManager.OpenWindow(_lesson.lessonWindow.ContentBox);
+        menuManager.OpenWindow(lessonWindow.gameObject);
 
         if (_lesson.NewLessonFound)
         {
@@ -64,5 +77,19 @@ public class LessonManager : MonoBehaviour
     private void UpdateProgressBar()
     {
         progressBar.ChangeSliderValue(foundLessons, lessons.Count);
+    }
+
+    private void SetFocus(Lesson _lesson)
+    {
+        if(_lesson.FocusPoints.Length > 0)
+        {
+            focusCamera.Target.TrackingTarget = _lesson.FocusPoints[0].FocusTransform;
+            orbitalFollow.Radius = _lesson.FocusPoints[0].Radius;
+        }
+        else
+        {
+            focusCamera.Target.TrackingTarget = _lesson.transform;
+            orbitalFollow.Radius = 2f;
+        }
     }
 }

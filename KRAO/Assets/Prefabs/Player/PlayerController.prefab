@@ -148,7 +148,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MovementEnabled: 0
   movementSpeed: 7.5
-  movementDamping: 0.06
+  movementDamping: 0.15
+  breakForce: 1.25
 --- !u!1 &8059624620545664314
 GameObject:
   m_ObjectHideFlags: 0

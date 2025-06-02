@@ -7,11 +7,13 @@ public class ProgressFiller : MonoBehaviour
 
     public void ShowProgress(float fillAmount)
     {
+        fillImage.enabled = true;
         fillImage.fillAmount = fillAmount;
     }
 
     public void ResetProgress()
     {
+        fillImage.enabled = false;
         fillImage.fillAmount = 0f;
     }
 }

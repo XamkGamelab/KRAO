@@ -5,10 +5,12 @@ public class PlayerManager : MonoBehaviour
 {
     private Movement movement => GetComponentInChildren<Movement>();
     private Look look => GetComponentInChildren<Look>();
+    private Interaction interaction => GetComponentInChildren<Interaction>();
 
     public bool ControllerEnabled = false;
 
     [SerializeField] private Transform playerTransform;
+    [SerializeField] private GameObject crosshair;
 
     #region Public Functions
     public void ToggleControllerState()
@@ -19,6 +21,8 @@ public class PlayerManager : MonoBehaviour
 
         movement.MovementEnabled = ControllerEnabled;
         look.LookEnabled = ControllerEnabled;
+        interaction.InteractionEnabled = ControllerEnabled;
+        crosshair.SetActive(ControllerEnabled);
 
         GetCursorLockModeFromControllerState(ControllerEnabled);
     }
@@ -31,6 +35,8 @@ public class PlayerManager : MonoBehaviour
 
         movement.MovementEnabled = ControllerEnabled;
         look.LookEnabled = ControllerEnabled;
+        interaction.InteractionEnabled = ControllerEnabled;
+        crosshair.SetActive(ControllerEnabled);
 
         GetCursorLockModeFromControllerState(ControllerEnabled);
     }
@@ -71,7 +77,7 @@ public class PlayerManager : MonoBehaviour
 
         if(_missingComponents > 0)
         {
-            Debug.LogError($"PlayerManager missing {_missingComponents.ToString()} components:{_errorMessage}");
+            Debug.LogError($"PlayerManager missing {_missingComponents} components:{_errorMessage}");
         }
     }
 

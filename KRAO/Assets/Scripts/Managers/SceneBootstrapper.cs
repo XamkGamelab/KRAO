@@ -17,14 +17,14 @@ public class SceneBootstrapper : MonoBehaviour
             player.GetComponent<PlayerManager>().TransportPlayer(Spawnpoint.position, Spawnpoint.rotation);
         } else
         {
-            SceneLoader.Instance.AddScene(2);
+            SceneLoader.Instance.AddScene(1);
             SceneManager.sceneLoaded += OnPlayerSceneLoaded;
         }
     }
     
     private void OnPlayerSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if(scene.buildIndex == 2)
+        if(scene.buildIndex == 1)
         {
             GameObject.FindWithTag("Player").GetComponent<PlayerManager>().TransportPlayer(Spawnpoint.position, Spawnpoint.rotation);
         }
