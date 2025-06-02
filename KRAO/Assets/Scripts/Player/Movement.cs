@@ -37,6 +37,7 @@ public class Movement : MonoBehaviour
         }
     }
 
+    //If the player is going into a direction, then inputs the opposite direction, this is used to make the transition more immediate for a better game feel
     private void MotionInputOpposition(Vector3 _motion)
     {
         if (movement.x > 0)
