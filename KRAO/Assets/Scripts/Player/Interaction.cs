@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 
 public class Interaction : MonoBehaviour
 {
+    public bool InteractionEnabled = false;
+
     [SerializeField] private float interactionRadius = 2.5f;
     [SerializeField] private LayerMask interactionMask;
     [SerializeField] private InteractionPrompt interactionPrompt;
@@ -20,6 +22,12 @@ public class Interaction : MonoBehaviour
     }
     void Update()
     {
+        if (!InteractionEnabled)
+        {
+            interactionPrompt.HidePrompt();
+            return;
+        }
+
         CheckForInteractablesInRange();
 
         if(interactableObjects.Count > 0)
@@ -52,7 +60,7 @@ public class Interaction : MonoBehaviour
                     if(selectedObject != _rayTarget)
                     {
                         selectedObject = _rayTarget;
-                        selectedObject.ToggleInteractableHighlight();
+                        //selectedObject.ToggleInteractableHighlight();
                     }
                     return;
                 }
@@ -61,7 +69,7 @@ public class Interaction : MonoBehaviour
 
         if(selectedObject != null)
         {
-            selectedObject.ToggleInteractableHighlight();
+            //selectedObject.ToggleInteractableHighlight();
             interactionPrompt.HidePrompt();
             selectedObject = null;
         }

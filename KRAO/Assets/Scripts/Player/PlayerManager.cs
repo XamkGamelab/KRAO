@@ -5,6 +5,7 @@ public class PlayerManager : MonoBehaviour
 {
     private Movement movement => GetComponentInChildren<Movement>();
     private Look look => GetComponentInChildren<Look>();
+    private Interaction interaction => GetComponentInChildren<Interaction>();
 
     public bool ControllerEnabled = false;
 
@@ -19,6 +20,7 @@ public class PlayerManager : MonoBehaviour
 
         movement.MovementEnabled = ControllerEnabled;
         look.LookEnabled = ControllerEnabled;
+        interaction.InteractionEnabled = ControllerEnabled;
 
         GetCursorLockModeFromControllerState(ControllerEnabled);
     }
@@ -31,6 +33,7 @@ public class PlayerManager : MonoBehaviour
 
         movement.MovementEnabled = ControllerEnabled;
         look.LookEnabled = ControllerEnabled;
+        interaction.InteractionEnabled = ControllerEnabled;
 
         GetCursorLockModeFromControllerState(ControllerEnabled);
     }
