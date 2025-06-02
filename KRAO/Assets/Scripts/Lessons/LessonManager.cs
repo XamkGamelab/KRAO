@@ -51,8 +51,8 @@ public class LessonManager : MonoBehaviour
     {
         openLesson = _lesson;
         // Set lessonObject as tracking target
-        focusCamera.Target.TrackingTarget = _lesson.LessonFocusObject.transform;
-        orbitalFollow.Radius = _lesson.FocusRadius;
+        SetFocus(_lesson);
+
         // Open FocusView
         focusView.ToggleFocusView();
 
@@ -77,5 +77,19 @@ public class LessonManager : MonoBehaviour
     private void UpdateProgressBar()
     {
         progressBar.ChangeSliderValue(foundLessons, lessons.Count);
+    }
+
+    private void SetFocus(Lesson _lesson)
+    {
+        if(_lesson.FocusPoints.Length > 0)
+        {
+            focusCamera.Target.TrackingTarget = _lesson.FocusPoints[0].FocusTransform;
+            orbitalFollow.Radius = _lesson.FocusPoints[0].Radius;
+        }
+        else
+        {
+            focusCamera.Target.TrackingTarget = _lesson.transform;
+            orbitalFollow.Radius = 2f;
+        }
     }
 }

@@ -2143,6 +2143,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1018460203869460143, guid: 31103c345b65bae4e9972399c5107f06, type: 3}
+      propertyPath: crosshair
+      value: 
+      objectReference: {fileID: 6309073405931349343}
     - target: {fileID: 1101366539697280817, guid: 31103c345b65bae4e9972399c5107f06, type: 3}
       propertyPath: m_MatchWidthOrHeight
       value: 0.5
@@ -2343,6 +2347,11 @@ MonoBehaviour:
   CloseSceneSelectionButton: {fileID: 0}
   OpenSampleSceneButton: {fileID: 0}
   OpenJessicaTestSceneButton: {fileID: 0}
+--- !u!1 &6309073405931349343 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7801955550708713786, guid: 31103c345b65bae4e9972399c5107f06, type: 3}
+  m_PrefabInstance: {fileID: 6309073405931349340}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

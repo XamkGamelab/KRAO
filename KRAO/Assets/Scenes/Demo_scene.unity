@@ -17944,8 +17944,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19dd03357af621c488c83ebe72238976, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LessonFocusObject: {fileID: 1920054388}
-  FocusRadius: 1
+  FocusPoints:
+  - FocusTransform: {fileID: 1920054389}
+    Radius: 1
   HeaderText: Testi1
   ContentText: "\rLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
     non dui et ante interdum consequat. Vivamus ac hendrerit lectus. Nunc fringilla
@@ -24878,8 +24879,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19dd03357af621c488c83ebe72238976, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LessonFocusObject: {fileID: 1677312491}
-  FocusRadius: 11
+  FocusPoints:
+  - FocusTransform: {fileID: 1677312492}
+    Radius: 12
   HeaderText: Juna
   ContentText: "Se on juna.\n\nSe menee lujaa.\n\nJa liikkuu rautateit\xE4 pitkin.\n\n\nJuna
     on yst\xE4v\xE4si.\n\nJuna on kaikista paras.\n\nJuna v\xE4litt\xE4\xE4 hyvinvoinnistasi.\n\nJuna

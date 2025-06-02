@@ -10,21 +10,8 @@ public class InteractableObject : MonoBehaviour
 
     [SerializeField] private UnityEvent interactionEvents;
 
-    private bool highlightOn = false;
-    [SerializeField] private Material highlightMaterial;
-
-    //private void Start()
-    //{
-    //    highlightMaterial = GetComponent<MeshRenderer>().materials[0];
-    //}
     public void Interact()
     {
         interactionEvents.Invoke();
     }
-
-    //public void ToggleInteractableHighlight()
-    //{
-    //    highlightOn = !highlightOn;
-    //    highlightMaterial.SetInt("_HighlightOn", highlightOn ? 1 : 0);
-    //}
 }
