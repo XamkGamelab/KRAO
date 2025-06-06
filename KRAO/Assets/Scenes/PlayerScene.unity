@@ -433,7 +433,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 672481659334735007, guid: 2018a133e3c227541a47b13441791f23, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -44.540154
+      value: -44.540077
       objectReference: {fileID: 0}
     - target: {fileID: 967965376588638640, guid: 2018a133e3c227541a47b13441791f23, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2037,14 +2037,6 @@ PrefabInstance:
     - target: {fileID: 3121116015401402783, guid: 090f899c9ce21f74c8e498317a8e491e, type: 3}
       propertyPath: m_Name
       value: FocusViewCamera
-      objectReference: {fileID: 0}
-    - target: {fileID: 6525983894449631769, guid: 090f899c9ce21f74c8e498317a8e491e, type: 3}
-      propertyPath: m_ControllerManager.Controllers.Array.data[0].Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6525983894449631769, guid: 090f899c9ce21f74c8e498317a8e491e, type: 3}
-      propertyPath: m_ControllerManager.Controllers.Array.data[1].Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8362519106912332972, guid: 090f899c9ce21f74c8e498317a8e491e, type: 3}
       propertyPath: m_LocalPosition.x
