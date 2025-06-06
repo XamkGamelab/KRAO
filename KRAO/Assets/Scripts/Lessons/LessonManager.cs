@@ -17,7 +17,6 @@ public class LessonManager : MonoBehaviour
     private CinemachineCamera focusCamera => GameObject.FindWithTag("FocusView").GetComponent<CinemachineCamera>();
     private CinemachineOrbitalFollow orbitalFollow => GameObject.FindWithTag("FocusView").GetComponent<CinemachineOrbitalFollow>();
     private List<Lesson> lessons => FindObjectsByType<Lesson>(FindObjectsSortMode.None).ToList();
-    //private LessonWindow lessonWindow => FindFirstObjectByType<LessonWindow>();
     public LessonWindow lessonWindow => FindFirstObjectByType<LessonWindow>();
 
     private Lesson openLesson;
