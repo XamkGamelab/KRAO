@@ -38,7 +38,7 @@ public class LessonManager : MonoBehaviour
         // Close FocusView
         focusView.ToggleFocusView();
         // Close lesson text box (canvas)
-        menuManager.CloseWindow(lessonWindow.gameObject);
+        menuManager.ToggleWindow(lessonWindow, false);
     }
 
     public void CloseLesson()
@@ -56,7 +56,7 @@ public class LessonManager : MonoBehaviour
         focusView.ToggleFocusView();
 
         // Open lesson text box (canvas)
-        menuManager.OpenWindow(lessonWindow.gameObject);
+        menuManager.ToggleWindow(lessonWindow, true);
 
         if (_lesson.NewLessonFound)
         {

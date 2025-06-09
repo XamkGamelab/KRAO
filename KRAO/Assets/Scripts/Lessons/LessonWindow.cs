@@ -2,7 +2,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class LessonWindow : MonoBehaviour
+public class LessonWindow : Window
 {
     public GameObject InteractionPrompt => GetComponentInChildren<Text>().gameObject;
     public GameObject ContentBox => GetComponentInChildren<ScrollRect>().gameObject;
