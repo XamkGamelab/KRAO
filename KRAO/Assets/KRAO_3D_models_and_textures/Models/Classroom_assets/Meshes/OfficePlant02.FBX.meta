@@ -3,7 +3,22 @@ guid: b12e25ce92152864c9138da82a8c88d8
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bark_Birch_Inst
+    second: {fileID: 2100000, guid: c7e0425d141218f429851c3359930f88, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IndoorPlantPotBase
+    second: {fileID: 2100000, guid: b0da659e8cc7f9e43bf4b5a2f2acf9ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: OfficePlantLeaf01_Base
+    second: {fileID: 2100000, guid: 8925e29d14cd4c34aa581fbbe33dd3ee, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
