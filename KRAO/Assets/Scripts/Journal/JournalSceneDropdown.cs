@@ -8,7 +8,7 @@ public class JournalSceneDropdown : MonoBehaviour
 {
     public Button SceneButton;
     public GameObject LessonButtons;
-    private bool open = true;
+    private bool open = false;
 
     private void Awake()
     {
