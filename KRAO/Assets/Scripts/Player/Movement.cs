@@ -45,6 +45,7 @@ public class Movement : MonoBehaviour
         {
             Debug.Log("Player not grounded!");
             GroundPlayer();
+
         }
     }
 

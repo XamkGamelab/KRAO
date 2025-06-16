@@ -2142,6 +2142,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: FocusViewCamera
       objectReference: {fileID: 0}
+    - target: {fileID: 6525983894449631769, guid: 090f899c9ce21f74c8e498317a8e491e, type: 3}
+      propertyPath: m_ControllerManager.Controllers.Array.data[0].Input.Gain
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6525983894449631769, guid: 090f899c9ce21f74c8e498317a8e491e, type: 3}
+      propertyPath: m_ControllerManager.Controllers.Array.data[1].Input.Gain
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6525983894449631769, guid: 090f899c9ce21f74c8e498317a8e491e, type: 3}
+      propertyPath: m_ControllerManager.Controllers.Array.data[0].Input.LegacyGain
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6525983894449631769, guid: 090f899c9ce21f74c8e498317a8e491e, type: 3}
+      propertyPath: m_ControllerManager.Controllers.Array.data[1].Input.LegacyGain
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8362519106912332972, guid: 090f899c9ce21f74c8e498317a8e491e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2181,6 +2197,38 @@ PrefabInstance:
     - target: {fileID: 8362519106912332972, guid: 090f899c9ce21f74c8e498317a8e491e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8889235935976039079, guid: 090f899c9ce21f74c8e498317a8e491e, type: 3}
+      propertyPath: lookAction.m_Name
+      value: Look
+      objectReference: {fileID: 0}
+    - target: {fileID: 8889235935976039079, guid: 090f899c9ce21f74c8e498317a8e491e, type: 3}
+      propertyPath: lookAction.m_SingletonActionBindings.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8889235935976039079, guid: 090f899c9ce21f74c8e498317a8e491e, type: 3}
+      propertyPath: lookAction.m_SingletonActionBindings.Array.data[0].m_Id
+      value: a1392f17-ce82-46e6-85ff-b6df3ac60421
+      objectReference: {fileID: 0}
+    - target: {fileID: 8889235935976039079, guid: 090f899c9ce21f74c8e498317a8e491e, type: 3}
+      propertyPath: lookAction.m_SingletonActionBindings.Array.data[1].m_Id
+      value: 8f48acd7-1f4a-43d9-bb7c-b54768085f32
+      objectReference: {fileID: 0}
+    - target: {fileID: 8889235935976039079, guid: 090f899c9ce21f74c8e498317a8e491e, type: 3}
+      propertyPath: lookAction.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <Mouse>/leftButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 8889235935976039079, guid: 090f899c9ce21f74c8e498317a8e491e, type: 3}
+      propertyPath: lookAction.m_SingletonActionBindings.Array.data[1].m_Path
+      value: <Pointer>/press
+      objectReference: {fileID: 0}
+    - target: {fileID: 8889235935976039079, guid: 090f899c9ce21f74c8e498317a8e491e, type: 3}
+      propertyPath: lookAction.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Look
+      objectReference: {fileID: 0}
+    - target: {fileID: 8889235935976039079, guid: 090f899c9ce21f74c8e498317a8e491e, type: 3}
+      propertyPath: lookAction.m_SingletonActionBindings.Array.data[1].m_Action
+      value: Look
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
