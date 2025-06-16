@@ -10,6 +10,7 @@ public class FocusView : MonoBehaviour
     private PlayerManager playerManager => GameObject.FindWithTag("Player").GetComponent<PlayerManager>();
     private CursorManager cursorManager => playerManager.CursorManager;
     private CinemachineCamera rotatingCamera => GetComponent<CinemachineCamera>();
+    private CinemachineOrbitalFollow orbitalFollow => GetComponent<CinemachineOrbitalFollow>();
     private CinemachineInputAxisController cinemachineInput => rotatingCamera.GetComponent<CinemachineInputAxisController>();
     
     private bool focusViewEnabled = false;
@@ -31,6 +32,10 @@ public class FocusView : MonoBehaviour
     public void ToggleFocusView()
     {
         focusViewEnabled = !focusViewEnabled;
+        if(focusViewEnabled)
+        {
+            ResetOribtalCameraValues();
+        }
         playerManager.ToggleControllerState();
         rotatingCamera.enabled = focusViewEnabled;
     }
@@ -41,6 +46,13 @@ public class FocusView : MonoBehaviour
         cinemachineInput.Controllers[0].Input.Gain = _sensitivity;
         // Look Orbit Y
         cinemachineInput.Controllers[1].Input.Gain = -_sensitivity;
+    }
+
+    private void ResetOribtalCameraValues()
+    {
+        orbitalFollow.HorizontalAxis.Value = orbitalFollow.HorizontalAxis.Center;
+        orbitalFollow.VerticalAxis.Value = orbitalFollow.VerticalAxis.Center;
+        orbitalFollow.RadialAxis.Value = orbitalFollow.RadialAxis.Center;
     }
 
     private void ToggleCursor(bool _state)
