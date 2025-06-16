@@ -13,6 +13,8 @@ public class Movement : MonoBehaviour
     private InputAction move;
     private Vector3 movement = Vector3.zero;
 
+    [SerializeField] LayerMask groundLayer;
+
     private void Start()
     {
         move = InputSystem.actions.FindAction("Move");
@@ -34,6 +36,15 @@ public class Movement : MonoBehaviour
         if(movement.magnitude > 0)
         {
             controller.Move(movement);
+        }
+    }
+
+    private void LateUpdate()
+    {
+        if(!controller.isGrounded)
+        {
+            Debug.Log("Player not grounded!");
+            GroundPlayer();
         }
     }
 
@@ -68,6 +79,17 @@ public class Movement : MonoBehaviour
             {
                 movement.z /= breakForce;
             }
+        }
+    }
+
+    private void GroundPlayer()
+    {
+        RaycastHit _hit;
+        if(Physics.Raycast(controller.transform.position, Vector3.down, out _hit, Mathf.Infinity, groundLayer))
+        {
+            Vector3 _newPosition = controller.transform.position;
+            _newPosition.y = _hit.point.y;
+            GameObject.FindWithTag("Player").GetComponent<PlayerManager>().TransportPlayer(_newPosition, controller.transform.rotation);
         }
     }
 }
