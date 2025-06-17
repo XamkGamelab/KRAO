@@ -11,7 +11,7 @@ public class Window : MonoBehaviour
 
     public static event Action<Window> OnWindowOpened;
 
-    public bool isOpen = false;
+    public bool isOpen { get; set; } = false;
 
     public KeyCode KeyCode;
 
@@ -30,7 +30,6 @@ public class Window : MonoBehaviour
 
     private void OpenWindow()
     {
-        //isOpen = !isOpen;
         OnWindowOpened?.Invoke(this);
     }
 }

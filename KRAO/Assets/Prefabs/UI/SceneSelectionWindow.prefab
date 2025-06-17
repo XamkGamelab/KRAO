@@ -872,7 +872,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OpenWindowButtons:
   - {fileID: 0}
-  isOpen: 0
+  - {fileID: 0}
   KeyCode: 0
 --- !u!1 &8345514012487035282
 GameObject:

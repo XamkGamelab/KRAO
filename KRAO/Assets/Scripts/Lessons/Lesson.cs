@@ -8,7 +8,8 @@ public class Lesson : MonoBehaviour
 {
     public LessonViewPoint[] FocusPoints;
     public LessonWindow lessonWindow => FindFirstObjectByType<LessonWindow>();
-    
+
+    public int LessonId;
     public string HeaderText;
     [TextArea(15,20)] public string ContentText;
 

@@ -11,7 +11,8 @@ using System;
 public class LessonManager : MonoBehaviour
 {
     private LessonProgressBar progressBar => FindFirstObjectByType<LessonProgressBar>();
-    private Journal journal => FindFirstObjectByType<Journal>();
+    //private Journal journal => FindFirstObjectByType<Journal>();
+    private JournalManager journal => FindFirstObjectByType<JournalManager>();
     private MenuManager menuManager => FindFirstObjectByType<MenuManager>();
     private FocusView focusView => GameObject.FindWithTag("FocusView").GetComponent<FocusView>();
     private CinemachineCamera focusCamera => GameObject.FindWithTag("FocusView").GetComponent<CinemachineCamera>();
@@ -68,8 +69,8 @@ public class LessonManager : MonoBehaviour
 
     private void AddLessonToJournal(Lesson _lesson)
     {
-        journal.AddNewLessonButton(_lesson.HeaderText, _lesson.ContentText);
-
+        //journal.AddNewLessonButton(_lesson.HeaderText, _lesson.ContentText);
+        journal.ActivateLesson(_lesson.LessonId);
         Debug.Log("Lesson added to journal");
     }
 
