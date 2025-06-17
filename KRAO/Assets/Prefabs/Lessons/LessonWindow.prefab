@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7319179765423912293
 RectTransform:
   m_ObjectHideFlags: 0
@@ -336,7 +336,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 8265073714802403851}
   m_Direction: 3
   m_Value: 0.5
-  m_Size: 0.100045554
+  m_Size: 0.1254525
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -376,7 +376,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -58.252}
+  m_AnchoredPosition: {x: 0, y: -58.251953}
   m_SizeDelta: {x: 0, y: 116.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1524914667773562693
@@ -789,6 +789,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6854223561211849153}
   - component: {fileID: 3926184449059019835}
+  - component: {fileID: 3661331432454370420}
   m_Layer: 5
   m_Name: LessonWindow
   m_TagString: Untagged
@@ -830,8 +831,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OpenWindowButtons: []
-  isOpen: 0
   KeyCode: 0
+  HeaderText: {fileID: 3786157497957725251}
+  ContentText: {fileID: 8014996521574519578}
+--- !u!225 &3661331432454370420
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4298520882502093011}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1 &4611162511107617651
 GameObject:
   m_ObjectHideFlags: 0
@@ -924,7 +938,7 @@ GameObject:
   - component: {fileID: 6552759678762192923}
   - component: {fileID: 5588739048588301048}
   m_Layer: 0
-  m_Name: Button (Legacy)
+  m_Name: ExitLessonButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1031,7 +1045,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6552759678762192923}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: LessonManager, Assembly-CSharp
+        m_MethodName: CloseLesson
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!1 &7572944434701605682
 GameObject:
   m_ObjectHideFlags: 0
@@ -1045,7 +1071,7 @@ GameObject:
   - component: {fileID: 9011008320132562590}
   - component: {fileID: 4439717236791356149}
   m_Layer: 0
-  m_Name: Lesson
+  m_Name: Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1118,7 +1144,7 @@ CanvasGroup:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7572944434701605682}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Alpha: 0
   m_Interactable: 0
   m_BlocksRaycasts: 0

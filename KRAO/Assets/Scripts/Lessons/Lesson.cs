@@ -28,7 +28,8 @@ public class Lesson : MonoBehaviour
             lessonWindow.SetTexts(HeaderText, ContentText);
             lessonWindow.ResetScrollbox();
             OnLessonOpened?.Invoke(this);
-        } else
+        }
+        else
         {
             NewLessonFound = false;
             OnLessonClosed?.Invoke(this);

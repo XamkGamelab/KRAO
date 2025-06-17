@@ -28,7 +28,7 @@ public class Window : MonoBehaviour
         }
     }
 
-    private void OpenWindow()
+    public void OpenWindow()
     {
         OnWindowOpened?.Invoke(this);
     }

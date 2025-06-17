@@ -223,7 +223,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OpenWindowButtons:
   - {fileID: 0}
-  KeyCode: 0
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  KeyCode: 27
 --- !u!1 &2392378174456474774
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,6 +434,7 @@ GameObject:
   - component: {fileID: 141257314624651322}
   - component: {fileID: 2184007981490853243}
   - component: {fileID: 4394814156409578117}
+  - component: {fileID: 79479833120832782}
   m_Layer: 5
   m_Name: OpenMainMenuButton
   m_TagString: Untagged
@@ -540,6 +544,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &79479833120832782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3657507894064785523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dafc109ce9f8f4b47945aba70f9b4478, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoadBuildIndex: 0
 --- !u!1 &3902691732489944737
 GameObject:
   m_ObjectHideFlags: 0

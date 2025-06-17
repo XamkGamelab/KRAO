@@ -1,10 +1,9 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class JournalManager : Window
+public class JournalWindow : Window
 {
     private List<JournalDropdown> journalDropdowns => GetComponentsInChildren<JournalDropdown>().ToList();
     private List<JournalDropdownButton> dropdownButtons => GetComponentsInChildren<JournalDropdownButton>().ToList();
@@ -51,8 +50,8 @@ public class JournalManager : Window
     private float DropdownHeight()
     {
         float _height = 0;
-        
-        foreach(JournalDropdown _d in journalDropdowns)
+
+        foreach (JournalDropdown _d in journalDropdowns)
         {
             _height += _d.dropdownRectTransform.sizeDelta.y;
         }

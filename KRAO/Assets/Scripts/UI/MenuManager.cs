@@ -21,6 +21,7 @@ public class MenuManager : MonoBehaviour
         windows.ForEach(window => window.isOpen = false);
         _window.isOpen = true;
         windows.ForEach(window => ToggleWindow(window));
+
         //playerManager.ToggleControllerState(false);
     }
 

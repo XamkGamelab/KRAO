@@ -4,16 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System;
 
-/* The object that this script is connected to should have a Rigidbody
- * and the lesson object should have a collider as trigger
- */
-
 public class LessonManager : MonoBehaviour
 {
     private LessonProgressBar progressBar => FindFirstObjectByType<LessonProgressBar>();
-    //private Journal journal => FindFirstObjectByType<Journal>();
-    private JournalManager journal => FindFirstObjectByType<JournalManager>();
-    private MenuManager menuManager => FindFirstObjectByType<MenuManager>();
+    private JournalWindow journal => FindFirstObjectByType<JournalWindow>();
+    //private MenuManager menuManager => FindFirstObjectByType<MenuManager>();
     private FocusView focusView => GameObject.FindWithTag("FocusView").GetComponent<FocusView>();
     private CinemachineCamera focusCamera => GameObject.FindWithTag("FocusView").GetComponent<CinemachineCamera>();
     private CinemachineOrbitalFollow orbitalFollow => GameObject.FindWithTag("FocusView").GetComponent<CinemachineOrbitalFollow>();
@@ -39,7 +34,7 @@ public class LessonManager : MonoBehaviour
         // Close FocusView
         focusView.ToggleFocusView();
         // Close lesson text box (canvas)
-        menuManager.ToggleWindow(lessonWindow, false);
+        //menuManager.ToggleWindow(lessonWindow, false);
     }
 
     public void CloseLesson()
@@ -57,7 +52,8 @@ public class LessonManager : MonoBehaviour
         focusView.ToggleFocusView();
 
         // Open lesson text box (canvas)
-        menuManager.ToggleWindow(lessonWindow, true);
+        //menuManager.ToggleWindow(lessonWindow, true);
+        lessonWindow.OpenWindow();
 
         if (_lesson.NewLessonFound)
         {
@@ -69,7 +65,6 @@ public class LessonManager : MonoBehaviour
 
     private void AddLessonToJournal(Lesson _lesson)
     {
-        //journal.AddNewLessonButton(_lesson.HeaderText, _lesson.ContentText);
         journal.ActivateLesson(_lesson.LessonId);
         Debug.Log("Lesson added to journal");
     }

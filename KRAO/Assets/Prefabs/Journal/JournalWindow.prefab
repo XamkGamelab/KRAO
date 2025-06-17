@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 79004468627430003}
   - component: {fileID: 6287259496276222371}
-  - component: {fileID: 7380939344977466475}
   - component: {fileID: 4657526040522682380}
   m_Layer: 5
   m_Name: JournalWindow
@@ -51,23 +50,6 @@ CanvasGroup:
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
---- !u!114 &7380939344977466475
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1063470923852974393}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fca2fcc89c9892408a66606ed1b561f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OpenWindowButtons: []
-  KeyCode: 0
-  HeaderText: {fileID: 0}
-  LessonText: {fileID: 0}
-  JournalButtonPrefab: {fileID: 0}
 --- !u!114 &4657526040522682380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3462,7 +3444,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 17.856018, y: -393.40073}
+  m_AnchoredPosition: {x: 17.856018, y: -393.40048}
   m_SizeDelta: {x: 690, y: 206.5075}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7168483821532991681

@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class JournalDropdownButton : MonoBehaviour
 {
     private Button journalButton => GetComponent<Button>();
-    private JournalManager journalManager => FindAnyObjectByType<JournalManager>();
+    private JournalWindow journal => FindAnyObjectByType<JournalWindow>();
     private Text headerText => GetComponentInChildren<Text>();
     public string contentText;
     public int LessonId;
@@ -21,7 +21,7 @@ public class JournalDropdownButton : MonoBehaviour
 
     public void HandleJournalButtonClick()
     {
-        journalManager.SetLessonTexts(headerText.text, contentText);
+        journal.SetLessonTexts(headerText.text, contentText);
     }
 
     public void SetValues(int _id, string _header, string _content)
