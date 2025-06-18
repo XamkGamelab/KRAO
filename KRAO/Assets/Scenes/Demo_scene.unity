@@ -27575,7 +27575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionType: 0
-  Prompt: "k\xE4ytt\xE4\xE4ksesi esinett\xE4"
+  Prompt: "oppiaksesi turvamiehist\xE4"
   interactionEvents:
     m_PersistentCalls:
       m_Calls:
