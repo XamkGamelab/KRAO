@@ -46488,7 +46488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FocusPoints:
-  - FocusTransform: {fileID: 0}
+  - FocusTransform: {fileID: 1319612789}
     Radius: 1.5
   HeaderText: Baliisi
   ContentText: "Baliisi on JKV-ratalaite, joka l\xE4hett\xE4\xE4 JKV-veturilaitteen
