@@ -2385,6 +2385,10 @@ PrefabInstance:
       propertyPath: interactionPrompt
       value: 
       objectReference: {fileID: 10096376}
+    - target: {fileID: 4170199905305933656, guid: 31103c345b65bae4e9972399c5107f06, type: 3}
+      propertyPath: interactionMask.m_Bits
+      value: 192
+      objectReference: {fileID: 0}
     - target: {fileID: 4170371760709054507, guid: 31103c345b65bae4e9972399c5107f06, type: 3}
       propertyPath: m_Name
       value: Player
