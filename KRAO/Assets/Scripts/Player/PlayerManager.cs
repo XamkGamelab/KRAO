@@ -3,6 +3,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerManager : MonoBehaviour
 {
+    public CursorManager CursorManager => GetComponent<CursorManager>();
+
     private Movement movement => GetComponentInChildren<Movement>();
     private Look look => GetComponentInChildren<Look>();
     private Interaction interaction => GetComponentInChildren<Interaction>();
@@ -24,7 +26,7 @@ public class PlayerManager : MonoBehaviour
         interaction.InteractionEnabled = ControllerEnabled;
         crosshair.SetActive(ControllerEnabled);
 
-        GetCursorLockModeFromControllerState(ControllerEnabled);
+        CursorManager.SetCursorState(GetCursorLockModeFromControllerState(ControllerEnabled));
     }
 
     public void ToggleControllerState(bool state)
@@ -38,7 +40,7 @@ public class PlayerManager : MonoBehaviour
         interaction.InteractionEnabled = ControllerEnabled;
         crosshair.SetActive(ControllerEnabled);
 
-        GetCursorLockModeFromControllerState(ControllerEnabled);
+        CursorManager.SetCursorState(GetCursorLockModeFromControllerState(ControllerEnabled));
     }
 
     public void TransportPlayer(Vector3 position, Quaternion rotation)
@@ -85,11 +87,9 @@ public class PlayerManager : MonoBehaviour
     {
         if(state)
         {
-            Cursor.visible = false;
             return CursorLockMode.Locked;
         } else
         {
-            Cursor.visible = true;
             return CursorLockMode.None;
         }
     }

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:KRAO/Assets/KRAO_3D_models_and_textures/Models/New_assets/Balise/Balise.blend.meta
 guid: 443e7d4c339a2bf408f5184c72579b3a
+========
+guid: a5a74105414517849af0833205a4e288
+>>>>>>>> main:KRAO/Assets/Models/PowerSocket/PowerSocket.fbx.meta
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []

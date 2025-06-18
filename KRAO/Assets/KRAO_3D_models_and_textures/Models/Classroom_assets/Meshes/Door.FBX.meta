@@ -3,7 +3,17 @@ guid: 9d42e90c9959d09499545dd3498946ac
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CleanSteel_Base
+    second: {fileID: 2100000, guid: 35df8ae75af54624197446b137e9808a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PaintedSurface_White_Inst
+    second: {fileID: 2100000, guid: 4082cff507811db439536b53a73e0625, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
