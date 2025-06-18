@@ -14,9 +14,6 @@ public class FocusView : MonoBehaviour
     private CinemachineInputAxisController cinemachineInput => rotatingCamera.GetComponent<CinemachineInputAxisController>();
     
     private bool focusViewEnabled = false;
-
-    private int UILayer => LayerMask.NameToLayer("UI");
-
     [SerializeField] private InputAction lookAction => InputSystem.actions.FindAction("Click");
 
     private void Update()
@@ -70,7 +67,6 @@ public class FocusView : MonoBehaviour
 
     private void ToggleCinemachineInput(bool _state)
     {
-        Debug.Log(_state ? "Setting input on" : "Setting input off");
         foreach(var controller in cinemachineInput.Controllers)
         {
             controller.Enabled = _state;
