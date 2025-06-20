@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:KRAO/Assets/KRAO_3D_models_and_textures/Models/New_assets/Track_circuit/track_circuit.blend1.meta
 guid: 0a4ae91d3ea63c34d91ba5c1794bc799
+========
+guid: a82f706daea8e604eb9e13380cf27e87
+folderAsset: yes
+>>>>>>>> main:KRAO/Assets/KRAO_3D_models_and_textures/Models/New_assets/Balise/Materials.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
