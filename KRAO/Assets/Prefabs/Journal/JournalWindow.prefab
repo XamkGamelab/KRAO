@@ -1708,7 +1708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42dc2469ff83cff4b91577c2f2503582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneIndex: 1
+  SceneIndex: 4
   DropdownButtonPrefab: {fileID: 4065382134423729859, guid: 06495ab76f11a0c4aa0c6616f3fd94b2, type: 3}
   DropdownHeaderText: {fileID: 178138067387367759}
   LessonsFoundText: {fileID: 3745063493241621917}
@@ -1959,7 +1959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42dc2469ff83cff4b91577c2f2503582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneIndex: 0
+  SceneIndex: 3
   DropdownButtonPrefab: {fileID: 4065382134423729859, guid: 06495ab76f11a0c4aa0c6616f3fd94b2, type: 3}
   DropdownHeaderText: {fileID: 836320476245332600}
   LessonsFoundText: {fileID: 7566542735218019848}
@@ -3444,7 +3444,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 17.856018, y: -393.40048}
+  m_AnchoredPosition: {x: 17.856018, y: -393.4009}
   m_SizeDelta: {x: 690, y: 206.5075}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7168483821532991681

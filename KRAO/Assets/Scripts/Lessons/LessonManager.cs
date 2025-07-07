@@ -33,8 +33,6 @@ public class LessonManager : MonoBehaviour
         openLesson = null;
         // Close FocusView
         focusView.ToggleFocusView();
-        // Close lesson text box (canvas)
-        //menuManager.ToggleWindow(lessonWindow, false);
     }
 
     public void CloseLesson()
@@ -52,7 +50,6 @@ public class LessonManager : MonoBehaviour
         focusView.ToggleFocusView();
 
         // Open lesson text box (canvas)
-        //menuManager.ToggleWindow(lessonWindow, true);
         lessonWindow.OpenWindow();
 
         if (_lesson.NewLessonFound)
