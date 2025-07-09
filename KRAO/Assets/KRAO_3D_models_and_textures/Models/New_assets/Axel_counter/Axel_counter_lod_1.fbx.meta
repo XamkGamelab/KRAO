@@ -3,7 +3,12 @@ guid: dc50727673beb41489432f49cc20bb0a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Axel_counter_mat
+    second: {fileID: 2100000, guid: 99193717fe306b240bcd5cd90318da96, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
