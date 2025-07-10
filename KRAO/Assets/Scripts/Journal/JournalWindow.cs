@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -5,8 +6,8 @@ using UnityEngine.UI;
 
 public class JournalWindow : Window
 {
-    private List<JournalDropdown> journalDropdowns => GetComponentsInChildren<JournalDropdown>().ToList();
-    private List<JournalDropdownButton> dropdownButtons => GetComponentsInChildren<JournalDropdownButton>().ToList();
+    public List<JournalDropdown> JournalDropdowns { get; set; }
+    private List<JournalDropdownButton> dropdownButtons;
     private RectTransform dropdownsContainerRectTransform => DropdownsContainer.GetComponent<RectTransform>();
 
     [Header("Lesson")]
@@ -16,7 +17,9 @@ public class JournalWindow : Window
     public Button NextLessonButton;
 
     [Header("ScrollBox")]
+    public GameObject JournalDropdownPrefab;
     public GameObject DropdownsContainer;
+    public List<JDropdown> Dropdowns;
 
     #region private methods
     private void Awake()
@@ -24,6 +27,12 @@ public class JournalWindow : Window
         JournalDropdown.OnDropdownClicked += HandleDropdownClicked;
         PrevLessonButton.onClick.AddListener(HandlePrevLessonButtonClick);
         NextLessonButton.onClick.AddListener(HandleNextLessonButtonClick);
+        
+        CreateDropdowns();
+        JournalDropdowns = GetComponentsInChildren<JournalDropdown>().ToList();
+
+        CreateDropdownButtons();
+        dropdownButtons = GetComponentsInChildren<JournalDropdownButton>().ToList();
     }
 
     private void HandleNextLessonButtonClick()
@@ -51,12 +60,31 @@ public class JournalWindow : Window
     {
         float _height = 0;
 
-        foreach (JournalDropdown _d in journalDropdowns)
+        foreach (JournalDropdown _d in JournalDropdowns)
         {
             _height += _d.dropdownRectTransform.sizeDelta.y;
         }
 
         return _height;
+    }
+
+    private void CreateDropdowns()
+    {
+        for (int i = 0; i < Dropdowns.Count; i++)
+        {
+            JournalDropdownPrefab.GetComponent<JournalDropdown>().SetInitValues(Dropdowns[i].SceneIndex,
+                Dropdowns[i].SceneHeader, Dropdowns[i].lessons);
+            Instantiate(JournalDropdownPrefab, DropdownsContainer.transform);
+        }
+    }
+
+    private void CreateDropdownButtons()
+    {
+        for (int i = 0; i < JournalDropdowns.Count; i++)
+        {
+            JournalDropdowns[i].CreateDropdownButtons(Dropdowns[i].lessons);
+            Debug.Log("BUTTONS");
+        }
     }
 
     #endregion
@@ -80,4 +108,20 @@ public class JournalWindow : Window
         ContentText.text = _content;
     }
     #endregion
+}
+
+[Serializable]
+public struct JDropdown
+{
+    public string SceneHeader;
+    public int SceneIndex;
+    public List<LessonItem> lessons;
+}
+
+[Serializable]
+public struct LessonItem
+{
+    public string HeaderText;
+    public int LessonId;
+    [TextArea(15, 20)] public string ContentText;
 }

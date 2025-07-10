@@ -1,24 +1,24 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class JournalDropdown : MonoBehaviour
 {
     public RectTransform dropdownRectTransform => GetComponent<RectTransform>();
     private Toggle toggle => GetComponentInChildren<Toggle>();
-    private CanvasGroup ButtonsContainer => GetComponentInChildren<CanvasGroup>();
+    public CanvasGroup ButtonsContainer;
 
     private float minHeight = 0;
 
     public static event Action OnDropdownClicked;
-
-    public int SceneIndex;
+    //private List<LessonItem> LessonsInScene;
+    private int LessonsInScene = 0;
+    public int SceneIndex { get; private set; }
+    
     public GameObject DropdownButtonPrefab;
     public Text DropdownHeaderText;
     public Text LessonsFoundText;
-    public List<LessonItem> LessonsInScene;
 
 
     private void Awake()
@@ -26,8 +26,7 @@ public class JournalDropdown : MonoBehaviour
         toggle.onValueChanged.AddListener(HandleDropdownClick);
         minHeight = dropdownRectTransform.sizeDelta.y;
 
-        SetHeaderText();
-        CreateDropdownButtons();
+        //CreateDropdownButtons();
     }
 
     private void HandleDropdownClick(bool _open)
@@ -45,42 +44,59 @@ public class JournalDropdown : MonoBehaviour
 
     }
 
-    private void CreateDropdownButtons()
+    private float Height(bool _open)
     {
-        for(int i = 0; i < LessonsInScene.Count; i++)
+        float _height = 0;
+        _height = ButtonsContainer.gameObject.GetComponent<VerticalLayoutGroup>().preferredHeight
+            * (_open ? 1f : 0f) + minHeight;
+        return _height;
+    }
+
+    /*public void CreateDropdownButtons()
+    {
+        for (int i = 0; i < LessonsInScene.Count; i++)
         {
             DropdownButtonPrefab.GetComponentInChildren<JournalDropdownButton>()
                 .SetValues(LessonsInScene[i].LessonId, LessonsInScene[i].HeaderText, LessonsInScene[i].ContentText);
 
             Instantiate(DropdownButtonPrefab, ButtonsContainer.transform);
         }
-        SetLessonsFoundText(0);
-    }
+        SetLessonsFoundText(0, LessonsInScene.Count);
+    }*/
 
-    private void SetHeaderText()
+    public void CreateDropdownButtons(List<LessonItem> _lessonItems)
     {
-        DropdownHeaderText.text = SceneManager.GetSceneByBuildIndex(SceneIndex).name;
-        //SceneManager.GetSceneAt(SceneIndex).name;
+        for (int i = 0; i < _lessonItems.Count; i++)
+        {
+            DropdownButtonPrefab.GetComponentInChildren<JournalDropdownButton>()
+                .SetValues(_lessonItems[i].LessonId, _lessonItems[i].HeaderText, _lessonItems[i].ContentText);
+
+            Instantiate(DropdownButtonPrefab, ButtonsContainer.transform);
+        }
+        SetLessonsFoundText(0, _lessonItems.Count);
     }
 
-    public void SetLessonsFoundText(int _value)
+
+    public void SetInitValues(int _sceneIndex, string _header, List<LessonItem> _lessonItems)
     {
-        LessonsFoundText.text = _value + "/" + LessonsInScene.Count;
+        SceneIndex = _sceneIndex;
+        DropdownHeaderText.text = _header;
+        LessonsInScene = _lessonItems.Count;
+        //CreateDropdownButtons(_lessonItems);
+
+        /*for (int i = 0; i < _lessonItems.Count; i++)
+        {
+            DropdownButtonPrefab.GetComponentInChildren<JournalDropdownButton>()
+                .SetValues(_lessonItems[i].LessonId, _lessonItems[i].HeaderText, _lessonItems[i].ContentText);
+
+            Instantiate(DropdownButtonPrefab, ButtonsContainer.transform);
+        }
+        SetLessonsFoundText(0, _lessonItems.Count);*/
     }
 
-    private float Height(bool _open)
+    public void SetLessonsFoundText(int _value, int _max)
     {
-        float _height = 0;
-        _height = ButtonsContainer.gameObject.GetComponent<VerticalLayoutGroup>().preferredHeight
-            * (_open ? 1f:0f) + minHeight;
-        return _height * 1.1f;
+        LessonsFoundText.text = _value + "/" + _max;
     }
-}
 
-[Serializable]
-public struct LessonItem
-{
-    public int LessonId;
-    public string HeaderText;
-    [TextArea(15, 20)] public string ContentText;
 }

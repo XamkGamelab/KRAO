@@ -426,13 +426,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 3716280782540364516}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91eed9d4d2842df4d94e111187e801b0, type: 3}
+  m_Script: {fileID: 11500000, guid: ad9897f20c250f24c81a8472a6c38767, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneImage: {fileID: 5919213064917868783}
-  headerText: {fileID: 4669168883606413912}
-  lessonsFoundText: {fileID: 1282730690618299214}
-  checkmark: {fileID: 6664969769638047395}
+  OpenSceneButton: {fileID: 7120092091015251213}
+  SceneElementImage: {fileID: 5919213064917868783}
+  SceneHeaderText: {fileID: 4669168883606413912}
+  ScenesFoundText: {fileID: 1282730690618299214}
+  CheckMark: {fileID: 6664969769638047395}
 --- !u!1 &5049109997416515691
 GameObject:
   m_ObjectHideFlags: 0

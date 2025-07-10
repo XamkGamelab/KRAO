@@ -6,12 +6,12 @@ public class JournalDropdownButton : MonoBehaviour
     private Button journalButton => GetComponent<Button>();
     private JournalWindow journal => FindAnyObjectByType<JournalWindow>();
     private Text headerText => GetComponentInChildren<Text>();
-    public string contentText;
+    private string contentText;
     public int LessonId;
 
     public Image CheckMarkImg;
 
-    private void Awake()
+    private void Start()
     {
         journalButton.interactable = false;
         CheckMarkImg.gameObject.SetActive(false);
