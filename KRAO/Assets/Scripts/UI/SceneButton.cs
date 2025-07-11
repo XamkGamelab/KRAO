@@ -7,7 +7,7 @@ public class SceneButton : MonoBehaviour
 {
     private Button button => GetComponent<Button>();
 
-    [SerializeField] private int sceneToLoadBuildIndex;
+    [SerializeField] public int sceneToLoadBuildIndex;
 
     private void Update()
     {

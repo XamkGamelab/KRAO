@@ -2,27 +2,24 @@ using Unity.Cinemachine;
 using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
-using System;
-
-/* The object that this script is connected to should have a Rigidbody
- * and the lesson object should have a collider as trigger
- */
+using UnityEngine.SceneManagement;
 
 public class LessonManager : MonoBehaviour
 {
-    private LessonProgressBar progressBar => FindFirstObjectByType<LessonProgressBar>();
-    private Journal journal => FindFirstObjectByType<Journal>();
-    private MenuManager menuManager => FindFirstObjectByType<MenuManager>();
+    //private LessonProgressBar progressBar => FindFirstObjectByType<LessonProgressBar>();
+    private JournalWindow journal => FindFirstObjectByType<JournalWindow>();
     private FocusView focusView => GameObject.FindWithTag("FocusView").GetComponent<FocusView>();
     private CinemachineCamera focusCamera => GameObject.FindWithTag("FocusView").GetComponent<CinemachineCamera>();
     private CinemachineOrbitalFollow orbitalFollow => GameObject.FindWithTag("FocusView").GetComponent<CinemachineOrbitalFollow>();
     private List<Lesson> lessons => FindObjectsByType<Lesson>(FindObjectsSortMode.None).ToList();
+    private LessonTracker lessonTracker => GetComponent<LessonTracker>();
+
     public LessonWindow lessonWindow => FindFirstObjectByType<LessonWindow>();
 
     private Lesson openLesson;
 
+    //private int foundLessons = 0;
 
-    private int foundLessons = 0;
 
     private void Start()
     {
@@ -37,8 +34,6 @@ public class LessonManager : MonoBehaviour
         openLesson = null;
         // Close FocusView
         focusView.ToggleFocusView();
-        // Close lesson text box (canvas)
-        menuManager.CloseWindow(lessonWindow.gameObject);
     }
 
     public void CloseLesson()
@@ -56,26 +51,21 @@ public class LessonManager : MonoBehaviour
         focusView.ToggleFocusView();
 
         // Open lesson text box (canvas)
-        menuManager.OpenWindow(lessonWindow.gameObject);
+        lessonWindow.OpenWindow();
 
         if (_lesson.NewLessonFound)
         {
-            foundLessons++;
+            //foundLessons++;
             AddLessonToJournal(_lesson);
-            UpdateProgressBar();
+            //UpdateProgressBar();
+            lessonTracker.AddLessonToTracker(SceneManager.GetActiveScene().buildIndex);
         }
     }
 
     private void AddLessonToJournal(Lesson _lesson)
     {
-        journal.AddNewLessonButton(_lesson.HeaderText, _lesson.ContentText);
-
+        journal.ActivateLesson(_lesson.LessonId);
         Debug.Log("Lesson added to journal");
-    }
-
-    private void UpdateProgressBar()
-    {
-        progressBar.ChangeSliderValue(foundLessons, lessons.Count);
     }
 
     private void SetFocus(Lesson _lesson)
@@ -91,4 +81,9 @@ public class LessonManager : MonoBehaviour
             orbitalFollow.Radius = 2f;
         }
     }
+
+    /*private void UpdateProgressBar()
+    {
+        progressBar.ChangeSliderValue(foundLessons, lessons.Count);
+    }*/
 }

@@ -6,14 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Demo_scene.unity
-    guid: b9a80bce1b291b947a55a7fea4900e1c
+    path: Assets/Scenes/MainMenuScene.unity
+    guid: 4421b0c0388f14548b872edb8a7d1971
   - enabled: 1
     path: Assets/Scenes/PlayerScene.unity
     guid: 476e9421c9b746b479339e07685077db
   - enabled: 1
+    path: Assets/Scenes/Demo_scene.unity
+    guid: b9a80bce1b291b947a55a7fea4900e1c
+  - enabled: 1
     path: Assets/Scenes/ViljamiScene.unity
     guid: 3c53c2090ae2c2047b1901dc7a63a023
+  - enabled: 1
+    path: Assets/Scenes/JessicaTestScene.unity
+    guid: e9c53f2f03b33a04c879a56e1a4ed83b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

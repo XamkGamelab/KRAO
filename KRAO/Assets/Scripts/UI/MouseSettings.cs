@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class MouseSettings : MonoBehaviour
@@ -10,8 +11,20 @@ public class MouseSettings : MonoBehaviour
 
     private void Awake()
     {
-        SetMouseSensitivity(mouseSensitivitySlider.value);
         mouseSensitivitySlider.onValueChanged.AddListener(SetMouseSensitivity);
+    }
+
+    private void Update()
+    {
+        // Disable focus view camera movement when over EventSystem object
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            focusView.SetFocusViewCameraSensitivity(0);
+        }
+        else
+        {
+            focusView.SetFocusViewCameraSensitivity(mouseSensitivitySlider.value);
+        }
     }
 
     private void SetMouseSensitivity(float _sensitivity)

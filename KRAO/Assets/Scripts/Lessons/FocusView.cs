@@ -43,6 +43,8 @@ public class FocusView : MonoBehaviour
         cinemachineInput.Controllers[0].Input.Gain = _sensitivity;
         // Look Orbit Y
         cinemachineInput.Controllers[1].Input.Gain = -_sensitivity;
+        // Zoom
+        cinemachineInput.Controllers[2].Input.Gain = -_sensitivity;
     }
 
     private void ResetOribtalCameraValues()

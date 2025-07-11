@@ -1,105 +1,41 @@
+using NUnit.Framework;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
-    // Window GameObjects
-    public GameObject MainMenuWindow;
-    public GameObject SettingsWindow;
-    public GameObject CreditsWindow;
-    public GameObject SceneSelectionWindow;
+    public List<Window> windows => FindObjectsByType<Window>(FindObjectsSortMode.None).ToList();
+    //private PlayerManager playerManager => GameObject.FindWithTag("Player").GetComponent<PlayerManager>();
 
-    // Buttons
-    public Button OpenSettingsButton;
-    public Button CloseSettingsButton;
-    
-    public Button OpenCreditsButton;
-    public Button CloseCreditsButton;
-
-    public Button OpenSceneSelectionButton;
-    public Button CloseSceneSelectionButton;
-    public Button OpenSampleSceneButton;
-    public Button OpenJessicaTestSceneButton;
-
-    //private void Awake()
-    //{
-    //    // Add listeners to buttons
-    //    OpenSettingsButton.onClick.AddListener(HandleOpenSettingsButtonClicked);
-    //    CloseSettingsButton.onClick.AddListener(HandleCloseSettingsButtonClicked);
-
-    //    OpenCreditsButton.onClick.AddListener(HandleOpenCreditsButtonClicked);
-    //    CloseCreditsButton.onClick.AddListener(HandleCloseCreditsButtonClicked);
-
-    //    OpenSceneSelectionButton.onClick.AddListener(HandleOpenSceneSelectionButtonClicked);
-    //    CloseSceneSelectionButton.onClick.AddListener(HandleCloseSceneSelectionButtonClicked);
-    //    OpenSampleSceneButton.onClick.AddListener(HandleOpenSampleSceneButtonClicked);
-    //    OpenJessicaTestSceneButton.onClick.AddListener(HandleOpenJessicaTestSceneButtonClicked);
-    //}
-
-
-
-
-    public void OpenWindow(GameObject window)
+    private void Start()
     {
-        window.GetComponent<CanvasGroup>().interactable = true;
-        window.GetComponent<CanvasGroup>().alpha = 1;
-        window.GetComponent<CanvasGroup>().blocksRaycasts = true;
+        Window.OnWindowOpened += HandleWindowOpened;
     }
 
-    public void CloseWindow(GameObject window)
+    private void HandleWindowOpened(Window _window)
     {
-        window.GetComponent<CanvasGroup>().interactable = false;
-        window.GetComponent<CanvasGroup>().alpha = 0;
-        window.GetComponent<CanvasGroup>().blocksRaycasts = false;
+        windows.ForEach(window => window.isOpen = false);
+        _window.isOpen = true;
+        windows.ForEach(window => ToggleWindow(window));
+
+        //playerManager.ToggleControllerState(false);
     }
 
-    private void HandleOpenSettingsButtonClicked()
+    public void ToggleWindow(Window _window, bool _open)
     {
-        OpenWindow(SettingsWindow);
-        CloseWindow(MainMenuWindow);
+        _window.CanvasGroup.interactable = _open;
+        _window.CanvasGroup.alpha = _open ? 1f : 0f;
+        _window.CanvasGroup.blocksRaycasts = _open;
     }
 
-    private void HandleCloseSettingsButtonClicked()
+    public void ToggleWindow(Window _window)
     {
-        OpenWindow(MainMenuWindow);
-        CloseWindow(SettingsWindow);
-    }
-
-    private void HandleOpenSceneSelectionButtonClicked()
-    {
-        OpenWindow(SceneSelectionWindow);
-        CloseWindow(MainMenuWindow);
-    }
-
-    private void HandleCloseSceneSelectionButtonClicked()
-    {
-        OpenWindow(MainMenuWindow);
-        CloseWindow(SceneSelectionWindow);
-    }
-
-    private void HandleOpenSampleSceneButtonClicked()
-    {
-        CloseWindow(MainMenuWindow);
-        SceneManager.LoadScene("SampleScene");
-    }
-
-    private void HandleOpenJessicaTestSceneButtonClicked()
-    {
-        CloseWindow(MainMenuWindow);
-        SceneManager.LoadScene("JessicaTestScene");
-    }
-
-    private void HandleOpenCreditsButtonClicked()
-    {
-        OpenWindow(CreditsWindow);
-        CloseWindow(MainMenuWindow);
-    }
-
-    private void HandleCloseCreditsButtonClicked()
-    {
-        OpenWindow(MainMenuWindow);
-        CloseWindow(CreditsWindow);
+        _window.CanvasGroup.interactable = _window.isOpen;
+        _window.CanvasGroup.alpha = _window.isOpen ? 1f : 0f;
+        _window.CanvasGroup.blocksRaycasts = _window.isOpen;
     }
 }

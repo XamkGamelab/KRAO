@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Journal : MonoBehaviour
+public class Journal : Window
 {
     private GameObject LessonButtonsContainer => GetComponentInChildren<VerticalLayoutGroup>().gameObject;
 
