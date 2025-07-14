@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 79004468627430003}
   - component: {fileID: 6287259496276222371}
   - component: {fileID: 4657526040522682380}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: JournalWindow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,51 +75,91 @@ MonoBehaviour:
   - SceneHeader: "P\xF6lkynvaihtoty\xF6maa"
     SceneIndex: 2
     lessons:
-    - HeaderText: 
-      LessonId: 0
-      ContentText: 
-    - HeaderText: 
-      LessonId: 0
-      ContentText: 
-    - HeaderText: 
-      LessonId: 0
-      ContentText: 
-    - HeaderText: 
-      LessonId: 0
-      ContentText: 
-    - HeaderText: 
-      LessonId: 0
-      ContentText: 
-    - HeaderText: 
-      LessonId: 0
-      ContentText: 
-    - HeaderText: 
-      LessonId: 0
-      ContentText: 
-    - HeaderText: 
-      LessonId: 0
-      ContentText: 
-    - HeaderText: 
-      LessonId: 0
-      ContentText: 
-    - HeaderText: 
-      LessonId: 0
-      ContentText: 
-    - HeaderText: 
-      LessonId: 0
-      ContentText: 
-    - HeaderText: 
-      LessonId: 0
-      ContentText: 
-    - HeaderText: 
-      LessonId: 0
-      ContentText: 
-    - HeaderText: 
-      LessonId: 0
-      ContentText: 
-    - HeaderText: 
-      LessonId: 0
-      ContentText: 
+    - HeaderText: "Rataty\xF6turvallisuusp\xE4tevyys"
+      LessonId: 1
+      ContentText: "Ennen valtion rataverkolla ty\xF6skentely\xE4 sinulla tulee olla
+        v\xE4hint\xE4\xE4n rataty\xF6turvallisuusp\xE4tevyys."
+    - HeaderText: "Vanhat ratap\xF6lkyt"
+      LessonId: 2
+      ContentText: "Puisia ratap\xF6lkkyj\xE4 korvataan betonisilla p\xF6lkyill\xE4.
+        Betoninen ratap\xF6lkky mahdollistaa suurempien kuten 25t akselipainoisten
+        junien ajattamisen. Betoniratap\xF6lkkyj\xE4 voi olla jopa 1640 kappaletta
+        kilometrill\xE4."
+    - HeaderText: "Rataty\xF6n suojaulottumat (RSU)"
+      LessonId: 3
+      ContentText: "Rataty\xF6n suojaulottuma (RSU) on pitkin raidetta ulottuva tila,
+        jonka sis\xE4puolella ty\xF6skentely edellytt\xE4\xE4 rataty\xF6luvan tai
+        voidaan tehd\xE4 tietyin edellytyksin esim turvamiestoiminnalla. Yksiraiteisella
+        radalla RSU on 2,5m l\xE4himm\xE4st\xE4 kiskosta ulosp\xE4in tai l\xE4himp\xE4\xE4n
+        pylv\xE4slinjan sis\xE4reunaan tai kiinte\xE4n rakenteeseen, kuten aita tai
+        melueste. "
+    - HeaderText: "Ty\xF6koneet ja liikkuva kalusto"
+      LessonId: 4
+      ContentText: "Kun ty\xF6kone tai liikkuva kalusto ty\xF6skentelee niin, ett\xE4
+        se, sen osa tai taakka ulottuu rataty\xF6n suojaulottuman sis\xE4puolelle
+        edes hetkeksi, tulee ty\xF6h\xF6n olla rataty\xF6lupa. Liikkuminen ja ty\xF6skentely
+        rataty\xF6n suojaulottuman sis\xE4puolella on sallittu vasta kun rataty\xF6vastaava
+        on antanut luvan."
+    - HeaderText: Raidesepeli
+      LessonId: 5
+      ContentText: "Sepeli on raidepohjalle asennettava materiaali, joka tarjoaa
+        tasaisen ja vakaan alustan junaliikenteelle. Sen rakeinen koostumus antaa
+        veden virrata ja vaimentaa t\xE4rin\xE4\xE4, parantaen raiteiden kest\xE4vyytt\xE4
+        ja mukavuutta. Raidesepelin koko on 32-64 mm"
+    - HeaderText: "Henkil\xF6kohtaiset varusteet"
+      LessonId: 6
+      ContentText: "Rautatiealueella liikkuvalla tulee olla keltainen huomiovaatetus
+        ja asianmukaiset suojavarusteet. Jokaisella rautatiealueella ty\xF6skentelev\xE4ll\xE4
+        ja liikkuvalla henkil\xF6ll\xE4 pit\xE4\xE4 olla n\xE4kyvill\xE4 henkil\xF6n
+        yksil\xF6iv\xE4 kuvallinen henkil\xF6tunniste."
+    - HeaderText: "Uudet ratap\xF6lkyt"
+      LessonId: 7
+      ContentText: "Betoniset ratap\xF6lkyt tarjoavat kest\xE4v\xE4n ja pitk\xE4ik\xE4isen
+        ratkaisun rautatieverkostoihin. Niiden muotoilu ja materiaali parantavat
+        raiteiden vakautta ja v\xE4hent\xE4\xE4 huoltotarvetta, tuoden samalla tehokkuutta
+        ja kest\xE4vyytt\xE4 liikenteeseen."
+    - HeaderText: Turvamies (T-mies)
+      LessonId: 8
+      ContentText: "Turvamiestoiminnalla turvataan ty\xF6t\xE4, joka suoritetaan
+        RSUn sis\xE4ll\xE4 jalkaisin. Turvamiest\xE4 k\xE4ytet\xE4\xE4n my\xF6s turvaamaan
+        koneiden ty\xF6skentely\xE4 RSUn ulkopuolella. Mik\xE4li ty\xF6t\xE4 ei voi
+        toteuttaa turvamiehen turvaamana, tulee ty\xF6 toteuttaa rataty\xF6luvalla."
+    - HeaderText: Aukean tilan ulottuma (ATU)
+      LessonId: 9
+      ContentText: "Radan aukea tila on raidetta ymp\xE4r\xF6iv\xE4\xE4 tilaa, joka
+        ei saa sis\xE4lt\xE4\xE4 kiinteit\xE4 rakenteita tai laitteita. ATU-mitat
+        ovat minimimittoja, jotka on otettava huomioon suunnittelun ja rakentamisen
+        aikana huomioiden tavoitenopeudet ja raiteen mahdolliset kallistuskulmat."
+    - HeaderText: "S\xE4hk\xF6veturi"
+      LessonId: 10
+      ContentText: "Rataverkolla on k\xE4yt\xF6ss\xE4 s\xE4hk\xF6vetureita, jotka
+        liikkuvat l\xE4hes \xE4\xE4nett\xF6m\xE4sti. S\xE4hk\xF6vetureita voidaan
+        k\xE4ytt\xE4\xE4 sek\xE4 tavara- ett\xE4 matkustajaliikenteess\xE4."
+    - HeaderText: Opastin
+      LessonId: 11
+      ContentText: "Opastin on laite, jolla annetaan kuljettajalle opasteita lamppujen
+        ja v\xE4rilasien muodostamalla opastinkuviolla."
+    - HeaderText: Baliisi
+      LessonId: 12
+      ContentText: "Baliisi on JKV-ratalaite, joka l\xE4hett\xE4\xE4 JKV-veturilaitteen
+        antennilta saamallaan energialla muistiinsa ohjelmoidun tai tiedonsiirtokaapelin
+        kautta l\xE4hetetyn baliisisanoman JKV-veturilaitteen antennille. "
+    - HeaderText: Akselinlaskija
+      LessonId: 13
+      ContentText: "Raiteen vapaanaolon valvontaj\xE4rjestelm\xE4, joka perustuu
+        osuuden p\xE4iss\xE4 olevien laskentapisteiden v\xE4lill\xE4 olevien akselien
+        lukum\xE4\xE4r\xE4\xE4n. "
+    - HeaderText: Raidevirtapiiri
+      LessonId: 14
+      ContentText: "Raiteen vapaanaolon valvontaj\xE4rjestelm\xE4, joka perus-tuu
+        eristysjatkosten rajaamaan raideosuuteen, jolla kiskoilla kulkeva yksikk\xF6
+        havaitaan akselien muodostaman virtapiirin shuntatessa osuuden p\xE4\xE4h\xE4n
+        kytketyn vastaanottimen sis\xE4\xE4ntulon."
+    - HeaderText: Raiteensulku
+      LessonId: 15
+      ContentText: "Raiteensulku on rautateill\xE4 k\xE4ytett\xE4v\xE4 turvalaite,
+        jonka tarkoitus on turvata p\xE4\xE4raiteen junaliikenne est\xE4m\xE4ll\xE4
+        sivuraiteelta karkaavia vaunuja p\xE4\xE4sem\xE4st\xE4 luvatta p\xE4\xE4raiteelle."
   - SceneHeader: Toimisto
     SceneIndex: 3
     lessons:
@@ -146,7 +186,7 @@ GameObject:
   - component: {fileID: 7633083991311545726}
   - component: {fileID: 1381658916542811791}
   - component: {fileID: 4716405074594035640}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: JournalLesson
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -225,7 +265,7 @@ GameObject:
   - component: {fileID: 436655487398824748}
   - component: {fileID: 1332078957599333974}
   - component: {fileID: 3770735647919012197}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: ScrollBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -316,7 +356,7 @@ GameObject:
   - component: {fileID: 7639657469677600546}
   - component: {fileID: 6438816284680250362}
   - component: {fileID: 2918771983251428986}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -391,7 +431,7 @@ GameObject:
   - component: {fileID: 737802535473779844}
   - component: {fileID: 5528106006154530061}
   - component: {fileID: 8813038182770667633}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Text (Legacy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -470,7 +510,7 @@ GameObject:
   - component: {fileID: 985754278184477337}
   - component: {fileID: 5689804212785122125}
   - component: {fileID: 6707321468715013447}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -543,7 +583,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2483534813856014527}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Sliding Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -581,7 +621,7 @@ GameObject:
   - component: {fileID: 3447539559567514546}
   - component: {fileID: 6314248361228671384}
   - component: {fileID: 3920390038651615918}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Header
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -657,7 +697,7 @@ GameObject:
   - component: {fileID: 2914379066543965321}
   - component: {fileID: 5079760850870393101}
   - component: {fileID: 2586304935370566171}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: HeaderText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -736,7 +776,7 @@ GameObject:
   - component: {fileID: 4977016755114814425}
   - component: {fileID: 1274917752937522621}
   - component: {fileID: 6460424800569815994}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Navigation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -814,7 +854,7 @@ GameObject:
   - component: {fileID: 9089866425102279812}
   - component: {fileID: 2560616129645777566}
   - component: {fileID: 5643238002604019418}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Text (Legacy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -894,7 +934,7 @@ GameObject:
   - component: {fileID: 4136825113075997106}
   - component: {fileID: 3094712652550792752}
   - component: {fileID: 4188655652835417012}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: LessonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -917,7 +957,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 415.645, y: -115.97}
+  m_AnchoredPosition: {x: 415.645, y: -489.97}
   m_SizeDelta: {x: 831.29, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4136825113075997106
@@ -1005,7 +1045,7 @@ GameObject:
   - component: {fileID: 4033093612053163086}
   - component: {fileID: 8843813059982660177}
   - component: {fileID: 7520104104243951247}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1080,7 +1120,7 @@ GameObject:
   - component: {fileID: 2641794470683230971}
   - component: {fileID: 4696912494850940356}
   - component: {fileID: 3764724860259130550}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1156,7 +1196,7 @@ GameObject:
   - component: {fileID: 3746365136585131426}
   - component: {fileID: 1136062445630898373}
   - component: {fileID: 3441904085888971848}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: NextLessonButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1277,7 +1317,7 @@ GameObject:
   - component: {fileID: 1836109212524690623}
   - component: {fileID: 449131937104033863}
   - component: {fileID: 4627937033767865930}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1352,7 +1392,7 @@ GameObject:
   - component: {fileID: 8334758143001732061}
   - component: {fileID: 1535405274728124939}
   - component: {fileID: 5331168920347093066}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Text (Legacy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1432,7 +1472,7 @@ GameObject:
   - component: {fileID: 7875653473206399126}
   - component: {fileID: 6867307676773751465}
   - component: {fileID: 4546490709125245699}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Scrollbar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1555,7 +1595,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5932369720528947604}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Sliding Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1593,7 +1633,7 @@ GameObject:
   - component: {fileID: 1402098155444408801}
   - component: {fileID: 7359945467480452366}
   - component: {fileID: 5377764477672085856}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: JournalHeaderText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1672,7 +1712,7 @@ GameObject:
   - component: {fileID: 1307161759752974390}
   - component: {fileID: 1500885081167576391}
   - component: {fileID: 1106673039426596814}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1749,7 +1789,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2590548270710590610}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1789,7 +1829,7 @@ GameObject:
   - component: {fileID: 224876841585529310}
   - component: {fileID: 8625843167231521363}
   - component: {fileID: 3333184115180054117}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: ScrollBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1873,7 +1913,7 @@ GameObject:
   - component: {fileID: 1252114182801210400}
   - component: {fileID: 5165719816146862949}
   - component: {fileID: 2948400737493582552}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: ExitButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1994,7 +2034,7 @@ GameObject:
   - component: {fileID: 4876507366470501159}
   - component: {fileID: 8359673342712405401}
   - component: {fileID: 4290219491881714248}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Scrollbar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2102,8 +2142,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3764724860259130550}
   m_HandleRect: {fileID: 2641794470683230971}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 1
+  m_Value: 0.5
+  m_Size: 0.5017944
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2120,7 +2160,7 @@ GameObject:
   - component: {fileID: 883974075271417696}
   - component: {fileID: 6421614071524165749}
   - component: {fileID: 4159129867024426187}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: PreviousLessonButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2242,7 +2282,7 @@ GameObject:
   - component: {fileID: 7168483821532991681}
   - component: {fileID: 2830018420915875723}
   - component: {fileID: 7159313072573137759}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: JournalDropdowns
   m_TagString: Untagged
   m_Icon: {fileID: 0}

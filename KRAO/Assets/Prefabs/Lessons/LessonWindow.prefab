@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2626723469985439375}
   - component: {fileID: 4994659140537870164}
   - component: {fileID: 4492942760294141760}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: InteractionPromptText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 6875424519746955975}
   - component: {fileID: 6287422762808398910}
   - component: {fileID: 4994909956595169115}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: ScrollableBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -227,7 +227,7 @@ GameObject:
   - component: {fileID: 6514689106677219190}
   - component: {fileID: 8875647030843161385}
   - component: {fileID: 1568888941960772719}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Scrollbar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -353,7 +353,7 @@ GameObject:
   - component: {fileID: 1524914667773562693}
   - component: {fileID: 3786157497957725251}
   - component: {fileID: 6930434335284655400}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: HeaderText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -453,7 +453,7 @@ GameObject:
   - component: {fileID: 2026845704170140235}
   - component: {fileID: 8014996521574519578}
   - component: {fileID: 7347010609551852941}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -601,7 +601,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4676791215966154722}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Sliding Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -639,7 +639,7 @@ GameObject:
   - component: {fileID: 8265073714802403851}
   - component: {fileID: 6183281674284489977}
   - component: {fileID: 8373487982370853131}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -714,7 +714,7 @@ GameObject:
   - component: {fileID: 3892120505691992544}
   - component: {fileID: 586299164808854094}
   - component: {fileID: 7639588907742107403}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ExitButtonContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -790,7 +790,7 @@ GameObject:
   - component: {fileID: 6854223561211849153}
   - component: {fileID: 3926184449059019835}
   - component: {fileID: 3661331432454370420}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: LessonWindow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -857,7 +857,7 @@ GameObject:
   - component: {fileID: 4653817257640347355}
   - component: {fileID: 4977160077447314946}
   - component: {fileID: 795413406406047075}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Text (Legacy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -937,7 +937,7 @@ GameObject:
   - component: {fileID: 2471090990138343917}
   - component: {fileID: 6552759678762192923}
   - component: {fileID: 5588739048588301048}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ExitLessonButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1070,7 +1070,7 @@ GameObject:
   - component: {fileID: 826550849324028773}
   - component: {fileID: 9011008320132562590}
   - component: {fileID: 4439717236791356149}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}

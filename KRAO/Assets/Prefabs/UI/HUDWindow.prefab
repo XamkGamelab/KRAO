@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5403475660525305695}
   - component: {fileID: 1990552617715340306}
   - component: {fileID: 4766259202824571421}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: HUDWindow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,7 +79,7 @@ GameObject:
   - component: {fileID: 1906367960230057982}
   - component: {fileID: 6796681721827670218}
   - component: {fileID: 4330580370563691197}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: ControlsGuide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154,7 +154,7 @@ GameObject:
   - component: {fileID: 4196434802228161910}
   - component: {fileID: 58220778723466766}
   - component: {fileID: 4422899900321695745}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: PauseButtonContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -231,7 +231,7 @@ GameObject:
   - component: {fileID: 742513068648606472}
   - component: {fileID: 1064410237518331221}
   - component: {fileID: 6000180380221224904}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: PauseButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -347,6 +347,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5403475660525305695}
     m_Modifications:
+    - target: {fileID: 2299132672826789146, guid: 2eb1dc0b7947f0449b8c8922f2cf2379, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3266890526079256925, guid: 2eb1dc0b7947f0449b8c8922f2cf2379, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579278490237736520, guid: 2eb1dc0b7947f0449b8c8922f2cf2379, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4881929827128316003, guid: 2eb1dc0b7947f0449b8c8922f2cf2379, type: 3}
       propertyPath: m_Type
       value: 1
@@ -355,13 +367,33 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 4980946189020204852, guid: 2eb1dc0b7947f0449b8c8922f2cf2379, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5142719227292187576, guid: 2eb1dc0b7947f0449b8c8922f2cf2379, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7007058536005098432, guid: 2eb1dc0b7947f0449b8c8922f2cf2379, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7426046908361047645, guid: 2eb1dc0b7947f0449b8c8922f2cf2379, type: 3}
       propertyPath: m_Name
       value: LessonProgressBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 7426046908361047645, guid: 2eb1dc0b7947f0449b8c8922f2cf2379, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7784012098218713346, guid: 2eb1dc0b7947f0449b8c8922f2cf2379, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8679940747529086824, guid: 2eb1dc0b7947f0449b8c8922f2cf2379, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8805345176301243081, guid: 2eb1dc0b7947f0449b8c8922f2cf2379, type: 3}
       propertyPath: m_Pivot.x
