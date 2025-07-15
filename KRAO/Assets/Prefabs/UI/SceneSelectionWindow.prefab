@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8981389747282662744}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Sliding Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 3270406587917984723}
   - component: {fileID: 1978755808409222130}
   - component: {fileID: 2174636352035853507}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 8997667584491815562}
   - component: {fileID: 4995421195310569811}
   - component: {fileID: 2189764319834356226}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: ScrollBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -214,7 +214,7 @@ GameObject:
   - component: {fileID: 8487623202634617164}
   - component: {fileID: 9105141638680353719}
   - component: {fileID: 7927648397287651978}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: SceneSelectionHeaderText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -293,7 +293,7 @@ GameObject:
   - component: {fileID: 422802133794292412}
   - component: {fileID: 301110092949384547}
   - component: {fileID: 3846374551078434484}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: SceneSelectionHeader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -370,7 +370,7 @@ GameObject:
   - component: {fileID: 7344115565686419198}
   - component: {fileID: 1436552005347488731}
   - component: {fileID: 3827798483491506739}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: CloseSceneSelectionButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -489,7 +489,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7798775368136597241}
   - component: {fileID: 1855976027399526674}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -539,7 +539,7 @@ GameObject:
   - component: {fileID: 6452773309472309396}
   - component: {fileID: 7295428560722774937}
   - component: {fileID: 4176039389697662649}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Scrollbar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -664,7 +664,7 @@ GameObject:
   - component: {fileID: 8836680519398450344}
   - component: {fileID: 38531327067551145}
   - component: {fileID: 4993375692591061529}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Text (Legacy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -744,7 +744,7 @@ GameObject:
   - component: {fileID: 4643144032275872216}
   - component: {fileID: 3216794071498378013}
   - component: {fileID: 3527810922269259239}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: SceneElements
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -845,7 +845,7 @@ GameObject:
   - component: {fileID: 4970138264909963579}
   - component: {fileID: 3202320110106947905}
   - component: {fileID: 5417663336556527794}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: SceneSelectionWindow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -922,7 +922,7 @@ GameObject:
   - component: {fileID: 8708884627405537979}
   - component: {fileID: 3761381689304103578}
   - component: {fileID: 2776423298285847542}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
