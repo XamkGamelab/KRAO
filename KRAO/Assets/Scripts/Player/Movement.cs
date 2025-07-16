@@ -9,6 +9,7 @@ public class Movement : MonoBehaviour
 
     [SerializeField] private float movementSpeed = 7.5f;
     [SerializeField] private float movementDamping = 0.06f;
+    [SerializeField] private float movementDampingWeb = 0.375f;
     [SerializeField] private float breakForce = 1.5f;
     private InputAction move;
     private Vector3 movement = Vector3.zero;
@@ -18,6 +19,10 @@ public class Movement : MonoBehaviour
     private void Start()
     {
         move = InputSystem.actions.FindAction("Move");
+
+        #if !UNITY_EDITOR && UNITY_WEBGL
+            movementDamping = movementDampingWeb = 0.375f;
+        #endif
     }
 
     private void Update()
