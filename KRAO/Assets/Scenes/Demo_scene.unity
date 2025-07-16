@@ -15409,6 +15409,7 @@ MonoBehaviour:
   FocusPoints:
   - FocusTransform: {fileID: 451965421}
     Radius: 3
+  LessonId: 2
   HeaderText: "Vanhat ratap\xF6lkyt"
   ContentText: "Vanhoja puisia ratap\xF6lkkyj\xE4 korvataan betonisilla p\xF6lkyill\xE4.\n\nBetoninen
     ratap\xF6lkky mahdollistaa suurempien junien, kuten 25t akselipainoisten, ajattamisen.
@@ -15591,6 +15592,7 @@ MonoBehaviour:
   FocusPoints:
   - FocusTransform: {fileID: 363213072}
     Radius: 1.5
+  LessonId: 11
   HeaderText: Opastin
   ContentText: "Opastin on laite, jolla annetaan kuljettajalle opasteita lamppujen
     ja v\xE4rilasien muodostamalla opastinkuviolla.\n\n[Missing feature: the possibility
@@ -18675,6 +18677,7 @@ MonoBehaviour:
   FocusPoints:
   - FocusTransform: {fileID: 620426996}
     Radius: 1.5
+  LessonId: 15
   HeaderText: Raiteensulku
   ContentText: "Raiteensulku on rautateill\xE4 k\xE4ytett\xE4v\xE4 turvalaite, jonka
     tarkoitus on turvata p\xE4\xE4raiteen junaliikenne est\xE4m\xE4ll\xE4 sivuraiteelta
@@ -23715,6 +23718,7 @@ MonoBehaviour:
   FocusPoints:
   - FocusTransform: {fileID: 29850226}
     Radius: 1.5
+  LessonId: 1
   HeaderText: "Rataty\xF6turvallisuusp\xE4tevyys"
   ContentText: "Ennen valtion rataverkolla ty\xF6skentely\xE4 sinulla tulee olla
     v\xE4hint\xE4\xE4n rataty\xF6turvallisuusp\xE4tevyys."
@@ -27557,6 +27561,7 @@ MonoBehaviour:
   FocusPoints:
   - FocusTransform: {fileID: 1947922211}
     Radius: 1.25
+  LessonId: 8
   HeaderText: Turvamies (T-mies)
   ContentText: "Turvamiestoiminnalla turvataan ty\xF6t\xE4, joka suoritetaan RSU:n
     sis\xE4ll\xE4 jalkaisin. Turvamiest\xE4 k\xE4ytet\xE4\xE4n my\xF6s turvaamaan
@@ -29155,6 +29160,7 @@ MonoBehaviour:
     Radius: 1
   - FocusTransform: {fileID: 2046327525}
     Radius: 0.5
+  LessonId: 13
   HeaderText: Akselinlaskija
   ContentText: "Raiteen vapaanaolon valvontaj\xE4rjestelm\xE4, joka perustuu osuuden
     p\xE4iss\xE4 olevien laskentapisteiden v\xE4lill\xE4 olevien akselien lukum\xE4\xE4r\xE4\xE4n."
@@ -38100,6 +38106,7 @@ MonoBehaviour:
   FocusPoints:
   - FocusTransform: {fileID: 1452692128}
     Radius: 1
+  LessonId: 14
   HeaderText: Raidevirtapiiri
   ContentText: "Raiteen vapaanaolon valvontaj\xE4rjestelm\xE4, joka perus-tuu eristysjatkosten
     rajaamaan raideosuuteen, jolla kiskoilla kulkeva yksikk\xF6 havaitaan akselien
@@ -38626,6 +38633,7 @@ MonoBehaviour:
   FocusPoints:
   - FocusTransform: {fileID: 2078390527}
     Radius: 1.5
+  LessonId: 6
   HeaderText: "Henkil\xF6kohtaiset varusteet"
   ContentText: "Rautatiealueella liikkuvalla tulee olla keltainen huomiovaatetus
     ja asianmukaiset suojavarusteet, jotka ovat:\n\n- Kyp\xE4r\xE4\n- Kuulosuojaimet\n-
@@ -43622,6 +43630,7 @@ MonoBehaviour:
   FocusPoints:
   - FocusTransform: {fileID: 1056970125}
     Radius: 2
+  LessonId: 5
   HeaderText: Raidesepeli
   ContentText: "Sepeli on raidepohjalle asennettava materiaali, joka tarjoaa tasaisen
     ja vakaan alustan junaliikenteelle. Sen rakeinen koostumus antaa veden virrata
@@ -46490,6 +46499,7 @@ MonoBehaviour:
   FocusPoints:
   - FocusTransform: {fileID: 1319612789}
     Radius: 1.5
+  LessonId: 12
   HeaderText: Baliisi
   ContentText: "Baliisi on JKV-ratalaite, joka l\xE4hett\xE4\xE4 JKV-veturilaitteen
     antennilta saamallaan energialla muistiinsa ohjelmoidun tai tiedonsiirtokaapelin
@@ -46660,6 +46670,7 @@ MonoBehaviour:
   FocusPoints:
   - FocusTransform: {fileID: 1814037215}
     Radius: 3.5
+  LessonId: 4
   HeaderText: "Ty\xF6koneet ja liikkuva kalusto"
   ContentText: "Kun ty\xF6kone tai liikkuva kalusto ty\xF6skentelee niin, ett\xE4
     se, sen osa tai taakka ulottuu rataty\xF6n suojaulottuman sis\xE4puolelle edes
@@ -48541,6 +48552,7 @@ MonoBehaviour:
   FocusPoints:
   - FocusTransform: {fileID: 1922013804}
     Radius: 3
+  LessonId: 7
   HeaderText: "Uudet ratap\xF6lkyt"
   ContentText: "Betoniset ratap\xF6lkyt tarjoavat kest\xE4v\xE4n ja pitk\xE4ik\xE4isen
     ratkaisun rautatieverkostoihin. Niiden muotoilu ja materiaali parantavat raiteiden
@@ -49069,6 +49081,7 @@ MonoBehaviour:
   FocusPoints:
   - FocusTransform: {fileID: 1954525968}
     Radius: 15
+  LessonId: 10
   HeaderText: "S\xE4hk\xF6veturi"
   ContentText: "Rataverkolla on k\xE4yt\xF6ss\xE4 s\xE4hk\xF6vetureita, jotka liikkuvat
     l\xE4hes \xE4\xE4nett\xF6m\xE4sti. S\xE4hk\xF6vetureita voidaan k\xE4ytt\xE4\xE4
@@ -49569,6 +49582,7 @@ MonoBehaviour:
   FocusPoints:
   - FocusTransform: {fileID: 37396762}
     Radius: 2.5
+  LessonId: 3
   HeaderText: "Rataty\xF6n suojaulottuma (RSU)"
   ContentText: "Rataty\xF6n suojaulottuma (RSU) on pitkin raidetta ulottuva tila,
     jonka sis\xE4puolella ty\xF6skentely edellytt\xE4\xE4 rataty\xF6luvan tai voidaan
@@ -51109,6 +51123,7 @@ MonoBehaviour:
   FocusPoints:
   - FocusTransform: {fileID: 344047714}
     Radius: 6
+  LessonId: 9
   HeaderText: Aukean tilan ulottuma (ATU)
   ContentText: "Radan aukea tila on raidetta ymp\xE4r\xF6iv\xE4\xE4 tilaa, joka ei
     saa sis\xE4lt\xE4\xE4 kiinteit\xE4 rakenteita tai laitteita. ATU-mitat ovat minimimittoja,

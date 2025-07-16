@@ -1,76 +1,144 @@
+using JetBrains.Annotations;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LessonTracker : MonoBehaviour
 {
-    public List<LessonScene> lessonScenes;
-
+    private LessonProgressBar progressBar => FindFirstObjectByType<LessonProgressBar>();
     private JournalWindow journalWindow => FindFirstObjectByType<JournalWindow>();
+    private SceneSelectionWindow sceneSelectionWindow => FindFirstObjectByType<SceneSelectionWindow>();
 
-    private void Start()
+    public List<SceneItem> SceneItems;
+    
+
+    #region private methods
+    private void Awake()
     {
-        //InitTrackers();
+        journalWindow.CreateDropdowns(SceneItems);
+        journalWindow.CreateDropdownButtons(SceneItems);
+        sceneSelectionWindow.CreateSceneElements(SceneItems);
+
+        InitTrackers();
+
+        SceneLoader.SetProgressBarValues += OnSceneChange;
+    }
+
+    private void OnSceneChange(int _sceneId)
+    {
+        if (_sceneId == 0)
+        {
+            return;
+        }
+        else
+        {
+            progressBar.ChangeSliderValue(SceneItemById(_sceneId).FoundLessons, SceneItemById(_sceneId).MaxLessons);
+        }
     }
 
     private void InitTrackers()
     {
-
-    }
-
-    public void AddLessonToTracker(int _sceneId)
-    {
-        for (int i = 0; i< lessonScenes.Count; i++)
+        for (int i = 0; i < SceneItems.Count; i++)
         {
-            if (lessonScenes[i].SceneId == _sceneId)
-            {
-                lessonScenes[i].FoundLessons++;
-                UpdateTrackers(_sceneId);
-            }
+            SceneItems[i].MaxLessons = SceneItems[i].lessons.Count;
+            
+            //journal
+            journalWindow.JournalDropdowns[i].SetLessonsFoundText(SceneItems[i].FoundLessons, SceneItems[i].MaxLessons);
+
+            //sceneselection
+            sceneSelectionWindow.SceneElements[i].SetLessonsFoundText(SceneItems[i].FoundLessons, SceneItems[i].MaxLessons);
         }
     }
 
     private void UpdateTrackers(int _sceneId)
     {
         //progressbar
-
-        //journal
-        for (int i=0;i< journalWindow.JournalDropdowns.Count; i++)
+        progressBar.ChangeSliderValue(SceneItemById(_sceneId).FoundLessons, SceneItemById(_sceneId).MaxLessons);
+        
+        for (int i = 0; i < SceneItems.Count; i++)
         {
-            if (journalWindow.JournalDropdowns[i].SceneIndex == _sceneId)
-            {
-                //journalWindow.JournalDropdowns[i].SetLessonsFoundText(GetLessonSceneBySceneId(_sceneId).FoundLessons);
-            }
+            //journal
+            journalWindow.JournalDropdowns[i].SetLessonsFoundText(SceneItems[i].FoundLessons, SceneItems[i].MaxLessons);
+
+            //sceneselection
+            sceneSelectionWindow.SceneElements[i].SetLessonsFoundText(SceneItems[i].FoundLessons, SceneItems[i].MaxLessons);
         }
-        //sceneselection
     }
 
-    private LessonScene GetLessonSceneBySceneId(int _id)
+    private SceneItem SceneItemById(int _sceneId)
     {
-        LessonScene scene = null;
+        SceneItem scene = null;
 
-        for (int i = 0; i < lessonScenes.Count; i++)
+        for (int i = 0; i < SceneItems.Count; i++)
         {
-            if (lessonScenes[i].SceneId == _id)
+            if (SceneItems[i].SceneIndex == _sceneId)
             {
-                scene = lessonScenes[i];
+                scene = SceneItems[i];
             }
         }
         return scene;
     }
+    #endregion
 
-    private int LessonsInScene(int _sceneId)
+    #region public methods
+    public LessonItem LessonItemById(int _lessonId)
     {
+        LessonItem _lessonItem = null;
 
+        for (int i = 0; i < SceneItems.Count; i++)
+        {
+            if (SceneItems[i].SceneIndex == SceneManager.GetActiveScene().buildIndex)
+            {
+                for (int j = 0; j < SceneItems[i].lessons.Count; j++)
+                {
+                    if (SceneItems[i].lessons[j].LessonId == _lessonId)
+                    {
+                        _lessonItem = SceneItems[i].lessons[j];
+                    }
+                }
+            }
+        }
 
-        return 0;
+        return _lessonItem;
     }
+
+    public void AddLessonToTracker(int _sceneId)
+    {
+        for (int i = 0; i < SceneItems.Count; i++)
+        {
+            if (SceneItems[i].SceneIndex == _sceneId)
+            {
+                SceneItems[i].FoundLessons++;
+                UpdateTrackers(_sceneId);
+            }
+        }
+    }
+
+    public void SetProgressBarValue(int _sceneId)
+    {
+        progressBar.ChangeSliderValue(SceneItemById(_sceneId).FoundLessons, SceneItemById(_sceneId).MaxLessons);
+    }
+    #endregion
 }
 
 [Serializable]
-public class LessonScene
+public class SceneItem
 {
-    public int SceneId;
-    public int FoundLessons = 0;
-    //public int MaxLessons;
+    public string SceneHeader;
+    public int SceneIndex;
+    public Image SceneImage;
+    public List<LessonItem> lessons;
+    public int FoundLessons { get; set; } = 0;
+    public int MaxLessons { get; set; }
+}
+
+[Serializable]
+public class LessonItem
+{
+    public string HeaderText;
+    public int LessonId;
+    [TextArea(15, 15)] public string ContentText;
 }

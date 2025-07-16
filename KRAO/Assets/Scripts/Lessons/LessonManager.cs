@@ -6,27 +6,20 @@ using UnityEngine.SceneManagement;
 
 public class LessonManager : MonoBehaviour
 {
-    //private LessonProgressBar progressBar => FindFirstObjectByType<LessonProgressBar>();
     private JournalWindow journal => FindFirstObjectByType<JournalWindow>();
     private FocusView focusView => GameObject.FindWithTag("FocusView").GetComponent<FocusView>();
     private CinemachineCamera focusCamera => GameObject.FindWithTag("FocusView").GetComponent<CinemachineCamera>();
     private CinemachineOrbitalFollow orbitalFollow => GameObject.FindWithTag("FocusView").GetComponent<CinemachineOrbitalFollow>();
-    private List<Lesson> lessons => FindObjectsByType<Lesson>(FindObjectsSortMode.None).ToList();
-    private LessonTracker lessonTracker => GetComponent<LessonTracker>();
-
+    private LessonTracker lessonTracker => FindFirstObjectByType<LessonTracker>();
     public LessonWindow lessonWindow => FindFirstObjectByType<LessonWindow>();
 
     private Lesson openLesson;
-
-    //private int foundLessons = 0;
 
 
     private void Start()
     {
         Lesson.OnLessonOpened += HandleLessonOpened;
         Lesson.OnLessonClosed += HandleLessonClosed;
-
-        Debug.Log("Lessons in scene: " + lessons.Count);
     }
 
     private void HandleLessonClosed(Lesson _lesson)
@@ -55,9 +48,7 @@ public class LessonManager : MonoBehaviour
 
         if (_lesson.NewLessonFound)
         {
-            //foundLessons++;
             AddLessonToJournal(_lesson);
-            //UpdateProgressBar();
             lessonTracker.AddLessonToTracker(SceneManager.GetActiveScene().buildIndex);
         }
     }
@@ -81,9 +72,4 @@ public class LessonManager : MonoBehaviour
             orbitalFollow.Radius = 2f;
         }
     }
-
-    /*private void UpdateProgressBar()
-    {
-        progressBar.ChangeSliderValue(foundLessons, lessons.Count);
-    }*/
 }

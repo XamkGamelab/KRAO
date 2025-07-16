@@ -160,7 +160,7 @@ MonoBehaviour:
       ContentText: "Raiteensulku on rautateill\xE4 k\xE4ytett\xE4v\xE4 turvalaite,
         jonka tarkoitus on turvata p\xE4\xE4raiteen junaliikenne est\xE4m\xE4ll\xE4
         sivuraiteelta karkaavia vaunuja p\xE4\xE4sem\xE4st\xE4 luvatta p\xE4\xE4raiteelle."
-  - SceneHeader: Toimisto
+  - SceneHeader: Scene 3
     SceneIndex: 3
     lessons:
     - HeaderText: 
@@ -172,7 +172,7 @@ MonoBehaviour:
     - HeaderText: 
       LessonId: 0
       ContentText: 
-  - SceneHeader: Scene
+  - SceneHeader: Scene 4
     SceneIndex: 4
     lessons: []
 --- !u!1 &1186746573597171868

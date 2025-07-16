@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,30 +8,18 @@ public class SceneSelectionWindow : Window
 {
     public GameObject SceneElementPrefab;
     public GameObject SceneElementsContainer;
-    public List<SceneElementStruct> SceneElements;
+    public List<SceneElement> SceneElements { get; set; }
 
-    private void Start()
+    public void CreateSceneElements(List<SceneItem> _sceneItems)
     {
-        gameObject.SetActive(true);
-        InstantiateElements();
-    }
-
-    private void InstantiateElements()
-    {
-        for (int i = 0; i < SceneElements.Count; i++)
+        for (int i = 0; i < _sceneItems.Count; i++)
         {
-            SceneElementPrefab.GetComponent<SceneElement>().SetInitValues(SceneElements[i].SceneIndex,
-                SceneElements[i].SceneHeader, SceneElements[i].Image);
+            SceneElementPrefab.GetComponent<SceneElement>().SetInitValues(_sceneItems[i].SceneIndex,
+                _sceneItems[i].SceneHeader, _sceneItems[i].SceneImage);
 
             Instantiate(SceneElementPrefab, SceneElementsContainer.transform);
         }
-    }
-}
 
-[Serializable]
-public struct SceneElementStruct
-{
-    public int SceneIndex;
-    public string SceneHeader;
-    public Image Image;
+        SceneElements = GetComponentsInChildren<SceneElement>().ToList();
+    }
 }

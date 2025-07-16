@@ -166,7 +166,7 @@ GameObject:
   - component: {fileID: 699593452015681992}
   - component: {fileID: 5923878640354782134}
   m_Layer: 5
-  m_Name: ScenesFoundText
+  m_Name: LessonsFoundText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -430,10 +430,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OpenSceneButton: {fileID: 7120092091015251213}
-  SceneElementImage: {fileID: 5919213064917868783}
-  SceneHeaderText: {fileID: 4669168883606413912}
-  ScenesFoundText: {fileID: 1282730690618299214}
-  CheckMark: {fileID: 6664969769638047395}
+  sceneElementImage: {fileID: 5919213064917868783}
+  sceneHeaderText: {fileID: 4669168883606413912}
+  lessonsFoundText: {fileID: 1282730690618299214}
+  checkMark: {fileID: 6664969769638047395}
 --- !u!1 &5049109997416515691
 GameObject:
   m_ObjectHideFlags: 0
