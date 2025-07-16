@@ -6,12 +6,11 @@ public class JournalDropdownButton : MonoBehaviour
     private Button journalButton => GetComponent<Button>();
     private JournalWindow journal => FindAnyObjectByType<JournalWindow>();
     private Text headerText => GetComponentInChildren<Text>();
-    private string contentText;
+    
     public int LessonId;
-
     public Image CheckMarkImg;
 
-    private void Start()
+    private void Awake()
     {
         journalButton.interactable = false;
         CheckMarkImg.gameObject.SetActive(false);
@@ -21,14 +20,13 @@ public class JournalDropdownButton : MonoBehaviour
 
     public void HandleJournalButtonClick()
     {
-        journal.SetLessonTexts(headerText.text, contentText);
+        journal.SetLessonTexts(LessonId);
     }
 
-    public void SetValues(int _id, string _header, string _content)
+    public void SetValues(int _id, string _header)
     {
         LessonId = _id;
         headerText.text = _header;
-        contentText = _content;
     }
 
     public void ActivateButton()

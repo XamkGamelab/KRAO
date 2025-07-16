@@ -5,15 +5,55 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using static System.Net.Mime.MediaTypeNames;
 
 public class MenuManager : MonoBehaviour
 {
     public List<Window> windows => FindObjectsByType<Window>(FindObjectsSortMode.None).ToList();
-    //private PlayerManager playerManager => GameObject.FindWithTag("Player").GetComponent<PlayerManager>();
+    private PlayerManager playerManager => GameObject.FindWithTag("Player").GetComponent<PlayerManager>();
+    private Window hudWindow => FindFirstObjectByType<HUDWindow>();
+    public Window PauseMenuWindow;
+    public Window MainMenuWindow;
+    public Button CloseSceneSelectionButton;
+    public Button CloseSettingsButton;
 
     private void Start()
     {
         Window.OnWindowOpened += HandleWindowOpened;
+        SceneManager.sceneLoaded += OnSceneChanged;
+
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            OpenMainMenu();
+            CloseSceneSelectionButton.onClick.AddListener(OpenMainMenu);
+            CloseSettingsButton.onClick.AddListener(OpenMainMenu);
+        }
+    }
+
+    private void OnSceneChanged(Scene _scene, LoadSceneMode _mode)
+    {
+        if (_scene.buildIndex == 0)
+        {
+            HandleWindowOpened(MainMenuWindow);
+            CloseSceneSelectionButton.onClick.AddListener(OpenMainMenu);
+            CloseSettingsButton.onClick.AddListener(OpenMainMenu);
+        }
+        else
+        {
+            HandleWindowOpened(hudWindow);
+            CloseSceneSelectionButton.onClick.AddListener(OpenPauseMenu);
+            CloseSettingsButton.onClick.AddListener(OpenPauseMenu);
+        }
+    }
+
+    private void OpenPauseMenu()
+    {
+        HandleWindowOpened(PauseMenuWindow);
+    }
+
+    private void OpenMainMenu()
+    {
+        HandleWindowOpened(MainMenuWindow);
     }
 
     private void HandleWindowOpened(Window _window)
@@ -21,8 +61,7 @@ public class MenuManager : MonoBehaviour
         windows.ForEach(window => window.isOpen = false);
         _window.isOpen = true;
         windows.ForEach(window => ToggleWindow(window));
-
-        //playerManager.ToggleControllerState(false);
+        playerManager.ToggleControllerState(hudWindow.isOpen);
     }
 
     public void ToggleWindow(Window _window, bool _open)

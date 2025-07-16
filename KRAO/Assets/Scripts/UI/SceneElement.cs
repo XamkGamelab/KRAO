@@ -5,29 +5,28 @@ using UnityEngine.UI;
 public class SceneElement : MonoBehaviour
 {
     [SerializeField] private SceneButton OpenSceneButton;
+    [SerializeField] private Image sceneElementImage;
+    [SerializeField] private Text sceneHeaderText;
+    [SerializeField] private Text lessonsFoundText;
+    [SerializeField] private Image checkMark;
 
-    [SerializeField] private Image SceneElementImage;
-    [SerializeField] private Text SceneHeaderText;
-    [SerializeField] private Text ScenesFoundText;
-
-    [SerializeField] private Image CheckMark;
-
+    public int SceneIndex { get; private set; }
 
     public void SetInitValues(int _sceneIndex, string _header, Image _image)
     {
         OpenSceneButton.sceneToLoadBuildIndex = _sceneIndex;
-        SceneHeaderText.text = _header;
-        SceneElementImage = _image;
+        sceneHeaderText.text = _header;
+        sceneElementImage = _image;
     }
 
-    public void SetScenesFoundText(int _found, int _max)
+    public void SetLessonsFoundText(int _found, int _max)
     {
-        ScenesFoundText.text = _found + "/" + _max;
+        lessonsFoundText.text = _found + "/" + _max;
 
         //if all lessons in scene found - show checkmark
         if (_max == _found)
         {
-            CheckMark.gameObject.SetActive(true);
+            checkMark.gameObject.SetActive(true);
         }
     }
 }

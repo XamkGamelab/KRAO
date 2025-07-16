@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -5,6 +6,7 @@ public class SceneLoader : SingletonMono<SceneLoader>
 {
     private int sceneToLoad;
     private int sceneToUnload;
+    public static event Action<int> SetProgressBarValues;
 
     private void Awake()
     {
@@ -21,6 +23,8 @@ public class SceneLoader : SingletonMono<SceneLoader>
         sceneToLoad = sceneBuildIndex;
         SceneManager.LoadSceneAsync(sceneToLoad, LoadSceneMode.Additive);
         SceneManager.sceneLoaded += OnSceneLoaded;
+
+        SetProgressBarValues?.Invoke(sceneBuildIndex);
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)

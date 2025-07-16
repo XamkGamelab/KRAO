@@ -10,8 +10,6 @@ public class Lesson : MonoBehaviour
     public LessonWindow lessonWindow => FindFirstObjectByType<LessonWindow>();
 
     public int LessonId;
-    public string HeaderText;
-    [TextArea(15,20)] public string ContentText;
 
     public bool NewLessonFound { get; private set; } = true;
     private bool lessonOpen = false;
@@ -25,7 +23,7 @@ public class Lesson : MonoBehaviour
 
         if(lessonOpen)
         {
-            lessonWindow.SetTexts(HeaderText, ContentText);
+            lessonWindow.SetTexts(LessonId);
             lessonWindow.ResetScrollbox();
             OnLessonOpened?.Invoke(this);
         }

@@ -901,15 +901,15 @@ MonoBehaviour:
   KeyCode: 0
   SceneElementPrefab: {fileID: 3716280782540364516, guid: aeb9a5759fccb6340b0234e3f5281dc6, type: 3}
   SceneElementsContainer: {fileID: 7293267230096922393}
-  SceneElements:
-  - SceneIndex: 2
-    SceneHeader: Demo Scene
+  SceneElementStructs:
+  - SceneHeader: "P\xF6lkynvaihtoty\xF6maa"
+    SceneIndex: 2
     Image: {fileID: 0}
-  - SceneIndex: 3
-    SceneHeader: Scene 3
+  - SceneHeader: Scene 3
+    SceneIndex: 3
     Image: {fileID: 0}
-  - SceneIndex: 4
-    SceneHeader: Scene 4
+  - SceneHeader: Scene 4
+    SceneIndex: 4
     Image: {fileID: 0}
 --- !u!1 &8345514012487035282
 GameObject:

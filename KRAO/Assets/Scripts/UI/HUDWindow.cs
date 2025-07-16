@@ -2,8 +2,9 @@ using UnityEngine;
 
 public class HUDWindow : Window
 {
-    private CanvasGroup canvasGroup => GetComponent<CanvasGroup>();
     private PlayerManager playerManager => GameObject.FindWithTag("Player").GetComponent<PlayerManager>();
+
+    /*private CanvasGroup canvasGroup => GetComponent<CanvasGroup>();
 
 
     void Update()
@@ -16,5 +17,10 @@ public class HUDWindow : Window
         {
             playerManager.ToggleControllerState(false);
         }
+    }*/
+
+    private void Start()
+    {
+        playerManager.ToggleControllerState(isOpen);
     }
 }

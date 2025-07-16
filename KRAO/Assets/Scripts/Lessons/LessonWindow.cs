@@ -8,11 +8,12 @@ public class LessonWindow : Window
     public Text ContentText;
 
     private Scrollbar scrollbar => GetComponentInChildren<Scrollbar>();
+    private LessonTracker lessonTracker => FindFirstObjectByType<LessonTracker>();
 
-    public void SetTexts(string _header, string _content)
+    public void SetTexts(int _lessonId)
     {
-        HeaderText.text = _header;
-        ContentText.text = _content;
+        HeaderText.text = lessonTracker.LessonItemById(_lessonId).HeaderText;
+        ContentText.text = lessonTracker.LessonItemById(_lessonId).ContentText;
     }
 
     public void ResetScrollbox()
