@@ -29,7 +29,7 @@ public class MouseSettings : MonoBehaviour
 
     private void SetMouseSensitivity(float _sensitivity)
     {
-        look.lookSensitivity = _sensitivity;                    // player
+        look.lookSensitivity = _sensitivity*10;                    // player
         focusView.SetFocusViewCameraSensitivity(_sensitivity);  // focus view
     }
 }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5142719227292187576}
   - component: {fileID: 874550203028285253}
   - component: {fileID: 2165440403212539728}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,14 +58,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.08235294, g: 0.5294118, b: 0.8000001, a: 1}
+  m_Color: {r: 0.078431375, g: 0.5529412, b: 0.8313726, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 7e3252a663a25944e9544fceefeebb1e, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 5075838831412727279}
   - component: {fileID: 3181840089787309965}
   - component: {fileID: 6153563334985573430}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,8 +109,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 3.4627}
+  m_SizeDelta: {x: 0, y: 6.9255}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3181840089787309965
 CanvasRenderer:
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 7e3252a663a25944e9544fceefeebb1e, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -161,7 +161,7 @@ GameObject:
   - component: {fileID: 6201760854572878460}
   - component: {fileID: 77035764706588128}
   - component: {fileID: 4881929827128316003}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: BackgroundImg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,8 +215,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 1975546c79413a94793502447a59500c, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 3
 --- !u!1 &4980946189020204852
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,7 +236,7 @@ GameObject:
   - component: {fileID: 5469247226129957014}
   - component: {fileID: 5503672307922392410}
   - component: {fileID: 1701418849104565752}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: ProgressBarHeaderText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -259,8 +259,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -37.3698}
-  m_SizeDelta: {x: 0, y: 74.7397}
+  m_AnchoredPosition: {x: -12.519485, y: -41.376286}
+  m_SizeDelta: {x: -25.0391, y: 82.7525}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5503672307922392410
 CanvasRenderer:
@@ -293,7 +293,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8cd06548cb81c2d42875df24f8326c24, type: 3}
     m_FontSize: 25
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -313,7 +313,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8477934521756641617}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -337,8 +337,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 3.4628}
+  m_SizeDelta: {x: 0, y: 6.9255}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7426046908361047645
 GameObject:
@@ -350,7 +350,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8805345176301243081}
   - component: {fileID: 11662515183802608}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: LessonProgressBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -401,7 +401,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4809457747980091560}
   - component: {fileID: 5236613232988120219}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -427,8 +427,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0.0000076293945, y: 43.436905}
-  m_SizeDelta: {x: 444.3006, y: 86.8738}
+  m_AnchoredPosition: {x: -14.8334, y: 34.24346}
+  m_SizeDelta: {x: 414.6338, y: 49.1389}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5236613232988120219
 MonoBehaviour:
@@ -449,7 +449,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -492,7 +492,7 @@ GameObject:
   - component: {fileID: 4731872812065429124}
   - component: {fileID: 6312379356489547176}
   - component: {fileID: 1857684232053403005}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: LessonsFoundText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -515,8 +515,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.00011396}
-  m_SizeDelta: {x: 160, y: 43.437}
+  m_AnchoredPosition: {x: 0, y: 3.4627}
+  m_SizeDelta: {x: 160, y: 36.511}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6312379356489547176
 CanvasRenderer:
@@ -549,7 +549,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8cd06548cb81c2d42875df24f8326c24, type: 3}
     m_FontSize: 25
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40

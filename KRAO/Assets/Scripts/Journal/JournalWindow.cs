@@ -8,7 +8,7 @@ public class JournalWindow : Window
 {
     private LessonTracker lessonTracker => FindFirstObjectByType<LessonTracker>();
     public List<JournalDropdown> JournalDropdowns { get; set; }
-    private List<JournalDropdownButton> dropdownButtons;
+    public List<JournalDropdownButton> dropdownButtons { get; set; }
     private RectTransform dropdownsContainerRectTransform => DropdownsContainer.GetComponent<RectTransform>();
 
     [Header("Lesson")]

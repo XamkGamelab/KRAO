@@ -12,11 +12,11 @@ public class SceneElement : MonoBehaviour
 
     public int SceneIndex { get; private set; }
 
-    public void SetInitValues(int _sceneIndex, string _header, Image _image)
+    public void SetInitValues(int _sceneIndex, string _header, Sprite _sprite)
     {
         OpenSceneButton.sceneToLoadBuildIndex = _sceneIndex;
         sceneHeaderText.text = _header;
-        sceneElementImage = _image;
+        sceneElementImage.sprite = _sprite;
     }
 
     public void SetLessonsFoundText(int _found, int _max)

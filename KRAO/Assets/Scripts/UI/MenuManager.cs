@@ -5,7 +5,6 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using static System.Net.Mime.MediaTypeNames;
 
 public class MenuManager : MonoBehaviour
 {
@@ -27,6 +26,7 @@ public class MenuManager : MonoBehaviour
             OpenMainMenu();
             CloseSceneSelectionButton.onClick.AddListener(OpenMainMenu);
             CloseSettingsButton.onClick.AddListener(OpenMainMenu);
+            PauseMenuWindow.KeyCode = KeyCode.None;
         }
     }
 
@@ -37,12 +37,14 @@ public class MenuManager : MonoBehaviour
             HandleWindowOpened(MainMenuWindow);
             CloseSceneSelectionButton.onClick.AddListener(OpenMainMenu);
             CloseSettingsButton.onClick.AddListener(OpenMainMenu);
+            PauseMenuWindow.KeyCode = KeyCode.None;
         }
         else
         {
             HandleWindowOpened(hudWindow);
             CloseSceneSelectionButton.onClick.AddListener(OpenPauseMenu);
             CloseSettingsButton.onClick.AddListener(OpenPauseMenu);
+            PauseMenuWindow.KeyCode = KeyCode.Escape;
         }
     }
 

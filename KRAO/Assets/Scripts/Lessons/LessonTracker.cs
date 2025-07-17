@@ -129,7 +129,7 @@ public class SceneItem
 {
     public string SceneHeader;
     public int SceneIndex;
-    public Image SceneImage;
+    public Sprite SceneImage;
     public List<LessonItem> lessons;
     public int FoundLessons { get; set; } = 0;
     public int MaxLessons { get; set; }
