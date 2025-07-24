@@ -23,7 +23,7 @@ public class Lesson : MonoBehaviour
         if(lessonOpen)
         {
             lessonWindow.SetTexts(LessonId);
-            lessonWindow.ResetScrollbox();
+            //lessonWindow.ResetScrollbox();
             OnLessonOpened?.Invoke(this);
         }
         else

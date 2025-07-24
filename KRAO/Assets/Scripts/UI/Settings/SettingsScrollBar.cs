@@ -14,12 +14,13 @@ public class SettingsScrollBar : MonoBehaviour
         slider.onValueChanged.AddListener(ShowSliderValue);
         slider.value = 0.5f;
         ShowSliderValue(slider.value);
-        MaxValueText.text = ((int)(slider.maxValue * 100)).ToString();
-        MinValueText.text = ((int)(slider.minValue * 100)).ToString();
+        MaxValueText.text = (slider.maxValue * 100).ToString();
+        MinValueText.text = (slider.minValue * 100).ToString();
     }
 
     private void ShowSliderValue(float _value)
     {
-        sliderValueText.text = ((int)(_value*100)).ToString();
+        float _fValue = _value*100;
+        sliderValueText.text = ((int)(_fValue)).ToString();
     }
 }

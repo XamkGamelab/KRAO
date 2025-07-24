@@ -46,10 +46,13 @@ public class JournalWindow : Window
 
     }
 
-    private void HandleDropdownClicked()
+    private void HandleDropdownClicked(int _sceneId)
     {
         //change rect transform size (to dropdown sizes)
         dropdownsContainerRectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, DropdownHeight());
+        
+        //change image
+        JournalImage.sprite = lessonTracker.SceneItemById(_sceneId).SceneImage;
     }
 
     private float DropdownHeight()
@@ -70,8 +73,7 @@ public class JournalWindow : Window
     {
         for (int i = 0; i < _sceneItems.Count; i++)
         {
-            JournalDropdownPrefab.GetComponent<JournalDropdown>().SetInitValues(_sceneItems[i].SceneIndex,
-                _sceneItems[i].SceneHeader);
+            JournalDropdownPrefab.GetComponent<JournalDropdown>().SetInitValues(_sceneItems[i]);
             Instantiate(JournalDropdownPrefab, DropdownsContainer.transform);
         }
 

@@ -14,22 +14,9 @@ public class MouseSettings : MonoBehaviour
         mouseSensitivitySlider.onValueChanged.AddListener(SetMouseSensitivity);
     }
 
-    private void Update()
-    {
-        // Disable focus view camera movement when over EventSystem object
-        if (EventSystem.current.IsPointerOverGameObject())
-        {
-            focusView.SetFocusViewCameraSensitivity(0);
-        }
-        else
-        {
-            focusView.SetFocusViewCameraSensitivity(mouseSensitivitySlider.value);
-        }
-    }
-
     private void SetMouseSensitivity(float _sensitivity)
     {
         look.lookSensitivity = _sensitivity*10;                    // player
-        focusView.SetFocusViewCameraSensitivity(_sensitivity);  // focus view
+        focusView.SetFocusViewCameraSensitivity(_sensitivity*10);  // focus view
     }
 }

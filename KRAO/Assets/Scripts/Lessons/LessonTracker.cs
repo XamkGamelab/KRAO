@@ -47,7 +47,7 @@ public class LessonTracker : MonoBehaviour
             
             //journal
             journalWindow.JournalDropdowns[i].SetLessonsFoundText(SceneItems[i].FoundLessons, SceneItems[i].MaxLessons);
-
+            journalWindow.JournalDropdowns[i].SceneIndex = SceneItems[i].SceneIndex;
             //sceneselection
             sceneSelectionWindow.SceneElements[i].SetLessonsFoundText(SceneItems[i].FoundLessons, SceneItems[i].MaxLessons);
         }
@@ -68,20 +68,6 @@ public class LessonTracker : MonoBehaviour
         }
     }
 
-    private SceneItem SceneItemById(int _sceneId)
-    {
-        SceneItem scene = null;
-
-        for (int i = 0; i < SceneItems.Count; i++)
-        {
-            if (SceneItems[i].SceneIndex == _sceneId)
-            {
-                scene = SceneItems[i];
-            }
-        }
-        return scene;
-    }
-
     private int FoundLessons(int _sceneId)
     {
         int foundLessons = 0;
@@ -99,6 +85,20 @@ public class LessonTracker : MonoBehaviour
     #endregion
 
     #region public methods
+    public SceneItem SceneItemById(int _sceneId)
+    {
+        SceneItem scene = null;
+
+        for (int i = 0; i < SceneItems.Count; i++)
+        {
+            if (SceneItems[i].SceneIndex == _sceneId)
+            {
+                scene = SceneItems[i];
+            }
+        }
+        return scene;
+    }
+
     public LessonItem LessonItemById(int _lessonId)
     {
         LessonItem _lessonItem = null;
