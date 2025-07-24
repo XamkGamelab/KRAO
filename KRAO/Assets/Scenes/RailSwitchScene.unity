@@ -278,7 +278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.43137255}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.8862745}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -317,6 +317,7 @@ GameObject:
   - component: {fileID: 439057594}
   - component: {fileID: 439057596}
   - component: {fileID: 439057597}
+  - component: {fileID: 439057599}
   m_Layer: 5
   m_Name: DialogueBox
   m_TagString: Untagged
@@ -422,6 +423,39 @@ CanvasGroup:
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
+--- !u!114 &439057599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439057592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 0}
+    - {fileID: 11400000, guid: fb38ddebbf4b9fa4b8a405dad4eb9826, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls: []
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 439057596}
+          m_TargetAssemblyTypeName: DialogueBox, Assembly-CSharp
+          m_MethodName: ShowDialogue
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: fa01249c46042fd439f8ff241a2ad73d, type: 2}
+            m_ObjectArgumentAssemblyTypeName: Dialogue, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &453049515
 GameObject:
   m_ObjectHideFlags: 0
@@ -682,7 +716,7 @@ Transform:
   m_GameObject: {fileID: 723824711}
   serializedVersion: 2
   m_LocalRotation: {x: -0.23330306, y: -0.23834522, z: 0.054142643, w: -0.94118536}
-  m_LocalPosition: {x: -4.41, y: 1.34, z: 0.15}
+  m_LocalPosition: {x: -3.5, y: 3.5070581, z: -7.0371695}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -719,7 +753,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  CustomBlends: {fileID: 11400000, guid: 1d6a29c330fed6b41b47d110875770a9, type: 2}
+  CustomBlends: {fileID: 0}
 --- !u!114 &723824716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1491,8 +1525,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4279769112
+  m_fontColor: {r: 0.09433961, g: 0.09433961, b: 0.09433961, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1645,7 +1679,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1947247011}
-  - component: {fileID: 1947247012}
   m_Layer: 0
   m_Name: CutsceneCameraShots
   m_TagString: Untagged
@@ -1661,7 +1694,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1947247010}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1670,25 +1703,8 @@ Transform:
   - {fileID: 1347600025}
   - {fileID: 453049517}
   - {fileID: 1695015414}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2103079073}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1947247012
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1947247010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c5f8abbd566077409c595a70b6bb183, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameras:
-  - {fileID: 1013389050}
-  - {fileID: 1347600024}
-  - {fileID: 453049516}
-  - {fileID: 1695015413}
 --- !u!1 &1977595678
 GameObject:
   m_ObjectHideFlags: 0
@@ -1885,6 +1901,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2103079073}
   - component: {fileID: 2103079072}
+  - component: {fileID: 2103079075}
+  - component: {fileID: 2103079074}
   m_Layer: 0
   m_Name: CutsceneDirector
   m_TagString: Untagged
@@ -1916,9 +1934,52 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1947247011}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2103079074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103079071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c5f8abbd566077409c595a70b6bb183, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameras:
+  - {fileID: 1013389050}
+  - {fileID: 1347600024}
+  - {fileID: 453049516}
+  - {fileID: 1695015413}
+--- !u!320 &2103079075
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103079071}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 22006a5438cbc0e408b0eaa5cfcc8127, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 1
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 836381961534298043, guid: 22006a5438cbc0e408b0eaa5cfcc8127, type: 2}
+    value: {fileID: 723824715}
+  - key: {fileID: -6560184594294543923, guid: 22006a5438cbc0e408b0eaa5cfcc8127, type: 2}
+    value: {fileID: 439057599}
+  m_ExposedReferences:
+    m_References:
+    - 909c9ddc640d91c4faf2e772303c008f: {fileID: 1347600024}
+    - f47ed0a392752364f90ffb77375e0f12: {fileID: 453049516}
+    - bde36cb8af6924e4d865f6f024173fa8: {fileID: 1695015413}
+    - 920e94b61d4efab4093ed362b93443ac: {fileID: 1347600024}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1928,5 +1989,4 @@ SceneRoots:
   - {fileID: 1217151225}
   - {fileID: 1176922002}
   - {fileID: 1260036158}
-  - {fileID: 1947247011}
   - {fileID: 2103079073}
