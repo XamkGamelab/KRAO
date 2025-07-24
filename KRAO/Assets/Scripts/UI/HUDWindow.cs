@@ -4,23 +4,21 @@ public class HUDWindow : Window
 {
     private PlayerManager playerManager => GameObject.FindWithTag("Player").GetComponent<PlayerManager>();
 
-    /*private CanvasGroup canvasGroup => GetComponent<CanvasGroup>();
-
-
-    void Update()
-    {
-        if (canvasGroup.alpha == 1)
-        {
-            playerManager.ToggleControllerState(true);
-        }
-        else
-        {
-            playerManager.ToggleControllerState(false);
-        }
-    }*/
+    [SerializeField] private GameObject ControlsGuide;
+    [SerializeField] private GameObject WarningSign;
 
     private void Start()
     {
         playerManager.ToggleControllerState(isOpen);
+    }
+
+    public void ShowControlsGuide(bool _state)
+    {
+        ControlsGuide.SetActive(_state);
+    }
+    
+    public void ShowWarningSign(bool _state)
+    {
+        WarningSign.SetActive(_state);
     }
 }

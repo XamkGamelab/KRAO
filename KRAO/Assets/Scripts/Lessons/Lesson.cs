@@ -11,7 +11,6 @@ public class Lesson : MonoBehaviour
 
     public int LessonId;
 
-    public bool NewLessonFound { get; private set; } = true;
     private bool lessonOpen = false;
 
     public static event Action<Lesson> OnLessonOpened;
@@ -29,7 +28,6 @@ public class Lesson : MonoBehaviour
         }
         else
         {
-            NewLessonFound = false;
             OnLessonClosed?.Invoke(this);
         }
     }

@@ -29,6 +29,7 @@ public class LessonManager : MonoBehaviour
         focusView.ToggleFocusView();
     }
 
+    //Called in LessonWindow (prefab) CloseLessonButton onClick
     public void CloseLesson()
     {
         openLesson.ToggleLesson();
@@ -46,10 +47,10 @@ public class LessonManager : MonoBehaviour
         // Open lesson text box (canvas)
         lessonWindow.OpenWindow();
 
-        if (_lesson.NewLessonFound)
+        if (lessonTracker.LessonItemById(_lesson.LessonId).IsNew)
         {
             AddLessonToJournal(_lesson);
-            lessonTracker.AddLessonToTracker(SceneManager.GetActiveScene().buildIndex);
+            lessonTracker.AddLessonToTracker(SceneManager.GetActiveScene().buildIndex, _lesson.LessonId);
         }
     }
 

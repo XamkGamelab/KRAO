@@ -12,7 +12,8 @@ public class SettingsScrollBar : MonoBehaviour
     private void Awake()
     {
         slider.onValueChanged.AddListener(ShowSliderValue);
-        sliderValueText.text = ((int)slider.value).ToString();
+        slider.value = 0.5f;
+        ShowSliderValue(slider.value);
         MaxValueText.text = ((int)(slider.maxValue * 100)).ToString();
         MinValueText.text = ((int)(slider.minValue * 100)).ToString();
     }
