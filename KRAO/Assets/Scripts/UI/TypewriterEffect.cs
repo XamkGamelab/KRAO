@@ -57,6 +57,11 @@ public class TypewriterEffect : MonoBehaviour
             StopCoroutine(typewriterCoroutine);
         }
 
+        if(nextDialogueCoroutine != null)
+        {
+            StopCoroutine(nextDialogueCoroutine);
+        }
+
         textBox.text = text;
         textBox.maxVisibleCharacters = 0;
         currentVisibleCharacterIndex = 0;
@@ -135,6 +140,5 @@ public class TypewriterEffect : MonoBehaviour
     {
         yield return nextDialogueDelayTime;
         DialogueBox.FinishDialogue();
-        StopCoroutine(nextDialogueCoroutine);
     }
 }

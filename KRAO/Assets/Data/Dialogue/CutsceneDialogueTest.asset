@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: df77bc65ebc4f9448bea866dabc73ba0, type: 3}
-  m_Name: Test3
+  m_Name: CutsceneDialogueTest
   m_EditorClassIdentifier: 
   header: test1
-  speakerName: Timo Testi
-  content: "T\xE4m\xE4 on kolmas, ja <color=\"red\">viimeinen</color> dialogi.<br>T\xE4m\xE4n
-    j\xE4lkeen ei pit\xE4isi tulla lis\xE4\xE4."
+  speakerName: Ohjaaja
+  content: "Testataan Timelinen kutsuvaa dialogia. Ehkei tarvitse teh\xE4 paljoa
+    enemp\xE4\xE4 ty\xF6t\xE4."
   NextDialogue: {fileID: 0}
