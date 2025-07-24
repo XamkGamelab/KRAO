@@ -6,7 +6,7 @@ public class SceneLoader : SingletonMono<SceneLoader>
 {
     private int sceneToLoad;
     private int sceneToUnload;
-    //public static event Action<int> SetProgressBarValues;
+    public static event Action<int> SetProgressBarValues;
 
     private void Awake()
     {
@@ -24,7 +24,7 @@ public class SceneLoader : SingletonMono<SceneLoader>
         SceneManager.LoadSceneAsync(sceneToLoad, LoadSceneMode.Additive);
         SceneManager.sceneLoaded += OnSceneLoaded;
 
-        //SetProgressBarValues?.Invoke(sceneBuildIndex);
+        SetProgressBarValues?.Invoke(sceneBuildIndex);
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)

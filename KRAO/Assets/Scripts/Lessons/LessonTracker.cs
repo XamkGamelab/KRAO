@@ -24,7 +24,7 @@ public class LessonTracker : MonoBehaviour
 
         InitTrackers();
 
-        //SceneLoader.SetProgressBarValues += OnSceneChange;
+        SceneLoader.SetProgressBarValues += OnSceneChange;
     }
 
     private void OnSceneChange(int _sceneId)
