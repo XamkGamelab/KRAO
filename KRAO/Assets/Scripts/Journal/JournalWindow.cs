@@ -12,10 +12,12 @@ public class JournalWindow : Window
     private RectTransform dropdownsContainerRectTransform => DropdownsContainer.GetComponent<RectTransform>();
 
     [Header("Lesson")]
+    public RectTransform ContentRect;
     public Text HeaderText;
     public Text ContentText;
     public Button PrevLessonButton;
     public Button NextLessonButton;
+    public Image JournalImage;
 
     [Header("ScrollBox")]
     public GameObject JournalDropdownPrefab;
@@ -102,6 +104,7 @@ public class JournalWindow : Window
     {
         HeaderText.text = lessonTracker.LessonItemById(_lessonId).HeaderText;
         ContentText.text = lessonTracker.LessonItemById(_lessonId).ContentText;
+        JournalImage.sprite = lessonTracker.LessonItemById(_lessonId).LessonImage;
     }
     #endregion
 }

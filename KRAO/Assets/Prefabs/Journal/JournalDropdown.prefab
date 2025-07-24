@@ -60,6 +60,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42dc2469ff83cff4b91577c2f2503582, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Arrow: {fileID: 7311142386254677936}
   ButtonsContainer: {fileID: 6681889093623018354}
   DropdownButtonPrefab: {fileID: 4065382134423729859, guid: 06495ab76f11a0c4aa0c6616f3fd94b2, type: 3}
   DropdownHeaderText: {fileID: 5505416314958411141}
@@ -433,7 +434,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7311142386254677936}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

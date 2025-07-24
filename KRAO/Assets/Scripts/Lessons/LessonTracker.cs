@@ -35,7 +35,7 @@ public class LessonTracker : MonoBehaviour
         }
         else
         {
-            progressBar.ChangeSliderValue(SceneItemById(_sceneId).FoundLessons, SceneItemById(_sceneId).MaxLessons);
+            SetProgressBarValue(_sceneId);
         }
     }
 
@@ -81,6 +81,21 @@ public class LessonTracker : MonoBehaviour
         }
         return scene;
     }
+
+    private int FoundLessons(int _sceneId)
+    {
+        int foundLessons = 0;
+
+        SceneItemById(_sceneId).lessons.ForEach(l =>
+        {
+            if (l.IsNew == false)
+            {
+                foundLessons++;
+            }
+        });
+
+        return foundLessons;
+    }
     #endregion
 
     #region public methods
@@ -105,13 +120,17 @@ public class LessonTracker : MonoBehaviour
         return _lessonItem;
     }
 
-    public void AddLessonToTracker(int _sceneId)
+    public void AddLessonToTracker(int _sceneId, int _lessonId)
     {
         for (int i = 0; i < SceneItems.Count; i++)
         {
             if (SceneItems[i].SceneIndex == _sceneId)
             {
-                SceneItems[i].FoundLessons++;
+                if (LessonItemById(_lessonId).IsNew)
+                {
+                    LessonItemById(_lessonId).IsNew = false;
+                    SceneItems[i].FoundLessons = FoundLessons(_sceneId);
+                }
                 UpdateTrackers(_sceneId);
             }
         }
@@ -140,5 +159,7 @@ public class LessonItem
 {
     public string HeaderText;
     public int LessonId;
+    public Sprite LessonImage;
     [TextArea(15, 15)] public string ContentText;
+    public bool IsNew { get; set; } = true;
 }

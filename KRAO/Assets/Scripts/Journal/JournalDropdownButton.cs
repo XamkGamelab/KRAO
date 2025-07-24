@@ -9,8 +9,6 @@ public class JournalDropdownButton : MonoBehaviour
     
     public int LessonId;
     public Image CheckMarkImg;
-    [SerializeField] private Sprite BasicBackground;
-    [SerializeField] private Sprite HighlightedBackground;
 
     private void Awake()
     {
@@ -22,9 +20,8 @@ public class JournalDropdownButton : MonoBehaviour
 
     public void HandleJournalButtonClick()
     {
+        //set texts
         journal.SetLessonTexts(LessonId);
-        journal.dropdownButtons.ForEach(b => b.journalButton.image.sprite = BasicBackground);
-        journalButton.image.sprite = HighlightedBackground;
     }
 
     public void SetValues(int _id, string _header)

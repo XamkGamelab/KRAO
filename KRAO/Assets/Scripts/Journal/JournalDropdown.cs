@@ -7,13 +7,12 @@ public class JournalDropdown : MonoBehaviour
 {
     public RectTransform dropdownRectTransform => GetComponent<RectTransform>();
     private Toggle toggle => GetComponentInChildren<Toggle>();
-    public CanvasGroup ButtonsContainer;
+    public int SceneIndex { get; private set; }
+    public static event Action OnDropdownClicked;
 
     private float minHeight = 0;
-
-    public static event Action OnDropdownClicked;
-    public int SceneIndex { get; private set; }
-    
+    public GameObject Arrow;
+    public CanvasGroup ButtonsContainer;
     public GameObject DropdownButtonPrefab;
     public Text DropdownHeaderText;
     public Text LessonsFoundText;
@@ -36,8 +35,8 @@ public class JournalDropdown : MonoBehaviour
         dropdownRectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, Height(_open));
         OnDropdownClicked?.Invoke();
 
-        // turn arrow when clicked
-
+        // turn arrow
+        Arrow.transform.Rotate(0, 0, 180);
     }
 
     private float Height(bool _open)

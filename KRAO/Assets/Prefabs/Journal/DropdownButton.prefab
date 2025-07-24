@@ -177,7 +177,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -189,7 +189,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 21300000, guid: 275d0ccda068111429a46aecd564ec82, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -217,7 +217,7 @@ MonoBehaviour:
   LessonId: 0
   CheckMarkImg: {fileID: 4897761590415980012}
   BasicBackground: {fileID: 21300000, guid: b39a2cddc98057545b4f1b8642562be9, type: 3}
-  HighlightedBackground: {fileID: 0}
+  HighlightedBackground: {fileID: 21300000, guid: fec205a66858b194181ea32ee88bde1f, type: 3}
 --- !u!1 &6900787478384798366
 GameObject:
   m_ObjectHideFlags: 0
