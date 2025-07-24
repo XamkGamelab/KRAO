@@ -3,7 +3,12 @@ guid: 376bafc6a59165e43ba77360bd8cdc33
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Rusty_Gas_Tank_Metal_vd5kdabdy_1K
+    second: {fileID: 2100000, guid: bd15e114aa0276d478a9fcfffaaf62e3, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
