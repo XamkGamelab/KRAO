@@ -32,6 +32,8 @@ public class TypewriterEffect : MonoBehaviour
     [SerializeField] private bool quickSkip;
     [SerializeField][Min(1)] private int skipSpeedup = 5;
 
+    private bool inNextDialogueDelayTime = false;
+
     private void Awake()
     {
         textBox = GetComponent<TMP_Text>();
@@ -71,7 +73,7 @@ public class TypewriterEffect : MonoBehaviour
 
     private void Skip()
     {
-        if (CurrentlySkipping)
+        if (CurrentlySkipping || inNextDialogueDelayTime)
         {
             return;
         }
@@ -99,6 +101,8 @@ public class TypewriterEffect : MonoBehaviour
         {
             CurrentlySkipping = false;
         }
+
+        inNextDialogueDelayTime = true;
 
         nextDialogueCoroutine = StartCoroutine(routine: NextDialogueDelay());
     }
@@ -139,6 +143,7 @@ public class TypewriterEffect : MonoBehaviour
     private IEnumerator NextDialogueDelay()
     {
         yield return nextDialogueDelayTime;
+        inNextDialogueDelayTime = false;
         DialogueBox.FinishDialogue();
     }
 }
