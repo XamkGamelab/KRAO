@@ -11,14 +11,31 @@ public class Lesson : MonoBehaviour
 
     public int LessonId;
 
+    private LessonManager lessonManager => FindFirstObjectByType<LessonManager>();
+
     private bool lessonOpen = false;
 
     public static event Action<Lesson> OnLessonOpened;
     public static event Action<Lesson> OnLessonClosed;
 
+    [SerializeField] private ParticleSystem unopenedParticles;
+
+    private void Start()
+    {
+        if(!lessonManager.CheckIsLessonInJournal(this))
+        {
+            unopenedParticles.Play();
+        }
+    }
+
     public void ToggleLesson()
     {
         lessonOpen = !lessonOpen;
+
+        if (unopenedParticles.isPlaying)
+        {
+            unopenedParticles.Stop();
+        }
 
         if(lessonOpen)
         {

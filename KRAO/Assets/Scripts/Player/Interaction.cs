@@ -88,7 +88,6 @@ public class Interaction : MonoBehaviour
                 if (!IsObjectInList(obj))
                 {
                     interactableObjects.Add(obj);
-                    Debug.Log($"Added {obj.name} to Interactable Objects within reach.");
                 }
             }
         }
@@ -101,7 +100,6 @@ public class Interaction : MonoBehaviour
                 if (!_objectsInRange.Contains(obj))
                 {
                     interactableObjects.Remove(obj);
-                    Debug.Log($"Removed {obj.name} from Interactable Objects within reach.");
                     break;
                 }
             }
@@ -134,5 +132,10 @@ public class Interaction : MonoBehaviour
     private bool CanInteract()
     {
         return selectedObject != null;
+    }
+
+    public void ClearInteractables()
+    {
+        interactableObjects.Clear();
     }
 }

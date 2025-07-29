@@ -54,6 +54,11 @@ public class LessonManager : MonoBehaviour
         }
     }
 
+    public bool CheckIsLessonInJournal(Lesson _lesson)
+    {
+        return journal.CheckIsLessonActivated(_lesson.LessonId);
+    }
+
     private void AddLessonToJournal(Lesson _lesson)
     {
         journal.ActivateLesson(_lesson.LessonId);
