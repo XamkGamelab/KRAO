@@ -119,6 +119,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &4950088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4950089}
+  m_Layer: 7
+  m_Name: Focuspoint1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4950089
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4950088}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.028, y: 0, z: 0.418}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 620426996}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &6058495
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5234,6 +5265,23 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fa8af515747a3004caee281b521f4899, type: 3}
   m_PrefabInstance: {fileID: 286547937}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &143501734 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5571807805553023391, guid: 94a30307acec1f24991764cd8e28d484, type: 3}
+  m_PrefabInstance: {fileID: 741848635}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &143501737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143501734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da7ca4116b5340049a79fc7cf8b79310, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &145843784
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14183,7 +14231,7 @@ GameObject:
   m_Component:
   - component: {fileID: 376558951}
   m_Layer: 7
-  m_Name: Focuspoint
+  m_Name: Focuspoint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14198,7 +14246,7 @@ Transform:
   m_GameObject: {fileID: 376558950}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.028, y: -0, z: 0.418}
+  m_LocalPosition: {x: -0.02, y: 0, z: 0.138}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15459,6 +15507,7 @@ MonoBehaviour:
   - FocusTransform: {fileID: 451965421}
     Radius: 3
   LessonId: 2
+  LessonFeatures: []
   unopenedParticles: {fileID: 268041492}
 --- !u!114 &451965423
 MonoBehaviour:
@@ -15715,6 +15764,7 @@ MonoBehaviour:
   - FocusTransform: {fileID: 363213072}
     Radius: 1.5
   LessonId: 11
+  LessonFeatures: []
   unopenedParticles: {fileID: 2049877793}
 --- !u!114 &462566192
 MonoBehaviour:
@@ -18449,7 +18499,9 @@ Transform:
   m_Children:
   - {fileID: 741848636}
   - {fileID: 1663917565}
+  - {fileID: 4950089}
   - {fileID: 376558951}
+  - {fileID: 1912711332}
   m_Father: {fileID: 330594756}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &620426997
@@ -18465,9 +18517,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FocusPoints:
+  - FocusTransform: {fileID: 4950089}
+    Radius: 1.2
   - FocusTransform: {fileID: 376558951}
-    Radius: 1.5
+    Radius: 2
+  - FocusTransform: {fileID: 1912711332}
+    Radius: 1.4
   LessonId: 15
+  LessonFeatures:
+  - ButtonEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 143501737}
+          m_TargetAssemblyTypeName: ToggleAnimation, Assembly-CSharp
+          m_MethodName: ToggleAnimationState
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    ButtonPrompt: Sulje / Avaa
   unopenedParticles: {fileID: 1663917566}
 --- !u!114 &620426998
 MonoBehaviour:
@@ -20296,15 +20369,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2964899880481033376, guid: 94a30307acec1f24991764cd8e28d484, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0.000002504478
+      value: 0.0000028651227
       objectReference: {fileID: 0}
     - target: {fileID: 2964899880481033376, guid: 94a30307acec1f24991764cd8e28d484, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 1.272222e-14
+      value: 1.4554218e-14
       objectReference: {fileID: 0}
     - target: {fileID: 2964899880481033376, guid: 94a30307acec1f24991764cd8e28d484, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -1.272222e-14
+      value: -1.4554218e-14
       objectReference: {fileID: 0}
     - target: {fileID: 5051025581287457573, guid: 94a30307acec1f24991764cd8e28d484, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20336,15 +20409,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8518057166155760303, guid: 94a30307acec1f24991764cd8e28d484, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
+      value: -27.355713
       objectReference: {fileID: 0}
     - target: {fileID: 8518057166155760303, guid: 94a30307acec1f24991764cd8e28d484, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 4.5498197e-21
+      value: -3.2229997e-14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8518057166155760303, guid: 94a30307acec1f24991764cd8e28d484, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 2.3205454e-14
       objectReference: {fileID: 0}
     - target: {fileID: 8804201336262804738, guid: 94a30307acec1f24991764cd8e28d484, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 89.69998
+      value: -19.100004
       objectReference: {fileID: 0}
     - target: {fileID: 8804201336262804738, guid: 94a30307acec1f24991764cd8e28d484, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -20352,12 +20429,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8804201336262804738, guid: 94a30307acec1f24991764cd8e28d484, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 180
+      value: -180
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5571807805553023391, guid: 94a30307acec1f24991764cd8e28d484, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 143501737}
   m_SourcePrefab: {fileID: 100100000, guid: 94a30307acec1f24991764cd8e28d484, type: 3}
 --- !u!4 &741848636 stripped
 Transform:
@@ -23651,6 +23731,7 @@ MonoBehaviour:
   - FocusTransform: {fileID: 29850226}
     Radius: 1.5
   LessonId: 1
+  LessonFeatures: []
   unopenedParticles: {fileID: 1018432303113389178}
 --- !u!114 &922748046
 MonoBehaviour:
@@ -27493,6 +27574,7 @@ MonoBehaviour:
   - FocusTransform: {fileID: 1947922211}
     Radius: 1.25
   LessonId: 8
+  LessonFeatures: []
   unopenedParticles: {fileID: 455329788}
 --- !u!114 &1046516030
 MonoBehaviour:
@@ -29085,10 +29167,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FocusPoints:
   - FocusTransform: {fileID: 1542662906}
-    Radius: 1
+    Radius: 1.5
   - FocusTransform: {fileID: 2046327525}
-    Radius: 0.5
+    Radius: 0.8
   LessonId: 13
+  LessonFeatures: []
   unopenedParticles: {fileID: 2054644807}
 --- !u!65 &1140114233
 BoxCollider:
@@ -36423,8 +36506,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FocusPoints:
   - FocusTransform: {fileID: 1452692128}
-    Radius: 1
+    Radius: 1.25
   LessonId: 14
+  LessonFeatures: []
   unopenedParticles: {fileID: 1722328782}
 --- !u!114 &1452692130
 MonoBehaviour:
@@ -36949,6 +37033,7 @@ MonoBehaviour:
   - FocusTransform: {fileID: 2078390527}
     Radius: 1.5
   LessonId: 6
+  LessonFeatures: []
   unopenedParticles: {fileID: 2135428597}
 --- !u!114 &1486961506
 MonoBehaviour:
@@ -41448,6 +41533,7 @@ MonoBehaviour:
   - FocusTransform: {fileID: 1056970125}
     Radius: 2
   LessonId: 5
+  LessonFeatures: []
   unopenedParticles: {fileID: 1970072455}
 --- !u!114 &1651671100
 MonoBehaviour:
@@ -44740,6 +44826,7 @@ MonoBehaviour:
   - FocusTransform: {fileID: 1319612789}
     Radius: 1.5
   LessonId: 12
+  LessonFeatures: []
   unopenedParticles: {fileID: 1876675509}
 --- !u!114 &1808262865
 MonoBehaviour:
@@ -44909,6 +44996,7 @@ MonoBehaviour:
   - FocusTransform: {fileID: 1814037215}
     Radius: 3.5
   LessonId: 4
+  LessonFeatures: []
   unopenedParticles: {fileID: 1886777031}
 --- !u!114 &1814037217
 MonoBehaviour:
@@ -46731,6 +46819,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6be528adce842384eb968c64bfe626eb, type: 3}
   m_PrefabInstance: {fileID: 1911556281}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1912711331
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1912711332}
+  m_Layer: 7
+  m_Name: Focuspoint3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1912711332
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912711331}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.087, y: 1.941, z: -0.413}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 620426996}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1915591269 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7142525742907099308, guid: 71c9e6fe29b8fac44b3b628a5828d9a3, type: 3}
@@ -46997,6 +47116,7 @@ MonoBehaviour:
   - FocusTransform: {fileID: 1922013804}
     Radius: 3
   LessonId: 7
+  LessonFeatures: []
   unopenedParticles: {fileID: 347770336}
 --- !u!114 &1922013806
 MonoBehaviour:
@@ -47523,6 +47643,7 @@ MonoBehaviour:
   - FocusTransform: {fileID: 1954525968}
     Radius: 15
   LessonId: 10
+  LessonFeatures: []
   unopenedParticles: {fileID: 1795162931}
 --- !u!114 &1954525970
 MonoBehaviour:
@@ -48104,6 +48225,7 @@ MonoBehaviour:
   - FocusTransform: {fileID: 37396762}
     Radius: 2.5
   LessonId: 3
+  LessonFeatures: []
   unopenedParticles: {fileID: 820070762}
 --- !u!114 &1970737606
 MonoBehaviour:
@@ -49641,6 +49763,7 @@ MonoBehaviour:
   - FocusTransform: {fileID: 344047714}
     Radius: 6
   LessonId: 9
+  LessonFeatures: []
   unopenedParticles: {fileID: 705955674}
 --- !u!114 &2047383471
 MonoBehaviour:

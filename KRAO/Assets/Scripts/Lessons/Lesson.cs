@@ -1,8 +1,7 @@
 using UnityEngine;
-using System.Linq;
-using UnityEngine.UI;
-using UnityEngine.InputSystem;
 using System;
+using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class Lesson : MonoBehaviour
 {
@@ -10,6 +9,8 @@ public class Lesson : MonoBehaviour
     public LessonWindow lessonWindow => FindFirstObjectByType<LessonWindow>();
 
     public int LessonId;
+
+    public LessonFeature[] LessonFeatures;
 
     private LessonManager lessonManager => FindFirstObjectByType<LessonManager>();
 
@@ -48,6 +49,16 @@ public class Lesson : MonoBehaviour
             OnLessonClosed?.Invoke(this);
         }
     }
+
+    public bool HasMultipleFocusPoints()
+    {
+        return FocusPoints.Length > 1;
+    }
+
+    public bool HasLessonFeatures()
+    {
+        return LessonFeatures.Length > 0;
+    }
 }
 
 [Serializable]
@@ -55,4 +66,11 @@ public struct LessonViewPoint
 {
     public Transform FocusTransform;
     public float Radius;
+}
+
+[Serializable]
+public struct LessonFeature
+{
+    public Button.ButtonClickedEvent ButtonEvent;
+    public string ButtonPrompt;
 }

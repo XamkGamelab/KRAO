@@ -29,10 +29,6 @@ public class FocusView : MonoBehaviour
     public void ToggleFocusView()
     {
         focusViewEnabled = !focusViewEnabled;
-        if(focusViewEnabled)
-        {
-            ResetOribtalCameraValues();
-        }
         playerManager.ToggleControllerState();
         rotatingCamera.enabled = focusViewEnabled;
     }
@@ -47,7 +43,7 @@ public class FocusView : MonoBehaviour
         cinemachineInput.Controllers[2].Input.Gain = -_sensitivity;
     }
 
-    private void ResetOribtalCameraValues()
+    public void ResetOribtalCameraValues()
     {
         orbitalFollow.HorizontalAxis.Value = orbitalFollow.HorizontalAxis.Center;
         orbitalFollow.VerticalAxis.Value = orbitalFollow.VerticalAxis.Center;

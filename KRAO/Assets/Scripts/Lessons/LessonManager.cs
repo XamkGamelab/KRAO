@@ -11,6 +11,8 @@ public class LessonManager : MonoBehaviour
     private CinemachineCamera focusCamera => GameObject.FindWithTag("FocusView").GetComponent<CinemachineCamera>();
     private CinemachineOrbitalFollow orbitalFollow => GameObject.FindWithTag("FocusView").GetComponent<CinemachineOrbitalFollow>();
     private LessonTracker lessonTracker => FindFirstObjectByType<LessonTracker>();
+    private LessonFocusPoints lessonFocusPoints => FindFirstObjectByType<LessonFocusPoints>();
+    private LessonFeatures lessonFeatures => FindFirstObjectByType<LessonFeatures>();
     public LessonWindow lessonWindow => FindFirstObjectByType<LessonWindow>();
 
     private Lesson openLesson;
@@ -25,6 +27,16 @@ public class LessonManager : MonoBehaviour
     private void HandleLessonClosed(Lesson _lesson)
     {
         openLesson = null;
+
+        if (_lesson.HasMultipleFocusPoints())
+        {
+            lessonFocusPoints.DisableFocusPoints();
+        }
+
+        if (_lesson.HasLessonFeatures())
+        {
+            lessonFeatures.DestroyButtons();
+        }
         // Close FocusView
         focusView.ToggleFocusView();
     }
@@ -39,10 +51,24 @@ public class LessonManager : MonoBehaviour
     {
         openLesson = _lesson;
         // Set lessonObject as tracking target
-        SetFocus(_lesson);
+        SetFocus(_lesson.FocusPoints[0]);
 
-        // Open FocusView
+        // Reset FocusView Rotation and open FocusView
+        focusView.ResetOribtalCameraValues();
         focusView.ToggleFocusView();
+
+        // If the lesson has multiple focus points for the camera, enable the UI to swap between them
+        if (_lesson.HasMultipleFocusPoints())
+        {
+            lessonFocusPoints.EnableFocusPoints(_lesson.FocusPoints);
+        }
+
+        // If the lesson has any features, generate buttons for them
+        if (_lesson.HasLessonFeatures())
+        {
+            Debug.Log("Features found");
+            lessonFeatures.GenerateButtons(_lesson.LessonFeatures);
+        }
 
         // Open lesson text box (canvas)
         lessonWindow.OpenWindow();
@@ -65,17 +91,9 @@ public class LessonManager : MonoBehaviour
         Debug.Log("Lesson added to journal");
     }
 
-    private void SetFocus(Lesson _lesson)
+    public void SetFocus(LessonViewPoint _focuspoint)
     {
-        if(_lesson.FocusPoints.Length > 0)
-        {
-            focusCamera.Target.TrackingTarget = _lesson.FocusPoints[0].FocusTransform;
-            orbitalFollow.Radius = _lesson.FocusPoints[0].Radius;
-        }
-        else
-        {
-            focusCamera.Target.TrackingTarget = _lesson.transform;
-            orbitalFollow.Radius = 2f;
-        }
+        focusCamera.Target.TrackingTarget = _focuspoint.FocusTransform;
+        orbitalFollow.Radius = _focuspoint.Radius;
     }
 }
