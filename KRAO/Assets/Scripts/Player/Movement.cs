@@ -48,7 +48,6 @@ public class Movement : MonoBehaviour
     {
         if(!controller.isGrounded)
         {
-            Debug.Log("Player not grounded!");
             GroundPlayer();
 
         }

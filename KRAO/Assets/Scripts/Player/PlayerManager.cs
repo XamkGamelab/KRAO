@@ -47,6 +47,7 @@ public class PlayerManager : MonoBehaviour
     {
         bool wasControlEnabled = ControllerEnabled;
         ControllerEnabled = false;
+        interaction.ClearInteractables();
         playerTransform.position = position;
         playerTransform.rotation = rotation;
         ControllerEnabled = wasControlEnabled;

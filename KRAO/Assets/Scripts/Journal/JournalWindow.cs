@@ -102,6 +102,23 @@ public class JournalWindow : Window
         }
     }
 
+    public bool CheckIsLessonActivated(int _lessonId)
+    {
+        bool _returnValue = false;
+        for (int i = 0; i < dropdownButtons.Count; i++)
+        {
+            if (dropdownButtons[i].LessonId == _lessonId)
+            {
+                if (dropdownButtons[i].IsInteractable())
+                {
+                    _returnValue = true;
+                    break;
+                }
+            }
+        }
+        return _returnValue;
+    }
+
     public void SetLessonTexts(int _lessonId)
     {
         HeaderText.text = lessonTracker.LessonItemById(_lessonId).HeaderText;
