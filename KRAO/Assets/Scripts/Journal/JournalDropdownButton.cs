@@ -6,7 +6,9 @@ public class JournalDropdownButton : MonoBehaviour
     private Button journalButton => GetComponent<Button>();
     private JournalWindow journal => FindAnyObjectByType<JournalWindow>();
     private Text headerText => GetComponentInChildren<Text>();
-    
+
+    public bool isOpen {  get; private set; }
+
     public int LessonId;
     public Image CheckMarkImg;
 
@@ -18,10 +20,17 @@ public class JournalDropdownButton : MonoBehaviour
         journalButton.onClick.AddListener(HandleJournalButtonClick);
     }
 
+    public void ToggleOpenState(bool _state)
+    {
+        isOpen = _state;
+    }
+
     public void HandleJournalButtonClick()
     {
         //set texts
         journal.SetLessonTexts(LessonId);
+        journal.dropdownButtons.ForEach(b => b.ToggleOpenState(false));
+        isOpen = true;
     }
 
     public void SetValues(int _id, string _header)

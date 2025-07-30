@@ -33,17 +33,40 @@ public class JournalWindow : Window
 
     private void HandleNextLessonButtonClick()
     {
-        // go to next active/found lesson
-
-        // if current lesson last in list disable button
+        for (int i = CurrentLesson() + 1; i < dropdownButtons.Count; i++)
+        {
+            if (dropdownButtons[i].IsInteractable())
+            {
+                dropdownButtons[i].HandleJournalButtonClick();
+                break;
+            }
+        }
     }
 
     private void HandlePrevLessonButtonClick()
     {
-        // go to previous active/found lesson
+        for (int i = CurrentLesson() - 1; i >= 0; i--)
+        {
+            if (dropdownButtons[i].IsInteractable())
+            {
+                dropdownButtons[i].HandleJournalButtonClick();
+                break;
+            }
+        }
+    }
 
-        // if current lesson first in list disable button
-
+    private int CurrentLesson()
+    {
+        int _lesson = 0;
+        for (int i = 0; i < dropdownButtons.Count; i++)
+        {
+            if (dropdownButtons[i].isOpen)
+            {
+                _lesson = i;
+                break;
+            }
+        }
+        return _lesson;
     }
 
     private void HandleDropdownClicked(int _sceneId)
@@ -105,6 +128,12 @@ public class JournalWindow : Window
     public bool CheckIsLessonActivated(int _lessonId)
     {
         bool _returnValue = false;
+
+        /*if (!lessonTracker.LessonItemById(_lessonId).IsNew)
+        {
+            _returnValue = true;
+        }*/
+
         for (int i = 0; i < dropdownButtons.Count; i++)
         {
             if (dropdownButtons[i].LessonId == _lessonId)
@@ -116,6 +145,7 @@ public class JournalWindow : Window
                 }
             }
         }
+
         return _returnValue;
     }
 
