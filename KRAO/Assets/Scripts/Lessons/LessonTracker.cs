@@ -1,10 +1,6 @@
-using JetBrains.Annotations;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class LessonTracker : MonoBehaviour
 {
@@ -13,7 +9,7 @@ public class LessonTracker : MonoBehaviour
     private SceneSelectionWindow sceneSelectionWindow => FindFirstObjectByType<SceneSelectionWindow>();
 
     public List<SceneItem> SceneItems;
-    
+
 
     #region private methods
     private void Awake()
@@ -44,7 +40,7 @@ public class LessonTracker : MonoBehaviour
         for (int i = 0; i < SceneItems.Count; i++)
         {
             SceneItems[i].MaxLessons = SceneItems[i].lessons.Count;
-            
+
             //journal
             journalWindow.JournalDropdowns[i].SetLessonsFoundText(SceneItems[i].FoundLessons, SceneItems[i].MaxLessons);
             journalWindow.JournalDropdowns[i].SceneIndex = SceneItems[i].SceneIndex;
@@ -57,7 +53,7 @@ public class LessonTracker : MonoBehaviour
     {
         //progressbar
         progressBar.ChangeSliderValue(SceneItemById(_sceneId).FoundLessons, SceneItemById(_sceneId).MaxLessons);
-        
+
         for (int i = 0; i < SceneItems.Count; i++)
         {
             //journal
@@ -105,14 +101,11 @@ public class LessonTracker : MonoBehaviour
 
         for (int i = 0; i < SceneItems.Count; i++)
         {
-            if (SceneItems[i].SceneIndex == SceneManager.GetActiveScene().buildIndex)
+            for (int j = 0; j < SceneItems[i].lessons.Count; j++)
             {
-                for (int j = 0; j < SceneItems[i].lessons.Count; j++)
+                if (SceneItems[i].lessons[j].LessonId == _lessonId)
                 {
-                    if (SceneItems[i].lessons[j].LessonId == _lessonId)
-                    {
-                        _lessonItem = SceneItems[i].lessons[j];
-                    }
+                    _lessonItem = SceneItems[i].lessons[j];
                 }
             }
         }

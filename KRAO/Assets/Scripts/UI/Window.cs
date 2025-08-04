@@ -1,7 +1,8 @@
+using System;
+using System.Collections;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Linq;
-using System;
 
 public class Window : MonoBehaviour
 {
@@ -31,5 +32,14 @@ public class Window : MonoBehaviour
     public void OpenWindow()
     {
         OnWindowOpened?.Invoke(this);
+    }
+
+    public IEnumerator ResetScrollbar(Scrollbar _scrollbar)
+    {
+        if (_scrollbar != null)
+        {
+            yield return new WaitForSeconds(0.02f);
+            _scrollbar.value = 1;
+        }
     }
 }

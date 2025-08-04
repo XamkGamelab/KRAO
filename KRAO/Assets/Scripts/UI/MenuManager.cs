@@ -44,7 +44,7 @@ public class MenuManager : MonoBehaviour
             HandleWindowOpened(hudWindow);
             CloseSceneSelectionButton.onClick.AddListener(OpenPauseMenu);
             CloseSettingsButton.onClick.AddListener(OpenPauseMenu);
-            PauseMenuWindow.KeyCode = KeyCode.Escape;
+            PauseMenuWindow.KeyCode = KeyCode.P;
         }
     }
 
