@@ -20,7 +20,7 @@ public class JournalDropdownButton : MonoBehaviour
         journalButton.onClick.AddListener(HandleJournalButtonClick);
     }
 
-    public void ToggleOpenState(bool _state)
+    public void SetOpenState(bool _state)
     {
         isOpen = _state;
     }
@@ -30,10 +30,8 @@ public class JournalDropdownButton : MonoBehaviour
         //set texts
         journal.SetLessonTexts(LessonId);
         //set isOpen state
-        journal.dropdownButtons.ForEach(b => b.ToggleOpenState(false));
+        journal.dropdownButtons.ForEach(b => b.SetOpenState(false));
         isOpen = true;
-        //reset scrollbar
-        journal.ResetScrollbar();
     }
 
     public void SetValues(int _id, string _header)
