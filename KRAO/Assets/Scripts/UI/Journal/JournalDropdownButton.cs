@@ -29,8 +29,11 @@ public class JournalDropdownButton : MonoBehaviour
     {
         //set texts
         journal.SetLessonTexts(LessonId);
+        //set isOpen state
         journal.dropdownButtons.ForEach(b => b.ToggleOpenState(false));
         isOpen = true;
+        //reset scrollbar
+        journal.ResetScrollbar();
     }
 
     public void SetValues(int _id, string _header)

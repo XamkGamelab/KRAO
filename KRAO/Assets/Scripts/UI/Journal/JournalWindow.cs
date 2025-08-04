@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -13,6 +12,7 @@ public class JournalWindow : Window
 
     [Header("Lesson")]
     public RectTransform ContentRect;
+    public Scrollbar ContentScrollbar;
     public Text HeaderText;
     public Text ContentText;
     public Button PrevLessonButton;
@@ -33,26 +33,34 @@ public class JournalWindow : Window
 
     private void HandleNextLessonButtonClick()
     {
+        int _next = 0;
         for (int i = CurrentLesson() + 1; i < dropdownButtons.Count; i++)
         {
             if (dropdownButtons[i].IsInteractable())
             {
-                dropdownButtons[i].HandleJournalButtonClick();
+                _next = i;
                 break;
             }
         }
+        dropdownButtons[_next].HandleJournalButtonClick();
     }
 
     private void HandlePrevLessonButtonClick()
     {
-        for (int i = CurrentLesson() - 1; i >= 0; i--)
+        int _prev = 0;
+        for (int i = CurrentLesson() - 1; i >= -1; i--)
         {
+            if (i == -1)
+            {
+                i = dropdownButtons.Count - 1;
+            }
             if (dropdownButtons[i].IsInteractable())
             {
-                dropdownButtons[i].HandleJournalButtonClick();
+                _prev = i;
                 break;
             }
         }
+        dropdownButtons[_prev].HandleJournalButtonClick();
     }
 
     private int CurrentLesson()
@@ -73,7 +81,7 @@ public class JournalWindow : Window
     {
         //change rect transform size (to dropdown sizes)
         dropdownsContainerRectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, DropdownHeight());
-        
+
         //change image
         JournalImage.sprite = lessonTracker.SceneItemById(_sceneId).SceneImage;
     }
@@ -129,21 +137,9 @@ public class JournalWindow : Window
     {
         bool _returnValue = false;
 
-        /*if (!lessonTracker.LessonItemById(_lessonId).IsNew)
+        if (!lessonTracker.LessonItemById(_lessonId).IsNew)
         {
             _returnValue = true;
-        }*/
-
-        for (int i = 0; i < dropdownButtons.Count; i++)
-        {
-            if (dropdownButtons[i].LessonId == _lessonId)
-            {
-                if (dropdownButtons[i].IsInteractable())
-                {
-                    _returnValue = true;
-                    break;
-                }
-            }
         }
 
         return _returnValue;
@@ -154,6 +150,13 @@ public class JournalWindow : Window
         HeaderText.text = lessonTracker.LessonItemById(_lessonId).HeaderText;
         ContentText.text = lessonTracker.LessonItemById(_lessonId).ContentText;
         JournalImage.sprite = lessonTracker.LessonItemById(_lessonId).LessonImage;
+
+        ResetScrollbar();
+    }
+
+    public void ResetScrollbar()
+    {
+        StartCoroutine(ResetScrollbar(ContentScrollbar));
     }
     #endregion
 }

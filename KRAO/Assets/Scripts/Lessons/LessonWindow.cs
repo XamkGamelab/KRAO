@@ -14,10 +14,6 @@ public class LessonWindow : Window
     {
         HeaderText.text = lessonTracker.LessonItemById(_lessonId).HeaderText;
         ContentText.text = lessonTracker.LessonItemById(_lessonId).ContentText;
-    }
-
-    public void ResetScrollbox()
-    {
-        scrollbar.value = 1f;
+        StartCoroutine(ResetScrollbar(scrollbar));
     }
 }
