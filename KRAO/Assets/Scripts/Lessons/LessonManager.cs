@@ -26,8 +26,6 @@ public class LessonManager : MonoBehaviour
 
     private void HandleLessonClosed(Lesson _lesson)
     {
-        openLesson = null;
-
         if (_lesson.HasMultipleFocusPoints())
         {
             lessonFocusPoints.DisableFocusPoints();
@@ -39,6 +37,8 @@ public class LessonManager : MonoBehaviour
         }
         // Close FocusView
         focusView.ToggleFocusView();
+
+        openLesson = null;
     }
 
     //Called in LessonWindow (prefab) CloseLessonButton onClick

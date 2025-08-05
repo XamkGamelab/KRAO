@@ -34,11 +34,12 @@ public class Window : MonoBehaviour
         OnWindowOpened?.Invoke(this);
     }
 
+
     public IEnumerator ResetScrollbar(Scrollbar _scrollbar)
     {
         if (_scrollbar != null)
         {
-            yield return new WaitForSeconds(0.02f);
+            yield return new WaitForSeconds(0.2f);
             _scrollbar.value = 1;
         }
     }

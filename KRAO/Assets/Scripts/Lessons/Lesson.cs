@@ -14,7 +14,7 @@ public class Lesson : MonoBehaviour
 
     private LessonManager lessonManager => FindFirstObjectByType<LessonManager>();
 
-    private bool lessonOpen = false;
+    public bool lessonOpen { get; private set; } = false;
 
     public static event Action<Lesson> OnLessonOpened;
     public static event Action<Lesson> OnLessonClosed;
