@@ -498,7 +498,6 @@ MonoBehaviour:
   MainMenuWindow: {fileID: 999956379}
   CloseSceneSelectionButton: {fileID: 6309073405931349342}
   CloseSettingsButton: {fileID: 6309073405931349341}
-  CloseLessonButton: {fileID: 6309073405931349345}
 --- !u!114 &1923732131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -676,6 +675,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1108580315172481103, guid: 31103c345b65bae4e9972399c5107f06, type: 3}
+      propertyPath: m_Color.a
+      value: 0.7254902
+      objectReference: {fileID: 0}
     - target: {fileID: 1676321009128394862, guid: 31103c345b65bae4e9972399c5107f06, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
@@ -790,7 +793,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4615867660726241496, guid: 31103c345b65bae4e9972399c5107f06, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -393.4009
+      value: -393.44217
       objectReference: {fileID: 0}
     - target: {fileID: 4643615823034485633, guid: 31103c345b65bae4e9972399c5107f06, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -851,6 +854,10 @@ PrefabInstance:
     - target: {fileID: 7097090008722463515, guid: 31103c345b65bae4e9972399c5107f06, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7442931165315879010, guid: 31103c345b65bae4e9972399c5107f06, type: 3}
+      propertyPath: m_Color.a
+      value: 0.7254902
       objectReference: {fileID: 0}
     - target: {fileID: 7822379614932292902, guid: 31103c345b65bae4e9972399c5107f06, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -963,17 +970,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 57f186f92bcd8a14fbaa7188a54a3c7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &6309073405931349345 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4051382918812947821, guid: 31103c345b65bae4e9972399c5107f06, type: 3}
-  m_PrefabInstance: {fileID: 6309073405931349340}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
