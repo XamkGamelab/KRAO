@@ -33,7 +33,7 @@ public class LessonManager : MonoBehaviour
 
         if (_lesson.HasLessonFeatures())
         {
-            lessonFeatures.DestroyButtons();
+            lessonFeatures.DisableLessonFeatures();
         }
         // Close FocusView
         focusView.ToggleFocusView();
@@ -67,7 +67,7 @@ public class LessonManager : MonoBehaviour
         if (_lesson.HasLessonFeatures())
         {
             Debug.Log("Features found");
-            lessonFeatures.GenerateButtons(_lesson.LessonFeatures);
+            lessonFeatures.EnableLessonFeatures(_lesson.LessonFeatures);
         }
 
         // Open lesson text box (canvas)

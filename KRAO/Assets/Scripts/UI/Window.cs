@@ -10,7 +10,7 @@ public class Window : MonoBehaviour
 
     public Button[] OpenWindowButtons;
 
-    public static event Action<Window> OnWindowOpened;
+    public static event Action<Window, bool> OnWindowChange;
 
     public bool isOpen { get; set; } = false;
 
@@ -27,13 +27,21 @@ public class Window : MonoBehaviour
         {
             OpenWindow();
         }
+        else if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            CloseWindow();
+        }
     }
 
     public void OpenWindow()
     {
-        OnWindowOpened?.Invoke(this);
+        OnWindowChange?.Invoke(this, true);
     }
 
+    public void CloseWindow()
+    {
+        OnWindowChange?.Invoke(this, false);
+    }
 
     public IEnumerator ResetScrollbar(Scrollbar _scrollbar)
     {

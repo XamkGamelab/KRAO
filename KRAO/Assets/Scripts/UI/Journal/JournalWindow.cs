@@ -33,11 +33,15 @@ public class JournalWindow : Window
 
     private void HandleNextLessonButtonClick()
     {
-        if (dropdownButtons[CurrentLesson()].IsInteractable())
+        if (CurrentLesson() != -1)
         {
-            int _next = 0;
-            for (int i = CurrentLesson() + 1; i < dropdownButtons.Count; i++)
+            int _next = CurrentLesson();
+            for (int i = CurrentLesson() + 1; i < dropdownButtons.Count + 1; i++)
             {
+                if (i == dropdownButtons.Count)
+                {
+                    i = 0;
+                }
                 if (dropdownButtons[i].IsInteractable())
                 {
                     _next = i;
@@ -50,9 +54,9 @@ public class JournalWindow : Window
 
     private void HandlePrevLessonButtonClick()
     {
-        if (dropdownButtons[CurrentLesson()].IsInteractable())
+        if (CurrentLesson() != -1)
         {
-            int _prev = 0;
+            int _prev = CurrentLesson();
             for (int i = CurrentLesson() - 1; i >= -1; i--)
             {
                 if (i == -1)
@@ -71,7 +75,7 @@ public class JournalWindow : Window
 
     private int CurrentLesson()
     {
-        int _lesson = 0;
+        int _lesson = -1;
         for (int i = 0; i < dropdownButtons.Count; i++)
         {
             if (dropdownButtons[i].isOpen)
