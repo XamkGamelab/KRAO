@@ -495,17 +495,6 @@
                 },
                 {
                     "name": "",
-                    "id": "e55e7451-fa52-42ae-ae49-0bd6bdd4827e",
-                    "path": "<Keyboard>/escape",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Menu",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "a33eb93c-1999-471b-8d03-d7efc08ea791",
                     "path": "<Keyboard>/tab",
                     "interactions": "",

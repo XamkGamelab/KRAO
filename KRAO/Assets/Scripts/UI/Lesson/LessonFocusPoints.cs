@@ -1,13 +1,24 @@
 using System.Drawing;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LessonFocusPoints : MonoBehaviour
 {
+    private UIRectScaling UIRectScaling => FindFirstObjectByType<UIRectScaling>();
     private CanvasGroup canvasGroup => GetComponent<CanvasGroup>();
 
+    [SerializeField] private RectTransform sidePanel;
     [SerializeField] private GameObject focusPointButtonPrefab;
+    [SerializeField] private GameObject cameraImage;
     [SerializeField] private RectTransform buttonParent;
-    
+
+    private float buttonParentPosY = 0;
+
+    private void Start()
+    {
+        buttonParentPosY = buttonParent.position.y;
+    }
+
     public void EnableFocusPoints(LessonViewPoint[] points)
     {
         GenerateButtons(points);
@@ -28,6 +39,8 @@ public class LessonFocusPoints : MonoBehaviour
 
     private void GenerateButtons(LessonViewPoint[] points)
     {
+        Instantiate(cameraImage, buttonParent);
+
         for(int i = 0; i < points.Length; i++)
         {
             var newButton = Instantiate(focusPointButtonPrefab, buttonParent);
@@ -35,6 +48,8 @@ public class LessonFocusPoints : MonoBehaviour
             focusPointButton.ViewPoint = points[i];
             focusPointButton.Text.text = (i + 1).ToString();
         }
+
+        UIRectScaling.ScaleHeightUpByChildren(buttonParent, sidePanel, buttonParentPosY);
     }
 
     private void DestroyButtons()
