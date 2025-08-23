@@ -24,6 +24,7 @@ public class SceneLoader : SingletonMono<SceneLoader>
         SceneManager.LoadSceneAsync(sceneToLoad, LoadSceneMode.Additive);
         SceneManager.sceneLoaded += OnSceneLoaded;
 
+        //Update progress bar
         SetProgressBarValues?.Invoke(sceneBuildIndex);
     }
 

@@ -41,7 +41,6 @@ public class LessonManager : MonoBehaviour
         openLesson = null;
     }
 
-    //Called in LessonWindow (prefab) CloseLessonButton onClick
     public void CloseLesson()
     {
         openLesson.ToggleLesson();

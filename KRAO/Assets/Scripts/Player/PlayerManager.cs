@@ -46,11 +46,18 @@ public class PlayerManager : MonoBehaviour
     public void TransportPlayer(Vector3 position, Quaternion rotation)
     {
         bool wasControlEnabled = ControllerEnabled;
+
+        //set controller state to false
         ControllerEnabled = false;
+        ToggleControllerState(ControllerEnabled);
+
         interaction.ClearInteractables();
         playerTransform.position = position;
         playerTransform.rotation = rotation;
+
+        //set controller state to original state (state before transport)
         ControllerEnabled = wasControlEnabled;
+        ToggleControllerState(ControllerEnabled);
     }
     #endregion
     #region Private Functions
