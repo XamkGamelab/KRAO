@@ -84,7 +84,14 @@ public class MenuManager : MonoBehaviour
             {
                 if (previousWindow != CurrentWindow())
                 {
-                    StartCoroutine(SetPreviousWindow(CurrentWindow()));
+                    if (CurrentWindow() == PauseMenuWindow || CurrentWindow() == MainMenuWindow)
+                    {
+                        StartCoroutine(SetPreviousWindow(CurrentWindow()));
+                    }
+                    else
+                    {
+                        StartCoroutine(SetPreviousWindow(CurrentWindow()));
+                    }
                 }
                 opening = _window;
             }
@@ -114,7 +121,7 @@ public class MenuManager : MonoBehaviour
                 lessonManager.CloseLesson();
                 StartCoroutine(SetPreviousWindow(PauseMenuWindow));
             }
-            //close _windows
+            //close windows
             windows.ForEach(window => window.isOpen = false);
 
             //open window
