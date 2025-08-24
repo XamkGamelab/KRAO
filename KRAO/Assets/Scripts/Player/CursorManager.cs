@@ -12,7 +12,7 @@ public class CursorManager : MonoBehaviour
     }
     public void SetCursorState(CursorLockMode lockMode)
     {
-        Debug.Log($"Cursor mode set to {lockMode}");
+        //Debug.Log($"Cursor mode set to {lockMode}");
         if(lockMode == CurrentMode)
         {
             return;
