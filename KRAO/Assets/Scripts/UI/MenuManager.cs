@@ -73,9 +73,9 @@ public class MenuManager : MonoBehaviour
     private void HandleWindowChange(Window _window, bool _open)
     {
         //opening _window
-        if (_open == true)
+        if (_open)
         {
-            if ((SceneManager.GetActiveScene().buildIndex == 0 && _window == PauseMenuWindow) ||
+            /*if ((SceneManager.GetActiveScene().buildIndex == 0 && _window == PauseMenuWindow) ||
             (SceneManager.GetActiveScene().buildIndex != 0 && _window == MainMenuWindow))
             {
                 return;
@@ -84,22 +84,16 @@ public class MenuManager : MonoBehaviour
             {
                 if (previousWindow != CurrentWindow())
                 {
-                    if (CurrentWindow() == PauseMenuWindow || CurrentWindow() == MainMenuWindow)
-                    {
-                        StartCoroutine(SetPreviousWindow(CurrentWindow()));
-                    }
-                    else
-                    {
-                        StartCoroutine(SetPreviousWindow(CurrentWindow()));
-                    }
+                    StartCoroutine(SetPreviousWindow(CurrentWindow()));
                 }
                 opening = _window;
-            }
+            }*/
+            StartCoroutine(HandleWindowOpen(_window));
         }
         //closing _window
-        else if (_open == false)
+        else
         {
-            if ((SceneManager.GetActiveScene().buildIndex == 0 && previousWindow == PauseMenuWindow) ||
+            /*if ((SceneManager.GetActiveScene().buildIndex == 0 && previousWindow == PauseMenuWindow) ||
             (SceneManager.GetActiveScene().buildIndex != 0 && previousWindow == MainMenuWindow) ||
             previousWindow == lessonWindow)
             {
@@ -112,30 +106,104 @@ public class MenuManager : MonoBehaviour
                 {
                     StartCoroutine(SetPreviousWindow(_window));
                 }
-            }
+            }*/
+
+            StartCoroutine(HandleWindowClose(_window));
         }
         if (opening != null)
         {
+            /*Debug.LogWarning("OPENING: " + opening);
+            Debug.LogWarning("CLOSING: " + previousWindow);
+
             if (CurrentWindow() == lessonWindow)
             {
                 lessonManager.CloseLesson();
                 StartCoroutine(SetPreviousWindow(PauseMenuWindow));
             }
-            //close windows
+            //set isOpen as false for all windows
             windows.ForEach(window => window.isOpen = false);
 
-            //open window
+            //set isOpen as true for the window to be opened
             opening.isOpen = true;
 
             //toggle windows
-            windows.ForEach(window => ToggleWindow(window));
+            windows.ForEach(window => ToggleWindow(window));*/
+
+            StartCoroutine(OpenWindow());
         }
+    }
+
+    private IEnumerator HandleWindowOpen(Window _window)
+    {
+        if ((SceneManager.GetActiveScene().buildIndex == 0 && _window == PauseMenuWindow) ||
+            (SceneManager.GetActiveScene().buildIndex != 0 && _window == MainMenuWindow))
+        {
+            yield return null;
+        }
+        else
+        {
+            if (previousWindow != CurrentWindow())
+            {
+                previousWindow = CurrentWindow();
+                yield return new WaitForSeconds(0.1f);
+            }
+
+            opening = _window;
+            yield return new WaitForSeconds(0.1f);
+        }
+    }
+
+    private IEnumerator HandleWindowClose(Window _window)
+    {
+        if ((SceneManager.GetActiveScene().buildIndex == 0 && previousWindow == PauseMenuWindow) ||
+        (SceneManager.GetActiveScene().buildIndex != 0 && previousWindow == MainMenuWindow) ||
+        previousWindow == lessonWindow)
+        {
+            yield return null;
+        }
+        else
+        {
+            opening = previousWindow;
+            yield return new WaitForSeconds(0.1f);
+
+            if (_window != lessonWindow)
+            {
+                previousWindow = _window;
+                yield return new WaitForSeconds(0.1f);
+            }
+        }
+    }
+
+    private IEnumerator OpenWindow()
+    {
+        Debug.LogWarning("OPENING: " + opening);
+        Debug.LogWarning("CLOSING: " + previousWindow);
+
+        if (CurrentWindow() == lessonWindow && lessonManager.openLesson != null)
+        {
+            lessonManager.CloseLesson();
+            //previousWindow = PauseMenuWindow;
+            previousWindow = hudWindow;
+            yield return new WaitForSeconds(0.1f);
+        }
+        //set isOpen as false for all windows
+        windows.ForEach(window => window.isOpen = false);
+        yield return new WaitForSeconds(0.1f);
+
+        //set isOpen as true for the window to be opened
+        opening.isOpen = true;
+        yield return new WaitForSeconds(0.1f);
+
+        //toggle windows
+        windows.ForEach(window => ToggleWindow(window));
+        yield return new WaitForSeconds(0.1f);
     }
 
     private IEnumerator SetPreviousWindow(Window _previous)
     {
         yield return new WaitForSeconds(0.1f);
         previousWindow = _previous;
+        yield return new WaitForSeconds(0.1f);
     }
 
     private Window CurrentWindow()

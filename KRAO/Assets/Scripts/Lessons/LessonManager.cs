@@ -1,7 +1,5 @@
 using Unity.Cinemachine;
 using UnityEngine;
-using System.Collections.Generic;
-using System.Linq;
 using UnityEngine.SceneManagement;
 
 public class LessonManager : MonoBehaviour
@@ -13,39 +11,38 @@ public class LessonManager : MonoBehaviour
     private LessonTracker lessonTracker => FindFirstObjectByType<LessonTracker>();
     private LessonFocusPoints lessonFocusPoints => FindFirstObjectByType<LessonFocusPoints>();
     private LessonFeatures lessonFeatures => FindFirstObjectByType<LessonFeatures>();
-    public LessonWindow lessonWindow => FindFirstObjectByType<LessonWindow>();
+    private LessonWindow lessonWindow => FindFirstObjectByType<LessonWindow>();
 
-    private Lesson openLesson;
+    public Lesson openLesson;    // Lesson that is currently open
 
-
+    #region private methods
     private void Start()
     {
+        // Start listening to lesson opened/closed events
         Lesson.OnLessonOpened += HandleLessonOpened;
         Lesson.OnLessonClosed += HandleLessonClosed;
     }
 
+    // Called when lesson is closing
     private void HandleLessonClosed(Lesson _lesson)
     {
+        // If lesson has multiple FocusPoints, disable the UI to swap between them
         if (_lesson.HasMultipleFocusPoints())
         {
             lessonFocusPoints.DisableFocusPoints();
         }
-
+        // If the lesson has LessonFeatures, disable the buttons for them
         if (_lesson.HasLessonFeatures())
         {
             lessonFeatures.DisableLessonFeatures();
         }
         // Close FocusView
         focusView.ToggleFocusView();
-
+        // Make openLesson null (because no lesson is open)
         openLesson = null;
     }
 
-    public void CloseLesson()
-    {
-        openLesson.ToggleLesson();
-    }
-
+    // Called when lesson is opening
     private void HandleLessonOpened(Lesson _lesson)
     {
         openLesson = _lesson;
@@ -53,7 +50,7 @@ public class LessonManager : MonoBehaviour
         SetFocus(_lesson.FocusPoints[0]);
 
         // Reset FocusView Rotation and open FocusView
-        focusView.ResetOribtalCameraValues();
+        focusView.ResetOrbitalCameraValues();
         focusView.ToggleFocusView();
 
         // If the lesson has multiple focus points for the camera, enable the UI to swap between them
@@ -69,30 +66,48 @@ public class LessonManager : MonoBehaviour
             lessonFeatures.EnableLessonFeatures(_lesson.LessonFeatures);
         }
 
-        // Open lesson text box (canvas)
+        // Open LessonWindow
         lessonWindow.OpenWindow();
 
+        // If _lesson has not been previously found (IsNew)
         if (lessonTracker.LessonItemById(_lesson.LessonId).IsNew)
         {
-            AddLessonToJournal(_lesson);
+            // Activate it in the Journal
+            journal.ActivateLesson(_lesson.LessonId);
+            Debug.Log("Lesson added to journal");
+            // In LessonTracker, set it as found and update all trackers (progress bar, journal, scene selection)
             lessonTracker.AddLessonToTracker(SceneManager.GetActiveScene().buildIndex, _lesson.LessonId);
         }
     }
+    #endregion
 
-    public bool CheckIsLessonInJournal(Lesson _lesson)
+    #region public methods
+    // Check if lesson is found
+    public bool CheckIsLessonFound(Lesson _lesson)
     {
-        return journal.CheckIsLessonActivated(_lesson.LessonId);
+        bool _returnValue = false;
+
+        if (!lessonTracker.LessonItemById(_lesson.LessonId).IsNew)
+        {
+            _returnValue = true;
+        }
+
+        return _returnValue;
     }
 
-    private void AddLessonToJournal(Lesson _lesson)
+    // Close current open lesson
+    public void CloseLesson()
     {
-        journal.ActivateLesson(_lesson.LessonId);
-        Debug.Log("Lesson added to journal");
+        openLesson.ToggleLesson();
     }
 
+    // Set FocusView camera's focus to _focuspoint
     public void SetFocus(LessonViewPoint _focuspoint)
     {
+        // Set focus transform
         focusCamera.Target.TrackingTarget = _focuspoint.FocusTransform;
+        // Set orbit radius
         orbitalFollow.Radius = _focuspoint.Radius;
     }
+    #endregion
 }

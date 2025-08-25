@@ -143,18 +143,6 @@ public class JournalWindow : Window
         }
     }
 
-    public bool CheckIsLessonActivated(int _lessonId)
-    {
-        bool _returnValue = false;
-
-        if (!lessonTracker.LessonItemById(_lessonId).IsNew)
-        {
-            _returnValue = true;
-        }
-
-        return _returnValue;
-    }
-
     public void SetLessonTexts(int _lessonId)
     {
         HeaderText.text = lessonTracker.LessonItemById(_lessonId).HeaderText;

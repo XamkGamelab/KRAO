@@ -22,17 +22,22 @@ public class FocusView : MonoBehaviour
         {
             return;
         }
-
+        // Update mouse input behavior - control camera if mouse left is pressed...
         ToggleCursor(lookAction.IsPressed());
     }
 
+    // Turn FocusView on/off
     public void ToggleFocusView()
     {
+        // Switch enabled state
         focusViewEnabled = !focusViewEnabled;
+        // Switch controller state
         playerManager.ToggleControllerState();
+        // Switch between FocusView camera and Player camera
         rotatingCamera.enabled = focusViewEnabled;
     }
 
+    // Set camera sensitivity in each axis
     public void SetFocusViewCameraSensitivity(float _sensitivity)
     {
         // Look Orbit X
@@ -43,7 +48,7 @@ public class FocusView : MonoBehaviour
         cinemachineInput.Controllers[2].Input.Gain = -_sensitivity;
     }
 
-    public void ResetOribtalCameraValues()
+    public void ResetOrbitalCameraValues()
     {
         orbitalFollow.HorizontalAxis.Value = orbitalFollow.HorizontalAxis.Center;
         orbitalFollow.VerticalAxis.Value = orbitalFollow.VerticalAxis.Center;
@@ -52,17 +57,20 @@ public class FocusView : MonoBehaviour
 
     private void ToggleCursor(bool _state)
     {
+        // If mouse is over UI, don't control camera
         if (IsPointerOverUIElement())
         {
             ToggleCinemachineInput(false);
             return;
         }
-
+        // Enable/disable camera inputs
         ToggleCinemachineInput(_state);
+        // Lock/unlock cursor (hide+center / free to move+visible)
         CursorLockMode _mode = _state ? CursorLockMode.Locked : CursorLockMode.None;
         cursorManager.SetCursorState(_mode);
     }
 
+    // Enable/disable camera inputs
     private void ToggleCinemachineInput(bool _state)
     {
         foreach(var controller in cinemachineInput.Controllers)
@@ -72,6 +80,7 @@ public class FocusView : MonoBehaviour
     }
 
     #region UI Detection
+    // Check if mouse pointer is over a UI element
     public bool IsPointerOverUIElement()
     {
         return EventSystem.current.IsPointerOverGameObject();
