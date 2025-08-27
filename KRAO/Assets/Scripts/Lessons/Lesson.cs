@@ -1,6 +1,5 @@
 using UnityEngine;
 using System;
-using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class Lesson : MonoBehaviour
@@ -11,22 +10,23 @@ public class Lesson : MonoBehaviour
     public static event Action<Lesson> OnLessonOpened;
     public static event Action<Lesson> OnLessonClosed;
 
-    public LessonViewPoint[] FocusPoints;
-    public LessonFeature[] LessonFeatures;
+    public bool lessonOpen { get; private set; } = false;      // is lesson open
 
-    private bool lessonOpen = false;       // is lesson open
-
-    // SET IN EDITOR
+    #region set in editor
     // Id to reference a specific lesson (Lesson and LessonTracker's corresponding LessonItem need to have same ids)
-    public int LessonId { get; private set; }
+    public int LessonId;
 
     // Particle effect for unopened lesson
     [SerializeField] private ParticleSystem unopenedParticles;
 
+    public LessonViewPoint[] FocusPoints;
+    public LessonFeature[] LessonFeatures;
+    #endregion
+
     private void Start()
     {
         // If lesson is not in journal (has not been opened/found), play particles
-        if (!lessonManager.CheckIsLessonInJournal(this))
+        if (!lessonManager.CheckIsLessonFound(this))
         {
             unopenedParticles.Play();
         }
@@ -62,28 +62,35 @@ public class Lesson : MonoBehaviour
     // Check if lesson has multiple FocusPoints
     public bool HasMultipleFocusPoints()
     {
-        // return true if over 1 FocusPoint in FocusPoints list
+        // return true if over 1 FocusPoint in FocusPoints array
         return FocusPoints.Length > 1;
     }
 
     // Check if lesson has any LessonFeatures
     public bool HasLessonFeatures()
     {
-        // return true if LessonFeatures list has anything inside
+        // return true if LessonFeatures array has anything inside
         return LessonFeatures.Length > 0;
     }
 }
 
+
+// Struct for different camera angles
 [Serializable]
 public struct LessonViewPoint
 {
+    // Transform the FocusView camera will focus on
     public Transform FocusTransform;
+    // Orbit radius
     public float Radius;
 }
 
+// Struct for different lesson features (currently just animation)
 [Serializable]
 public struct LessonFeature
 {
+    // What happens when button is pressed
     public Button.ButtonClickedEvent ButtonEvent;
+    // Text to describe what the Feature does (LessonFeatureTooltip)
     public string ButtonPrompt;
 }

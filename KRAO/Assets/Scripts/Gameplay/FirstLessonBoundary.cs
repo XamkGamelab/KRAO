@@ -26,6 +26,6 @@ public class FirstLessonBoundary : MonoBehaviour
 
     private bool HasLessonBeenLearned()
     {
-        return lessonManager.CheckIsLessonInJournal(firstLesson);
+        return lessonManager.CheckIsLessonFound(firstLesson);
     }
 }
