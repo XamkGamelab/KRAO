@@ -1,6 +1,4 @@
-using System.Drawing;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class LessonFocusPoints : MonoBehaviour
 {
@@ -11,13 +9,6 @@ public class LessonFocusPoints : MonoBehaviour
     [SerializeField] private GameObject focusPointButtonPrefab;
     [SerializeField] private GameObject cameraImage;
     [SerializeField] private RectTransform buttonParent;
-
-    private float buttonParentPosY = 0;
-
-    private void Start()
-    {
-        buttonParentPosY = buttonParent.position.y;
-    }
 
     public void EnableFocusPoints(LessonViewPoint[] points)
     {
@@ -49,7 +40,8 @@ public class LessonFocusPoints : MonoBehaviour
             focusPointButton.Text.text = (i + 1).ToString();
         }
 
-        UIRectScaling.ScaleHeightUpByChildren(buttonParent, sidePanel, buttonParentPosY);
+        // Scale side panel height
+        UIRectScaling.ScaleHeightUpByChildren(buttonParent, sidePanel, 0);
     }
 
     private void DestroyButtons()

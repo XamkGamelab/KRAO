@@ -1,11 +1,11 @@
 using System;
-using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneLoader : SingletonMono<SceneLoader>
 {
     private int sceneToLoad;
     private int sceneToUnload;
+    // Event for updating the progress bar (implemented in LessonTracker)
     public static event Action<int> SetProgressBarValues;
 
     private void Awake()

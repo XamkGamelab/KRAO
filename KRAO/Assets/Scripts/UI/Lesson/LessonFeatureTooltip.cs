@@ -11,15 +11,18 @@ public class LessonFeatureTooltip : MonoBehaviour, IPointerEnterHandler, IPointe
 
     private void Start()
     {
+        // Get tooltip GameObject from lessonfeatures class
         tooltip = lessonFeatures.Tooltip;
+        // Get CanvasGroup from the tooltip GameObject
         tooltipCanvasGroup = tooltip.GetComponent<CanvasGroup>();
     }
 
-    public void SetValues(string _text)
+    public void SetTooltipText(string _text)
     {
         tooltipText = _text;
     }
 
+    // When pointer enters lesson feature button area
     public void OnPointerEnter(PointerEventData eventData)
     {
         //show tooltip with correct text
@@ -28,7 +31,7 @@ public class LessonFeatureTooltip : MonoBehaviour, IPointerEnterHandler, IPointe
         tooltipCanvasGroup.blocksRaycasts = true;
         tooltip.GetComponentInChildren<TMP_Text>(true).text = tooltipText;
     }
-
+    // When pointer exits lesson feature button area
     public void OnPointerExit(PointerEventData eventData)
     {
         //hide tooltip

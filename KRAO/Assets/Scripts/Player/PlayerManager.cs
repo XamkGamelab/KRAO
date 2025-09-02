@@ -1,10 +1,8 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PlayerManager : MonoBehaviour
 {
     public CursorManager CursorManager => GetComponent<CursorManager>();
-
     private Movement movement => GetComponentInChildren<Movement>();
     private Look look => GetComponentInChildren<Look>();
     private Interaction interaction => GetComponentInChildren<Interaction>();

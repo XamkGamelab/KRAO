@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,8 +11,10 @@ public class SceneElement : MonoBehaviour
 
     public int SceneIndex { get; private set; }
 
+    // Set scene index, header text and scene image (sprite)
     public void SetInitValues(int _sceneIndex, string _header, Sprite _sprite)
     {
+        // Scene the SceneButton will open
         OpenSceneButton.sceneToLoadBuildIndex = _sceneIndex;
         sceneHeaderText.text = _header;
         sceneElementImage.sprite = _sprite;

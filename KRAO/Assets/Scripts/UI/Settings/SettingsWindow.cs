@@ -1,5 +1,3 @@
-using System;
-using UnityEngine;
 using UnityEngine.UI;
 
 public class SettingsWindow : Window
@@ -11,9 +9,11 @@ public class SettingsWindow : Window
 
     private void Awake()
     {
+        // Start listening to toggle clicks
         ControlsGuideToggle.onValueChanged.AddListener(ToggleControlsGuide);
     }
 
+    // Show/hide guides in HUD and Lesson windows
     private void ToggleControlsGuide(bool _state)
     {
         hudWindow.ShowControlsGuide(!_state);

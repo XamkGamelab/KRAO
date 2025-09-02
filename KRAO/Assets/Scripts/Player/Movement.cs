@@ -16,6 +16,8 @@ public class Movement : MonoBehaviour
 
     [SerializeField] LayerMask groundLayer;
 
+    Vector2 _input;
+
     private void Start()
     {
         move = InputSystem.actions.FindAction("Move");
@@ -49,7 +51,6 @@ public class Movement : MonoBehaviour
         if(!controller.isGrounded)
         {
             GroundPlayer();
-
         }
     }
 

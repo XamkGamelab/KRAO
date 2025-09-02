@@ -9,7 +9,7 @@ public class SceneBootstrapper : MonoBehaviour
         SetPlayerToSpawn();
     }
 
-    private void SetPlayerToSpawn()
+    public void SetPlayerToSpawn()
     {
         GameObject player = GameObject.FindWithTag("Player");
         if (player != null)

@@ -107,7 +107,7 @@ public class LessonTracker : MonoBehaviour
             {
                 scene = SceneItems[i];
             }
-            // else return null
+            // else returns null
         }
         return scene;
     }
@@ -144,6 +144,7 @@ public class LessonTracker : MonoBehaviour
         UpdateTrackers(_sceneId);
     }
 
+    // Set progress bar value (to some scenes FoundLessons out of its MaxLessons) with a sceneId
     public void SetProgressBarValue(int _sceneId)
     {
         progressBar.ChangeSliderValue(SceneItemById(_sceneId).FoundLessons, SceneItemById(_sceneId).MaxLessons);

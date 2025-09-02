@@ -1,6 +1,4 @@
-using System.Collections.Generic;
 using Unity.Cinemachine;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -22,7 +20,7 @@ public class FocusView : MonoBehaviour
         {
             return;
         }
-        // Update mouse input behavior - control camera if mouse left is pressed...
+        // Update mouse input behavior - control camera if mouse left is pressed, etc.
         ToggleCursor(lookAction.IsPressed());
     }
 

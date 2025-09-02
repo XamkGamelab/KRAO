@@ -1,4 +1,3 @@
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,14 +10,6 @@ public class LessonFeatures : MonoBehaviour
     [SerializeField] private GameObject buttonPrefab;
     [SerializeField] private RectTransform buttonParent;
     public GameObject Tooltip;
-
-
-    private float buttonParentPosY = 0;
-
-    private void Start()
-    {
-        buttonParentPosY = buttonParent.position.y;
-    }
 
     public void EnableLessonFeatures(LessonFeature[] _features)
     {
@@ -45,13 +36,11 @@ public class LessonFeatures : MonoBehaviour
             var _newFeature = Instantiate(buttonPrefab, buttonParent.transform);
             Button _featureButton = _newFeature.GetComponent<Button>();
             _featureButton.onClick = _feature.ButtonEvent;
-            _featureButton.GetComponent<LessonFeatureTooltip>().SetValues(_feature.ButtonPrompt);
-
-            //_newFeature.GetComponentInChildren<TMP_Text>(true).text = _feature.ButtonPrompt;
-            //Tooltip.GetComponentInChildren<TMP_Text>(true).text = _feature.ButtonPrompt;
+            _featureButton.GetComponent<LessonFeatureTooltip>().SetTooltipText(_feature.ButtonPrompt);
         }
 
-        UIRectScaling.ScaleHeightUpByChildren(buttonParent, sidePanel, buttonParentPosY);
+        // Scale side panel height
+        UIRectScaling.ScaleHeightUpByChildren(buttonParent, sidePanel, 0);
     }
 
     public void DestroyButtons()

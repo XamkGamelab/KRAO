@@ -10,6 +10,7 @@ public class AudioSettings : MonoBehaviour
 
     private void Awake()
     {
+        // Start listening to volume slider and toggle value changes
         audioVolumeSlider.onValueChanged.AddListener(SetVolume);
         audioMuteToggle.onValueChanged.AddListener(MuteAudio);
     }
@@ -20,6 +21,7 @@ public class AudioSettings : MonoBehaviour
         AudioMixer.SetFloat("Volume", Mathf.Log10(_volume) * 20);
     }
 
+    // Mute audio if toggle checked (_muted == true)
     private void MuteAudio(bool _muted)
     {
         if (_muted)
