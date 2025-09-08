@@ -3,7 +3,22 @@ guid: 4a98939daab3be448a8c6f920be5222a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Clovers_Base
+    second: {fileID: 2100000, guid: 2e71fa548fb97654b96a17237b0cc215, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IndoorPlantPotBase
+    second: {fileID: 2100000, guid: 5f59dc94d76b4e1489554ea54213d503, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: OfficePlantLeaf02_Base
+    second: {fileID: 2100000, guid: 059b35cf302a43c478b7c3ac5cd35649, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

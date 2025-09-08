@@ -5,8 +5,20 @@ using UnityEngine.InputSystem;
 public class InteractionPrompt : MonoBehaviour
 {
     [SerializeField] private TMP_Text interactionPrompt;
+    [SerializeField] private CanvasGroup interactionCanvasGroup;
+    [SerializeField] private float fadeTime = 0.5f;
+
+    private bool promptActive = false;
 
     private InputAction interact;
+
+    private void Update()
+    {
+        if(interactionCanvasGroup.alpha != GetInteractionPromptTargetAlpha(promptActive))
+        {
+            interactionCanvasGroup.alpha = Mathf.MoveTowards(interactionCanvasGroup.alpha, GetInteractionPromptTargetAlpha(promptActive), Time.deltaTime / fadeTime);
+        }
+    }
 
     public void ShowPrompt(string prompt, InteractionType interactionType)
     {
@@ -16,18 +28,17 @@ public class InteractionPrompt : MonoBehaviour
             interactionPrompt.text = _prompt;
         }
 
-        if (!interactionPrompt.enabled)
-        {
-            interactionPrompt.enabled = true;
-        }
+        promptActive = true;
     }
 
     public void HidePrompt()
     {
-        if (interactionPrompt.enabled)
-        {
-            interactionPrompt.enabled = false;
-        }
+        promptActive = false;
+    }
+
+    private float GetInteractionPromptTargetAlpha(bool state)
+    {
+        return state ? 1f : 0f;
     }
 
     private string GetPromptFromType(InteractionType type)

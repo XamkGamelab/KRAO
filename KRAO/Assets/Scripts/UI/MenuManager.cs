@@ -44,7 +44,7 @@ public class MenuManager : MonoBehaviour
     private void OnSceneChanged(Scene _current, Scene _next)
     {
         // If the next scene is main menu, open main menu window
-        if (_next.buildIndex == 0)
+        if (_next.buildIndex == 0 && playerManager.InMainMenu)
         {
             OpenMenu();
         }
@@ -62,7 +62,7 @@ public class MenuManager : MonoBehaviour
     private void OpenMenu()
     {
         // If main menu scene
-        if (SceneManager.GetActiveScene().buildIndex == 0)
+        if (SceneManager.GetActiveScene().buildIndex == 0 && playerManager.InMainMenu)
         {
             HandleWindowChange(MainMenuWindow, true);
             // Set pause menu and journal opening keycodes to none, so they can't be opened in main menu
@@ -117,6 +117,12 @@ public class MenuManager : MonoBehaviour
         }
         // Return window that is open or null if none was found
         return _window;
+    }
+    public void CloseMainMenu()
+    {
+        HandleWindowChange(hudWindow, true);
+        PauseMenuWindow.KeyCode = KeyCode.P;
+        journalWindow.KeyCode = KeyCode.J;
     }
 
     // Open or close the window coming in depending on the _open value

@@ -1,3 +1,5 @@
+using System;
+using Unity.Cinemachine;
 using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
@@ -8,16 +10,23 @@ public class PlayerManager : MonoBehaviour
     private Interaction interaction => GetComponentInChildren<Interaction>();
 
     public bool ControllerEnabled = false;
+    public bool HasCertificate = false;
+    public bool InMainMenu = true;
+
+    public static event Action<PlayerManager> OnCertificateActivation;
 
     [SerializeField] private Transform playerTransform;
     [SerializeField] private GameObject crosshair;
+
+    [SerializeField] private CinemachineCamera mainMenuCamera;
+    [SerializeField] private CinemachineCamera gameCamera;
+
+    private CinemachineCamera currentCamera;
 
     #region Public Functions
     public void ToggleControllerState()
     {
         ControllerEnabled = !ControllerEnabled;
-
-        Debug.Log($"Controller state switched to {ControllerEnabled}");
 
         movement.MovementEnabled = ControllerEnabled;
         look.LookEnabled = ControllerEnabled;
@@ -30,8 +39,6 @@ public class PlayerManager : MonoBehaviour
     public void ToggleControllerState(bool state)
     {
         ControllerEnabled = state;
-
-        Debug.Log($"Controller state switched to {ControllerEnabled}");
 
         movement.MovementEnabled = ControllerEnabled;
         look.LookEnabled = ControllerEnabled;
@@ -57,6 +64,26 @@ public class PlayerManager : MonoBehaviour
         ControllerEnabled = wasControlEnabled;
         ToggleControllerState(ControllerEnabled);
     }
+
+    public void StartGame()
+    {
+        ToggleControllerState(true);
+        InMainMenu = false;
+        SwitchCamera(gameCamera);
+    }
+
+    public void MainMenu()
+    {
+        ToggleControllerState(false);
+        InMainMenu = true;
+        SwitchCamera(mainMenuCamera);
+    }
+
+    public void ActivateCertificate()
+    {
+        HasCertificate = true;
+        OnCertificateActivation?.Invoke(this);
+    }
     #endregion
     #region Private Functions
     private void Start()
@@ -64,6 +91,22 @@ public class PlayerManager : MonoBehaviour
         CheckComponents();
         Transform newSpawn = GameObject.FindWithTag("Bootstrapper").GetComponent<SceneBootstrapper>().Spawnpoint;
         TransportPlayer(newSpawn.position, newSpawn.rotation);
+        currentCamera = mainMenuCamera;
+    }
+
+    private void SwitchCamera(CinemachineCamera _camera)
+    {
+        currentCamera = _camera;
+
+        if(currentCamera == mainMenuCamera)
+        {
+            mainMenuCamera.enabled = true;
+            gameCamera.enabled = false;
+        } else
+        {
+            gameCamera.enabled = true;
+            mainMenuCamera.enabled = false;
+        }
     }
 
     private void CheckComponents()
