@@ -18,6 +18,11 @@ public class Movement : MonoBehaviour
 
     Vector2 _input;
 
+    public void StopMovement()
+    {
+        movement = Vector3.zero;
+    }
+
     private void Start()
     {
         move = InputSystem.actions.FindAction("Move");

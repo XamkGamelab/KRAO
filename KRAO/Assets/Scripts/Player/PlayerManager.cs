@@ -56,6 +56,8 @@ public class PlayerManager : MonoBehaviour
         ControllerEnabled = false;
         ToggleControllerState(ControllerEnabled);
 
+        movement.StopMovement();
+
         interaction.ClearInteractables();
         playerTransform.position = position;
         playerTransform.rotation = rotation;

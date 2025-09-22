@@ -11,13 +11,4 @@ public class PlayerTeleporter : MonoBehaviour
         playerManager.TransportPlayer(teleporterDestination.position, teleporterDestination.rotation);
     }
 
-    public void ShowPrompt()
-    {
-        interactionPrompt.ShowPrompt(teleporterPrompt, InteractionType.Stay);
-    }
-
-    public void HidePrompt()
-    {
-        interactionPrompt.HidePrompt();
-    }
 }

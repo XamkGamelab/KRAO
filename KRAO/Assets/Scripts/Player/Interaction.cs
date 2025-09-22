@@ -137,5 +137,6 @@ public class Interaction : MonoBehaviour
     public void ClearInteractables()
     {
         interactableObjects.Clear();
+        interactionPrompt.HidePrompt();
     }
 }
