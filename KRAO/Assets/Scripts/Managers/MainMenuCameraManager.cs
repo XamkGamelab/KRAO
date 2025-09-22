@@ -1,4 +1,3 @@
-using Unity.Cinemachine;
 using UnityEngine;
 
 public class MainMenuCameraManager : MonoBehaviour
@@ -29,6 +28,11 @@ public class MainMenuCameraManager : MonoBehaviour
             if(wasActive)
             {
                 wasActive = false;
+                if (fadeHasHappened)
+                {
+                    playerFade.ToggleFade(false);
+                    fadeHasHappened = false;
+                }
             }
             return;
         }
