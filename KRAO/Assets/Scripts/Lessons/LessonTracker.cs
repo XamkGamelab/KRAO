@@ -25,17 +25,14 @@ public class LessonTracker : MonoBehaviour
 
         // Start listening to scene changes
         SceneLoader.SetProgressBarValues += OnSceneChange;
+
+        // Set progress bar for the first scene
+        SetProgressBarValue(0);
     }
 
     // Update progress bar values when scene changes
     private void OnSceneChange(int _sceneId)
     {
-        // return if scene is main menu
-        if (_sceneId == 0)
-        {
-            return;
-        }
-        else
         {
             SetProgressBarValue(_sceneId);
         }

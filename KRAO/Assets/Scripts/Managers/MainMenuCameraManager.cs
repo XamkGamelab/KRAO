@@ -4,6 +4,7 @@ using UnityEngine;
 public class MainMenuCameraManager : MonoBehaviour
 {
     private PlayerManager playerManager => FindFirstObjectByType<PlayerManager>();
+    private PlayerFadeOut playerFade => FindFirstObjectByType<PlayerFadeOut>();
 
     [SerializeField] private float cameraSwitchTime = 10f;
 
@@ -14,6 +15,8 @@ public class MainMenuCameraManager : MonoBehaviour
     private int currentCameraIndex = -1;
 
     private float lastSwitchTime = 0f;
+
+    private bool fadeHasHappened = false;
 
     private void Start()
     {
@@ -48,11 +51,18 @@ public class MainMenuCameraManager : MonoBehaviour
 
     private void UpdateCameras()
     {
-        if(Time.time - lastSwitchTime >= cameraSwitchTime)
+        if (Time.time - lastSwitchTime >= cameraSwitchTime - playerFade.FadeTime && !fadeHasHappened)
+        {
+            fadeHasHappened = true;
+            playerFade.ToggleFade(true);
+        }
+        if (Time.time - lastSwitchTime >= cameraSwitchTime)
         {
             currentCameraIndex = GetNextCameraInArray(currentCameraIndex);
             MoveCamera(mainMenuCameras[currentCameraIndex]);
             lastSwitchTime = Time.time;
+            playerFade.ToggleFade(false);
+            fadeHasHappened = false;
         }
     }
 
@@ -64,12 +74,12 @@ public class MainMenuCameraManager : MonoBehaviour
 
     private int GetNextCameraInArray(int _index)
     {
-        if(_index++ >= mainMenuCameras.Length)
+        if(_index < mainMenuCameras.Length)
         {
-            return 0;
+            return _index + 1;
         } else
         {
-            return _index++;
+            return 0;
         }
     }
 }

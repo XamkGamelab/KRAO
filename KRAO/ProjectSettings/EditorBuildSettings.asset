@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/PlayerScene.unity
     guid: 5502de54b1c175641828133cb5c78090
   - enabled: 1
-    path: Assets/Scenes/Demo_scene.unity
+    path: "Assets/Scenes/P\xF6lkynvaihtoty\xF6maaScene.unity"
     guid: b9a80bce1b291b947a55a7fea4900e1c
   - enabled: 1
     path: Assets/Scenes/ViljamiScene.unity

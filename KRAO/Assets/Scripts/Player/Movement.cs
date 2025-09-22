@@ -23,7 +23,7 @@ public class Movement : MonoBehaviour
         move = InputSystem.actions.FindAction("Move");
 
         #if !UNITY_EDITOR && UNITY_WEBGL
-            movementDamping = movementDampingWeb = 0.375f;
+            movementDamping = movementDampingWeb;
         #endif
     }
 
@@ -42,15 +42,7 @@ public class Movement : MonoBehaviour
 
         if(movement.magnitude > 0)
         {
-            controller.Move(movement);
-        }
-    }
-
-    private void LateUpdate()
-    {
-        if(!controller.isGrounded)
-        {
-            GroundPlayer();
+            controller.Move(movement + GroundPlayer());
         }
     }
 
@@ -88,14 +80,13 @@ public class Movement : MonoBehaviour
         }
     }
 
-    private void GroundPlayer()
+    private Vector3 GroundPlayer()
     {
         RaycastHit _hit;
-        if(Physics.Raycast(controller.transform.position, Vector3.down, out _hit, Mathf.Infinity, groundLayer))
+        if (Physics.Raycast(controller.transform.position, Vector3.down, out _hit, 10f, groundLayer))
         {
-            Vector3 _newPosition = controller.transform.position;
-            _newPosition.y = _hit.point.y;
-            GameObject.FindWithTag("Player").GetComponent<PlayerManager>().TransportPlayer(_newPosition, controller.transform.rotation);
+            return _hit.point - controller.transform.position;
         }
+        else return Vector3.zero;
     }
 }
