@@ -608,7 +608,7 @@ MonoBehaviour:
     lessons:
     - HeaderText: "Rataty\xF6turvallisuusp\xE4tevyys"
       LessonId: 1
-      LessonImage: {fileID: 21300000, guid: 83df3e21300a4f441ac7cfd84e597595, type: 3}
+      LessonImage: {fileID: 21300000, guid: 5f1faa47da69a634ba09bc5be73c488f, type: 3}
       ContentText: "Ennen valtion rataverkolla ty\xF6skentely\xE4 sinulla tulee olla
         v\xE4hint\xE4\xE4n rataty\xF6turvallisuusp\xE4tevyys."
   - SceneHeader: "P\xF6lkynvaihtoty\xF6maa"
@@ -617,14 +617,13 @@ MonoBehaviour:
     lessons:
     - HeaderText: "Vanhat ratap\xF6lkyt"
       LessonId: 2
-      LessonImage: {fileID: 0}
-      ContentText: "Puisia ratap\xF6lkkyj\xE4 korvataan betonisilla p\xF6lkyill\xE4.
-        Betoninen ratap\xF6lkky mahdollistaa suurempien kuten 25t akselipainoisten
-        junien ajattamisen. Betoniratap\xF6lkkyj\xE4 voi olla jopa 1640 kappaletta
-        kilometrill\xE4."
+      LessonImage: {fileID: 21300000, guid: 5faa9db172b36454398b8f4b07f58a84, type: 3}
+      ContentText: "Vanhoja puisia ratap\xF6lkkyj\xE4 korvataan betonisilla p\xF6lkyill\xE4,
+        jotka mahdollistavat suurempien akselipainoisten, kuten 25 tonnisten, junien
+        ajattamisen. Betoniratap\xF6lkkyj\xE4 voi olla jopa 1640 kappaletta kilometrill\xE4."
     - HeaderText: "Rataty\xF6n suojaulottumat (RSU)"
       LessonId: 3
-      LessonImage: {fileID: 0}
+      LessonImage: {fileID: 21300000, guid: 00133e51db9162847bd453b082cc3ea2, type: 3}
       ContentText: "Rataty\xF6n suojaulottuma (RSU) on pitkin raidetta ulottuva tila,
         jonka sis\xE4puolella ty\xF6skentely edellytt\xE4\xE4 rataty\xF6luvan tai
         voidaan tehd\xE4 tietyin edellytyksin esim turvamiestoiminnalla. Yksiraiteisella
@@ -633,7 +632,7 @@ MonoBehaviour:
         melueste."
     - HeaderText: "Ty\xF6koneet ja liikkuva kalusto"
       LessonId: 4
-      LessonImage: {fileID: 0}
+      LessonImage: {fileID: 21300000, guid: 0aead9568b45c7a4cbd364740c69f6b4, type: 3}
       ContentText: "Kun ty\xF6kone tai liikkuva kalusto ty\xF6skentelee niin, ett\xE4
         se, sen osa tai taakka ulottuu rataty\xF6n suojaulottuman sis\xE4puolelle
         edes hetkeksi, tulee ty\xF6h\xF6n olla rataty\xF6lupa. Liikkuminen ja ty\xF6skentely
@@ -641,72 +640,73 @@ MonoBehaviour:
         on antanut luvan."
     - HeaderText: Raidesepeli
       LessonId: 5
-      LessonImage: {fileID: 0}
+      LessonImage: {fileID: 21300000, guid: 123ff0199f68b124b815bb1ca4bb6f00, type: 3}
       ContentText: "Sepeli on raidepohjalle asennettava materiaali, joka tarjoaa
         tasaisen ja vakaan alustan junaliikenteelle. Sen rakeinen koostumus antaa
         veden virrata ja vaimentaa t\xE4rin\xE4\xE4, parantaen raiteiden kest\xE4vyytt\xE4
         ja mukavuutta. Raidesepelin koko on 32-64 mm"
     - HeaderText: "Henkil\xF6kohtaiset varusteet"
       LessonId: 6
-      LessonImage: {fileID: 0}
+      LessonImage: {fileID: 21300000, guid: 1187defde4571e9418bf4e1dd2d408e4, type: 3}
       ContentText: "Rautatiealueella liikkuvalla tulee olla keltainen huomiovaatetus
         ja asianmukaiset suojavarusteet. Jokaisella rautatiealueella ty\xF6skentelev\xE4ll\xE4
         ja liikkuvalla henkil\xF6ll\xE4 pit\xE4\xE4 olla n\xE4kyvill\xE4 henkil\xF6n
         yksil\xF6iv\xE4 kuvallinen henkil\xF6tunniste."
     - HeaderText: "Uudet ratap\xF6lkyt"
       LessonId: 7
-      LessonImage: {fileID: 0}
+      LessonImage: {fileID: 21300000, guid: fea1400e65697254b96435768f5f350d, type: 3}
       ContentText: "Betoniset ratap\xF6lkyt tarjoavat kest\xE4v\xE4n ja pitk\xE4ik\xE4isen
         ratkaisun rautatieverkostoihin. Niiden muotoilu ja materiaali parantavat
         raiteiden vakautta ja v\xE4hent\xE4\xE4 huoltotarvetta, tuoden samalla tehokkuutta
         ja kest\xE4vyytt\xE4 liikenteeseen."
     - HeaderText: Turvamies (T-mies)
       LessonId: 8
-      LessonImage: {fileID: 0}
+      LessonImage: {fileID: 21300000, guid: 46bb7c338c11c7643bffbe42834b0d0c, type: 3}
       ContentText: "Turvamiestoiminnalla turvataan ty\xF6t\xE4, joka suoritetaan
         RSUn sis\xE4ll\xE4 jalkaisin. Turvamiest\xE4 k\xE4ytet\xE4\xE4n my\xF6s turvaamaan
         koneiden ty\xF6skentely\xE4 RSUn ulkopuolella. Mik\xE4li ty\xF6t\xE4 ei voi
         toteuttaa turvamiehen turvaamana, tulee ty\xF6 toteuttaa rataty\xF6luvalla."
     - HeaderText: Aukean tilan ulottuma (ATU)
       LessonId: 9
-      LessonImage: {fileID: 0}
+      LessonImage: {fileID: 21300000, guid: c5e4f274a8044b149b59b407b9f0f895, type: 3}
       ContentText: "Radan aukea tila on raidetta ymp\xE4r\xF6iv\xE4\xE4 tilaa, joka
         ei saa sis\xE4lt\xE4\xE4 kiinteit\xE4 rakenteita tai laitteita. ATU-mitat
         ovat minimimittoja, jotka on otettava huomioon suunnittelun ja rakentamisen
         aikana huomioiden tavoitenopeudet ja raiteen mahdolliset kallistuskulmat."
     - HeaderText: "S\xE4hk\xF6veturi"
       LessonId: 10
-      LessonImage: {fileID: 0}
+      LessonImage: {fileID: 21300000, guid: d7485609d64999142b061bbd725e23a5, type: 3}
       ContentText: "Rataverkolla on k\xE4yt\xF6ss\xE4 s\xE4hk\xF6vetureita, jotka
         liikkuvat l\xE4hes \xE4\xE4nett\xF6m\xE4sti. S\xE4hk\xF6vetureita voidaan
         k\xE4ytt\xE4\xE4 sek\xE4 tavara- ett\xE4 matkustajaliikenteess\xE4."
     - HeaderText: Opastin
       LessonId: 11
-      LessonImage: {fileID: 0}
+      LessonImage: {fileID: 21300000, guid: 2151bd04d506d0a4fbde98cbbd4b2b6f, type: 3}
       ContentText: "Opastin on laite, jolla annetaan kuljettajalle opasteita lamppujen
         ja v\xE4rilasien muodostamalla opastinkuviolla."
     - HeaderText: Baliisi
       LessonId: 12
-      LessonImage: {fileID: 0}
-      ContentText: "Baliisi on JKV-ratalaite, joka l\xE4hett\xE4\xE4 JKV-veturilaitteen
-        antennilta saamallaan energialla muistiinsa ohjelmoidun tai tiedonsiirtokaapelin
-        kautta l\xE4hetetyn baliisisanoman JKV-veturilaitteen antennille. "
+      LessonImage: {fileID: 21300000, guid: 7733be90a22f0894fa3260a15c67a507, type: 3}
+      ContentText: "Baliisi on JKV-ratalaite (Junan Kulun Valvonta), joka l\xE4hett\xE4\xE4
+        JKV-veturilaitteen antennilta saamallaan energialla muistiinsa ohjelmoidun
+        tai tiedonsiirtokaapelin kautta l\xE4hetetyn baliisisanoman JKV-veturilaitteen
+        antennille."
     - HeaderText: Akselinlaskija
       LessonId: 13
-      LessonImage: {fileID: 0}
+      LessonImage: {fileID: 21300000, guid: 3fee38a43e205fc4a9fdf329a2fe6c64, type: 3}
       ContentText: "Raiteen vapaanaolon valvontaj\xE4rjestelm\xE4, joka perustuu
         osuuden p\xE4iss\xE4 olevien laskentapisteiden v\xE4lill\xE4 olevien akselien
         lukum\xE4\xE4r\xE4\xE4n. "
     - HeaderText: Raidevirtapiiri
       LessonId: 14
-      LessonImage: {fileID: 0}
+      LessonImage: {fileID: 21300000, guid: 64bfe2628107f12498f9a72d7480b2fb, type: 3}
       ContentText: "Raiteen vapaanaolon valvontaj\xE4rjestelm\xE4, joka perustuu
         eristysjatkosten rajaamaan raideosuuteen, jolla kiskoilla kulkeva yksikk\xF6
         havaitaan akselien muodostaman virtapiirin shuntatessa osuuden p\xE4\xE4h\xE4n
         kytketyn vastaanottimen sis\xE4\xE4ntulon."
     - HeaderText: Raiteensulku
       LessonId: 15
-      LessonImage: {fileID: 0}
+      LessonImage: {fileID: 21300000, guid: d5b925a888a5e0e4f92fa7e6291ad042, type: 3}
       ContentText: "Raiteensulku on rautateill\xE4 k\xE4ytett\xE4v\xE4 turvalaite,
         jonka tarkoitus on turvata p\xE4\xE4raiteen junaliikenne est\xE4m\xE4ll\xE4
         sivuraiteelta karkaavia vaunuja p\xE4\xE4sem\xE4st\xE4 luvatta p\xE4\xE4raiteelle."
@@ -832,7 +832,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4615867660726241496, guid: 31103c345b65bae4e9972399c5107f06, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -393.54865
+      value: -393.42096
       objectReference: {fileID: 0}
     - target: {fileID: 4851882851868276748, guid: 31103c345b65bae4e9972399c5107f06, type: 3}
       propertyPath: m_AnchorMax.y
